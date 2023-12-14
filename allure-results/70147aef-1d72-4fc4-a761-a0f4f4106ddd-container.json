@@ -1,0 +1,1 @@
+{"uuid":"70147aef-1d72-4fc4-a761-a0f4f4106ddd","name":"testcases.TagFolder","children":["d28ea97e-348d-42a8-b2ef-43feb56514d1"],"befores":[{"name":"baseURL","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701863205695,"stop":1701863206223}],"afters":[],"start":1701863205571,"stop":1701863207775}

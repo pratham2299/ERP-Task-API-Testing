@@ -1,0 +1,1 @@
+{"uuid":"fd1a66dd-1e38-4812-b660-fa7a1f15e904","name":"testcases.DesignationFolder","children":["48457f57-8ed2-40fa-91b8-c9ae5e41edb6"],"befores":[{"name":"baseURL","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701863055839,"stop":1701863056344}],"afters":[],"start":1701863055714,"stop":1701863057970}

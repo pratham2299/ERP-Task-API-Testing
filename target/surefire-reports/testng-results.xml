@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T15:31:25 IST" name="Suite" finished-at="2023-11-30T15:31:28 IST" duration-ms="2566">
+    <groups>
+    </groups>
+    <test started-at="2023-11-30T15:31:25 IST" name="Test" finished-at="2023-11-30T15:31:28 IST" duration-ms="2566">
+      <class name="testcases.TaskModule">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.TaskModule@f6c03cb]" started-at="2023-11-30T15:31:25 IST" name="baseURL" finished-at="2023-11-30T15:31:26 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURL -->
+        <test-method signature="addStatus()[pri:1, instance:testcases.TaskModule@f6c03cb]" started-at="2023-11-30T15:31:26 IST" name="addStatus" finished-at="2023-11-30T15:31:28 IST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStatus -->
+        <test-method signature="addPriority()[pri:2, instance:testcases.TaskModule@f6c03cb]" started-at="2023-11-30T15:31:28 IST" name="addPriority" finished-at="2023-11-30T15:31:28 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPriority -->
+        <test-method signature="getPriority()[pri:3, instance:testcases.TaskModule@f6c03cb]" started-at="2023-11-30T15:31:28 IST" name="getPriority" finished-at="2023-11-30T15:31:28 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPriority -->
+      </class> <!-- testcases.TaskModule -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

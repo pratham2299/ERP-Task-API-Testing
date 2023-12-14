@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<!-- File Appender for DesignationFolder -->
+		<File name="DesignationFolder" fileName="logs/DesignationFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+
+		<!-- File Appender for StatusFolder -->
+		<File name="StatusFolder" fileName="logs/StatusFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+		<!-- File Appender for PriorityFolder -->
+		<File name="PriorityFolder" fileName="logs/PriorityFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+		<!-- File Appender for TagFolder -->
+		<File name="TagFolder" fileName="logs/TagFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+		<!-- File Appender for ProjectFolder -->
+		<File name="ProjectFolder" fileName="logs/ProjectFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console" />
+		</Root>
+
+		<!-- Logger for StatusFolder -->
+		<Logger name="testcases.StatusFolder" level="all" additivity="false">
+			<AppenderRef ref="StatusFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<!-- Logger for PriorityFolder -->
+		<Logger name="testcases.PriorityFolder" level="all" additivity="false">
+			<AppenderRef ref="Class2LogFile" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<!-- Logger for TagFolder -->
+		<Logger name="testcases.TagFolder" level="all" additivity="false">
+			<AppenderRef ref="TagFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<!-- Logger for DesignationFolder -->
+		<Logger name="testcases.DesignationFolder" level="all"
+			additivity="false">
+			<AppenderRef ref="DesignationFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+	</Loggers>
+</Configuration>
