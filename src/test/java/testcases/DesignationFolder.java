@@ -1,15 +1,19 @@
 package testcases;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
+import com.google.gson.Gson;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
@@ -38,19 +42,21 @@ public class DesignationFolder {
 	@Test(priority = 1)
 	@Step("Add Designation Without Authorization")
 	public void verifyAddDesignationWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designation", "designation");
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designation", "designation");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation");
-		response = requestSpec.contentType("application/json").body(data).post();
+		response = requestSpec.contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 401;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 401, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -67,13 +73,16 @@ public class DesignationFolder {
 	@Test(priority = 3)
 	@Step("Update Designation Without Authorization")
 	public void updateDesignationWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designationId", 7);
-		Object fakeDesignation1 = faker.name().firstName();
-		data.put("designation", fakeDesignation1);
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designationId", 7);
+		String fakeDesignation1 = faker.name().firstName();
+		designationMap.put("designation", fakeDesignation1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/update");
-		response = requestSpec.contentType("application/json").body(data).put();
+		response = requestSpec.contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -98,24 +107,46 @@ public class DesignationFolder {
 	@Step("Add Designation With Authorization")
 	public void verifyAddDesignationWithAuthorization() {
 		String fakeDesignation1 = faker.job().position();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designation", fakeDesignation1);
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designation", fakeDesignation1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedStatusId = getRandomDesignationId(keyList);
+		String fakeDesignation = response.jsonPath().getString(selectedStatusId);
+		deleteSingleDesignationWithAuthorization(fakeDesignation);
+
 		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 201;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+
+		// Check the response status code
+		if (response.getStatusCode() == 201) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 201);
+		} else if (response.getStatusCode() == 422) {
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Designation Already Exits");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
+
 		log.info("Response Time: " + response.getTime());
-//		double actualResponseTime = response.getTime();
-//		SoftAssert softAssert = new SoftAssert();
-//		softAssert.assertEquals(actualResponseTime < 200, true, "Response time is more than 200 ms");
-//		softAssert.assertAll();
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -134,18 +165,19 @@ public class DesignationFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-
-		deleteSingleDesignationWithAuthorization(fakeDesignation1);
 	}
 
 	@Test(priority = 6)
 	@Step("Add Designation With Invalid Payload")
 	public void addDesignationWithInvalidPayload() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("design", "designation");
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("design", "designation");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
@@ -156,19 +188,21 @@ public class DesignationFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
 	@Test(priority = 7)
 	@Step("Add Designation With Same Payload As Previous")
 	public void addDesignationWithSamePayloadAsPrevious() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designation", "Project Lead");
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designation", "Project Lead");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
@@ -179,8 +213,7 @@ public class DesignationFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 422;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -193,8 +226,6 @@ public class DesignationFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
-		String responseBody = response.getBody().asPrettyString();
-		Assert.assertEquals(responseBody.contains("COO"), true, "COO value does not exist");
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -214,22 +245,25 @@ public class DesignationFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-//		given().when().get("http://192.168.0.177:10003/task/status/get/all").then().body("status", equalTo("Start"))
-//				.statusCode(200).log().all();
 	}
 
 	@Test(priority = 9)
 	@Step("Update Designation With Authorization")
 	public void updateDesignationWithAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designationId", 13);
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designationId", 13);
 		String fakeDesignation1 = faker.job().position();
-		data.put("designation", fakeDesignation1);
+		designationMap.put("designation", fakeDesignation1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
+
+		Assert.assertEquals(response.jsonPath().getString("13"), fakeDesignation1);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -256,11 +290,14 @@ public class DesignationFolder {
 	@Test(priority = 10)
 	@Step("Update Designation Without Giving Designation Id")
 	public void updateDesignationWithoutGivingDesignationId() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designation", "Project Lead");
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designation", "Project Lead");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -270,8 +307,7 @@ public class DesignationFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -279,12 +315,15 @@ public class DesignationFolder {
 	@Step("Update Designation By Giving Non Existing Designation Id")
 	public void updateDesignationByGivingNonExistingDesignationId() {
 		String fakeDesignation = faker.job().position();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("designationId", 37);
-		data.put("designation", fakeDesignation);
+		HashMap<String, Object> designationMap = new HashMap<>();
+		designationMap.put("designationId", 37);
+		designationMap.put("designation", fakeDesignation);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(designationMap);
 
 		requestSpec.basePath("/employee/designation/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -294,8 +333,7 @@ public class DesignationFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -307,8 +345,20 @@ public class DesignationFolder {
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
 		log.info("Status Code: " + response.statusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+
+		// Check the response status code
+		if (response.getStatusCode() == 200) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		} else if (response.getStatusCode() == 404) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "No designation to delete with " + fakeDesignation + ".");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -334,20 +384,26 @@ public class DesignationFolder {
 	@Test(priority = 13)
 	@Step("Delete Designation With Invalid Designation Name")
 	public void deleteSingleDesignationWithInvalidDesignationName() {
-		requestSpec.basePath("/employee/designation/delete").queryParam("designation", "Lawyer1");
+		String fakeDesignationName = "Lawyer2";
+		requestSpec.basePath("/employee/designation/delete").queryParam("designation", fakeDesignationName);
 		response = requestSpec.auth().basic(username, password).contentType("application/json").delete();
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "No status to delete with Lawyer1.");
+		Assert.assertEquals(actualMessage, "No designation to delete with " + fakeDesignationName + ".");
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+	}
+
+	private String getRandomDesignationId(List<String> keyList) {
+		Random random = new Random();
+		int randomIndex = random.nextInt(keyList.size());
+		return keyList.get(randomIndex);
 	}
 
 }

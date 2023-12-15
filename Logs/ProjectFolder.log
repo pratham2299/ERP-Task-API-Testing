@@ -1,0 +1,2059 @@
+18:05:13.791 [main] INFO  testcases.ProjectFolder - Response Body:
+
+18:05:13.794 [main] INFO  testcases.ProjectFolder - Response Code: 401
+18:05:13.798 [main] INFO  testcases.ProjectFolder - Response Time: 451
+18:05:13.959 [main] INFO  testcases.ProjectFolder - Status Code: 401
+18:05:14.814 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    }
+]
+18:05:14.815 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:05:14.815 [main] INFO  testcases.ProjectFolder - Response Time: 701
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:05:14.816 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Date Value: Thu, 14 Dec 2023 12:35:14 GMT
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+18:05:14.817 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+18:05:15.569 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023/12/05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    }
+]
+18:05:15.570 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:05:15.570 [main] INFO  testcases.ProjectFolder - Response Time: 722
+18:05:15.570 [main] INFO  testcases.ProjectFolder - Response Time: 722
+18:05:16.035 [main] INFO  testcases.ProjectFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:17.168+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields Missing",
+    "path": "/project/add"
+}
+18:05:16.563 [main] INFO  testcases.ProjectFolder - Message: Fields Missing
+18:05:16.564 [main] INFO  testcases.ProjectFolder - Response Code: 400
+18:05:16.564 [main] INFO  testcases.ProjectFolder - Response Time: 451
+18:05:17.085 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    }
+]
+18:05:17.086 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:05:17.086 [main] INFO  testcases.ProjectFolder - Response Time: 506
+18:05:17.714 [main] INFO  testcases.ProjectFolder - Status Code: 200
+18:05:17.718 [main] INFO  testcases.ProjectFolder - Response Body: [
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    }
+]
+18:05:17.719 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+18:05:17.719 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+18:05:17.719 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+18:05:17.719 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+18:05:17.719 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Date Value: Thu, 14 Dec 2023 12:35:18 GMT
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+18:05:17.720 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+18:10:35.080 [main] INFO  testcases.ProjectFolder - Response Body:
+
+18:10:35.084 [main] INFO  testcases.ProjectFolder - Response Code: 401
+18:10:35.088 [main] INFO  testcases.ProjectFolder - Response Time: 444
+18:10:35.272 [main] INFO  testcases.ProjectFolder - Status Code: 401
+18:10:36.144 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    }
+]
+18:10:36.145 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:10:36.146 [main] INFO  testcases.ProjectFolder - Response Time: 762
+18:10:36.146 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+18:10:36.146 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+18:10:36.146 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+18:10:36.146 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+18:10:36.147 [main] INFO  testcases.ProjectFolder - Key: Date Value: Thu, 14 Dec 2023 12:40:37 GMT
+18:10:36.148 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+18:10:36.148 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+18:10:36.815 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023/12/05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    }
+]
+18:10:36.816 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:10:36.817 [main] INFO  testcases.ProjectFolder - Response Time: 644
+18:10:36.817 [main] INFO  testcases.ProjectFolder - Response Time: 644
+18:10:37.528 [main] INFO  testcases.ProjectFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:38.631+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields Missing",
+    "path": "/project/add"
+}
+18:10:38.094 [main] INFO  testcases.ProjectFolder - Message: Fields Missing
+18:10:38.095 [main] INFO  testcases.ProjectFolder - Response Code: 400
+18:10:38.095 [main] INFO  testcases.ProjectFolder - Response Time: 698
+18:10:38.752 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    }
+]
+18:10:38.753 [main] INFO  testcases.ProjectFolder - Response Code: 201
+18:10:38.753 [main] INFO  testcases.ProjectFolder - Response Time: 640
+18:10:39.465 [main] INFO  testcases.ProjectFolder - Status Code: 200
+18:10:39.472 [main] INFO  testcases.ProjectFolder - Response Body: [
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    }
+]
+18:10:39.478 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+18:10:39.478 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+18:10:39.478 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+18:10:39.479 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+18:10:39.479 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+18:10:39.479 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:10:39.480 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+18:10:39.480 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+18:10:39.480 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+18:10:39.481 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+18:10:39.481 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+18:10:39.481 [main] INFO  testcases.ProjectFolder - Key: Date Value: Thu, 14 Dec 2023 12:40:39 GMT
+18:10:39.481 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+18:10:39.482 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+10:53:44.895 [main] INFO  testcases.ProjectFolder - Response Body:
+
+10:53:44.898 [main] INFO  testcases.ProjectFolder - Response Code: 401
+10:53:44.901 [main] INFO  testcases.ProjectFolder - Response Time: 646
+10:53:45.005 [main] INFO  testcases.ProjectFolder - Status Code: 401
+10:53:45.774 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    }
+]
+10:53:45.774 [main] INFO  testcases.ProjectFolder - Response Code: 201
+10:53:45.774 [main] INFO  testcases.ProjectFolder - Response Time: 659
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+10:53:45.775 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+10:53:45.776 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+10:53:45.776 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+10:53:45.776 [main] INFO  testcases.ProjectFolder - Key: Date Value: Fri, 15 Dec 2023 05:23:45 GMT
+10:53:45.776 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+10:53:45.776 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+10:53:46.183 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023/12/05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    }
+]
+10:53:46.183 [main] INFO  testcases.ProjectFolder - Response Code: 201
+10:53:46.183 [main] INFO  testcases.ProjectFolder - Response Time: 389
+10:53:46.183 [main] INFO  testcases.ProjectFolder - Response Time: 389
+10:53:46.581 [main] INFO  testcases.ProjectFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:23:47.422+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields Missing",
+    "path": "/project/add"
+}
+10:53:47.104 [main] INFO  testcases.ProjectFolder - Message: Fields Missing
+10:53:47.104 [main] INFO  testcases.ProjectFolder - Response Code: 400
+10:53:47.105 [main] INFO  testcases.ProjectFolder - Response Time: 381
+10:53:47.522 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    }
+]
+10:53:47.523 [main] INFO  testcases.ProjectFolder - Response Code: 201
+10:53:47.523 [main] INFO  testcases.ProjectFolder - Response Time: 396
+10:53:47.920 [main] INFO  testcases.ProjectFolder - Status Code: 200
+10:53:47.924 [main] INFO  testcases.ProjectFolder - Response Body: [
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    }
+]
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+10:53:47.926 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+10:53:47.927 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+10:53:47.927 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+10:53:47.927 [main] INFO  testcases.ProjectFolder - Key: Date Value: Fri, 15 Dec 2023 05:23:48 GMT
+10:53:47.927 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+10:53:47.927 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+11:04:56.984 [main] INFO  testcases.ProjectFolder - Response Body:
+
+11:04:56.988 [main] INFO  testcases.ProjectFolder - Response Code: 401
+11:04:56.994 [main] INFO  testcases.ProjectFolder - Response Time: 419
+11:04:57.109 [main] INFO  testcases.ProjectFolder - Status Code: 401
+11:04:57.687 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 24,
+        "projectName": "Bitwolf",
+        "projectStartDate": "2019-06-05"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    }
+]
+11:04:57.688 [main] INFO  testcases.ProjectFolder - Response Code: 201
+11:04:57.688 [main] INFO  testcases.ProjectFolder - Response Time: 440
+11:04:57.688 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+11:04:57.689 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+11:04:57.690 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+11:04:57.690 [main] INFO  testcases.ProjectFolder - Key: Date Value: Fri, 15 Dec 2023 05:34:56 GMT
+11:04:57.690 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+11:04:57.690 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+11:04:58.108 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 25,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023/12/05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 24,
+        "projectName": "Bitwolf",
+        "projectStartDate": "2019-06-05"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    }
+]
+11:04:58.109 [main] INFO  testcases.ProjectFolder - Response Code: 201
+11:04:58.110 [main] INFO  testcases.ProjectFolder - Response Time: 398
+11:04:58.110 [main] INFO  testcases.ProjectFolder - Response Time: 398
+11:04:58.501 [main] INFO  testcases.ProjectFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:34:57.724+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields Missing",
+    "path": "/project/add"
+}
+11:04:59.022 [main] INFO  testcases.ProjectFolder - Message: Fields Missing
+11:04:59.022 [main] INFO  testcases.ProjectFolder - Response Code: 400
+11:04:59.022 [main] INFO  testcases.ProjectFolder - Response Time: 378
+11:04:59.494 [main] INFO  testcases.ProjectFolder - Response Body:
+[
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 25,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 24,
+        "projectName": "Bitwolf",
+        "projectStartDate": "2019-06-05"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 26,
+        "projectName": "Stringtough",
+        "projectStartDate": null
+    }
+]
+11:04:59.495 [main] INFO  testcases.ProjectFolder - Response Code: 201
+11:04:59.495 [main] INFO  testcases.ProjectFolder - Response Time: 455
+11:05:00.042 [main] INFO  testcases.ProjectFolder - Status Code: 200
+11:05:00.044 [main] INFO  testcases.ProjectFolder - Response Body: [
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 25,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 24,
+        "projectName": "Bitwolf",
+        "projectStartDate": "2019-06-05"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 26,
+        "projectName": "Stringtough",
+        "projectStartDate": null
+    }
+]
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:05:00.048 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Date Value: Fri, 15 Dec 2023 05:34:58 GMT
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+11:05:00.049 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive
+16:12:40.960 [main] INFO  testcases.ProjectFolder - Status Code: 200
+16:12:41.012 [main] INFO  testcases.ProjectFolder - Response Body: [
+    {
+        "projectId": 1,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 2,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 4,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 9,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 13,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 16,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 19,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 22,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 25,
+        "projectName": "E-commerce App",
+        "projectStartDate": "2023-12-05"
+    },
+    {
+        "projectId": 15,
+        "projectName": "It",
+        "projectStartDate": "2021-01-01"
+    },
+    {
+        "projectId": 24,
+        "projectName": "Bitwolf",
+        "projectStartDate": "2019-06-05"
+    },
+    {
+        "projectId": 3,
+        "projectName": "Home Ing",
+        "projectStartDate": "2017-08-11"
+    },
+    {
+        "projectId": 21,
+        "projectName": "Prodder",
+        "projectStartDate": "2015-03-16"
+    },
+    {
+        "projectId": 18,
+        "projectName": "Overhold",
+        "projectStartDate": "2013-02-21"
+    },
+    {
+        "projectId": 12,
+        "projectName": "Y-find",
+        "projectStartDate": "2003-03-11"
+    },
+    {
+        "projectId": 8,
+        "projectName": "Fix San",
+        "projectStartDate": "2001-05-16"
+    },
+    {
+        "projectId": 5,
+        "projectName": "Home Ing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 6,
+        "projectName": "Sonsing",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 7,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 10,
+        "projectName": "Stronghold",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 11,
+        "projectName": "Quiz App",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 14,
+        "projectName": "Greenlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 17,
+        "projectName": "Kanlam",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 20,
+        "projectName": "Wrapsafe",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 23,
+        "projectName": "Domainer",
+        "projectStartDate": null
+    },
+    {
+        "projectId": 26,
+        "projectName": "Stringtough",
+        "projectStartDate": null
+    }
+]
+16:12:41.016 [main] INFO  testcases.ProjectFolder - Content Type header value is: application/json
+16:12:41.017 [main] INFO  testcases.ProjectFolder - Transfer Encoding header value is: chunked
+16:12:41.017 [main] INFO  testcases.ProjectFolder - Connection header value is: keep-alive
+16:12:41.017 [main] INFO  testcases.ProjectFolder - Key: X-Content-Type-Options Value: nosniff
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: X-XSS-Protection Value: 0
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Pragma Value: no-cache
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Expires Value: 0
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: X-Frame-Options Value: DENY
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Content-Type Value: application/json
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Transfer-Encoding Value: chunked
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Date Value: Fri, 15 Dec 2023 10:42:40 GMT
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Keep-Alive Value: timeout=60
+16:12:41.018 [main] INFO  testcases.ProjectFolder - Key: Connection Value: keep-alive

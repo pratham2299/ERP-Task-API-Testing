@@ -6,6 +6,7 @@
       <class name="testcases.ProjectFolder"/>
       <class name="testcases.StatusFolder"/>
       <class name="testcases.DesignationFolder"/>
+      <class name="testcases.RegularTaskFolder"/>
       <class name="testcases.RoleFolder"/>
       <class name="testcases.TagFolder"/>
       <class name="testcases.PriorityFolder"/>

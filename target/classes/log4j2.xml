@@ -31,18 +31,23 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</File>
+		<!-- File Appender for RoleFolder -->
+		<File name="RoleFolder" fileName="logs/RoleFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+		<!-- File Appender for EmployeeFolder -->
+		<File name="EmployeeFolder" fileName="logs/EmployeeFolder.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
 	</Appenders>
 	<Loggers>
-		<Root level="info">
-			<AppenderRef ref="Console" />
-		</Root>
-
 		<!-- Logger for StatusFolder -->
 		<Logger name="testcases.StatusFolder" level="all" additivity="false">
 			<AppenderRef ref="StatusFolder" />
 			<AppenderRef ref="Console" />
 		</Logger>
-
 		<!-- Logger for PriorityFolder -->
 		<Logger name="testcases.PriorityFolder" level="all" additivity="false">
 			<AppenderRef ref="Class2LogFile" />
@@ -53,11 +58,26 @@
 			<AppenderRef ref="TagFolder" />
 			<AppenderRef ref="Console" />
 		</Logger>
-
 		<!-- Logger for DesignationFolder -->
 		<Logger name="testcases.DesignationFolder" level="all"
 			additivity="false">
 			<AppenderRef ref="DesignationFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<!-- Logger for RoleFolder -->
+		<Logger name="testcases.RoleFolder" level="all"
+			additivity="false">
+			<AppenderRef ref="RoleFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<!-- Logger for ProjectFolder -->
+		<Logger name="testcases.ProjectFolder" level="all" additivity="false">
+			<AppenderRef ref="ProjectFolder" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<!-- Logger for EmployeeFolder -->
+		<Logger name="testcases.EmployeeFolder" level="all" additivity="false">
+			<AppenderRef ref="EmployeeFolder" />
 			<AppenderRef ref="Console" />
 		</Logger>
 	</Loggers>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/2/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>66/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 14 10:58:00 IST 2023</td>
+<td>Started on:</td><td>Fri Dec 15 10:53:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5784 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25544 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.StatusFolder.deleteSingleStatusWithInvalidStatusName()'><b>deleteSingleStatusWithInvalidStatusName</b><br>Test class: testcases.StatusFolder</td>
-<td><div><pre>java.lang.AssertionError: expected [No status to delete with Bass.] but found [No status to delete with Lind,Bass.]
-	at testcases.StatusFolder.deleteSingleStatusWithInvalidStatusName(StatusFolder.java:357)
+<td title='testcases.StatusFolder.verifyAddStatusWithAuthorization()'><b>verifyAddStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td><div><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.StatusFolder.deleteSingleStatusWithAuthorization(StatusFolder.java:328)
+	at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:149)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625817721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1625817721'><pre>java.lang.AssertionError: expected [No status to delete with Bass.] but found [No status to delete with Lind,Bass.]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1972489169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1972489169'><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at testcases.StatusFolder.deleteSingleStatusWithInvalidStatusName(StatusFolder.java:357)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at testcases.StatusFolder.deleteSingleStatusWithAuthorization(StatusFolder.java:328)
+	at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:149)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,21 +121,23 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.StatusFolder@3aee3976</td></tr>
 <tr>
-<td title='testcases.StatusFolder.verifyAddStatusWithAuthorization()'><b>verifyAddStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
-<td><div><pre>java.lang.AssertionError: Status Already Exists expected [201] but found [422]
-	at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:121)
+<td title='testcases.TagFolder.verifyAddTagWithAuthorization()'><b>verifyAddTagWithAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td><div><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.TagFolder.deleteSingleTagWithAuthorization(TagFolder.java:320)
+	at testcases.TagFolder.verifyAddTagWithAuthorization(TagFolder.java:147)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1988280166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1988280166'><pre>java.lang.AssertionError: Status Already Exists expected [201] but found [422]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace314245922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace314245922'><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:121)
+	at testcases.TagFolder.deleteSingleTagWithAuthorization(TagFolder.java:320)
+	at testcases.TagFolder.verifyAddTagWithAuthorization(TagFolder.java:147)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,8 +167,55 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.verifyAddDesignationWithAuthorization()'><b>verifyAddDesignationWithAuthorization</b><br>Test class: testcases.DesignationFolder</td>
+<td><div><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.DesignationFolder.deleteSingleDesignationWithAuthorization(DesignationFolder.java:320)
+	at testcases.DesignationFolder.verifyAddDesignationWithAuthorization(DesignationFolder.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace572087558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace572087558'><pre>java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at testcases.DesignationFolder.deleteSingleDesignationWithAuthorization(DesignationFolder.java:320)
+	at testcases.DesignationFolder.verifyAddDesignationWithAuthorization(DesignationFolder.java:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -175,119 +226,335 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.StatusFolder.deleteSingleStatusWithoutAuthorization()'><b>deleteSingleStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.DesignationFolder.updateDesignationWithoutAuthorization()'><b>updateDesignationWithoutAuthorization</b><br>Test class: testcases.DesignationFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
 <tr>
-<td title='testcases.StatusFolder.verifyGetAllStatusWithoutAuthorization()'><b>verifyGetAllStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.ProjectFolder.verifyAddProjectWithoutAuthorization()'><b>verifyAddProjectWithoutAuthorization</b><br>Test class: testcases.ProjectFolder</td>
 <td></td>
-<td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>1</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
 <tr>
-<td title='testcases.StatusFolder.verifyUpdateStatusWithoutAuthorization()'><b>verifyUpdateStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.DesignationFolder.verifyGetAllDesignationWithoutAuthorization()'><b>verifyGetAllDesignationWithoutAuthorization</b><br>Test class: testcases.DesignationFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.updateDesignationWithoutGivingDesignationId()'><b>updateDesignationWithoutGivingDesignationId</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.verifyGetAllPriorityWithoutAuthorization()'><b>verifyGetAllPriorityWithoutAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
 <tr>
 <td title='testcases.StatusFolder.addStatusWithSamePayloadAsPrevious()'><b>addStatusWithSamePayloadAsPrevious</b><br>Test class: testcases.StatusFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.StatusFolder@3aee3976</td></tr>
 <tr>
-<td title='testcases.StatusFolder.verifyGetAllStatusWithAuthorization()'><b>verifyGetAllStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.StatusFolder.updateStatusWithAuthorization()'><b>updateStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.StatusFolder@3aee3976</td></tr>
 <tr>
-<td title='testcases.StatusFolder.updateStatusWithoutGivingStatusId()'><b>updateStatusWithoutGivingStatusId</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.TagFolder.updateTagWithAuthorization()'><b>updateTagWithAuthorization</b><br>Test class: testcases.TagFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.TagFolder@127e70c5</td></tr>
 <tr>
-<td title='testcases.StatusFolder.updateStatusByGivingNonExistingStatusId()'><b>updateStatusByGivingNonExistingStatusId</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.TagFolder.updateTagByGivingNonExistingTagId()'><b>updateTagByGivingNonExistingTagId</b><br>Test class: testcases.TagFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.TagFolder@127e70c5</td></tr>
 <tr>
-<td title='testcases.StatusFolder.addStatusWithInvalidPayload()'><b>addStatusWithInvalidPayload</b><br>Test class: testcases.StatusFolder</td>
+<td title='testcases.PriorityFolder.updatePriorityWithoutGivingPriorityId()'><b>updatePriorityWithoutGivingPriorityId</b><br>Test class: testcases.PriorityFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.addPriorityWithInvalidPayload()'><b>addPriorityWithInvalidPayload</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.StatusFolder.deleteSingleStatusWithInvalidStatusName()'><b>deleteSingleStatusWithInvalidStatusName</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.RoleFolder.deleteSingleRoleWithoutAuthorization()'><b>deleteSingleRoleWithoutAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.RoleFolder.getRoleByLevelWithoutAuthorization()'><b>getRoleByLevelWithoutAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.RoleFolder.verifyGetAllRoleWithAuthorization()'><b>verifyGetAllRoleWithAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.addProjectWithoutGivingProjectStartDateInPayload()'><b>addProjectWithoutGivingProjectStartDateInPayload</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.addPriorityWithSamePayloadAsPrevious()'><b>addPriorityWithSamePayloadAsPrevious</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.RoleFolder.updateRoleWithAuthorization()'><b>updateRoleWithAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.TagFolder.updateTagWithoutGivingTagId()'><b>updateTagWithoutGivingTagId</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.addDesignationWithSamePayloadAsPrevious()'><b>addDesignationWithSamePayloadAsPrevious</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
 <tr>
 <td title='testcases.StatusFolder.verifyAddStatusWithoutAuthorization()'><b>verifyAddStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
 <td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>testcases.StatusFolder@3aee3976</td></tr>
 <tr>
-<td title='testcases.StatusFolder.updateStatusWithAuthorization()'><b>updateStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
-<td><div><pre>java.lang.Throwable: Method testcases.StatusFolder.updateStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c depends on not successfully finished methods 
-[testcases.StatusFolder.verifyAddStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800523009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace800523009'><pre>java.lang.Throwable: Method testcases.StatusFolder.updateStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c depends on not successfully finished methods 
-[testcases.StatusFolder.verifyAddStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='testcases.PriorityFolder.updatePriorityWithoutAuthorization()'><b>updatePriorityWithoutAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.PriorityFolder@5910de75</td></tr>
 <tr>
-<td title='testcases.StatusFolder.deleteSingleStatusWithAuthorization()'><b>deleteSingleStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
-<td><div><pre>java.lang.Throwable: Method testcases.StatusFolder.deleteSingleStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c depends on not successfully finished methods 
-[testcases.StatusFolder.verifyAddStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56804492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace56804492'><pre>java.lang.Throwable: Method testcases.StatusFolder.deleteSingleStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c depends on not successfully finished methods 
-[testcases.StatusFolder.verifyAddStatusWithAuthorization() on instance testcases.StatusFolder@54e12f4c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='testcases.PriorityFolder.updatePriorityByGivingNonExistingPriorityId()'><b>updatePriorityByGivingNonExistingPriorityId</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
 <td>0</td>
-<td>testcases.StatusFolder@54e12f4c</td></tr>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.RoleFolder.updateRoleWithoutAuthorization()'><b>updateRoleWithoutAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.RoleFolder.verifyGetAllRoleWithoutAuthorization()'><b>verifyGetAllRoleWithoutAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.deleteSingleDesignationWithoutAuthorization()'><b>deleteSingleDesignationWithoutAuthorization</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.StatusFolder.updateStatusByGivingNonExistingStatusId()'><b>updateStatusByGivingNonExistingStatusId</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.RoleFolder.getRoleByLevelWithInvalidRoleLevel()'><b>getRoleByLevelWithInvalidRoleLevel</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.StatusFolder.updateStatusWithoutGivingStatusId()'><b>updateStatusWithoutGivingStatusId</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.addProjectWithInvalidPayload()'><b>addProjectWithInvalidPayload</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.TagFolder.deleteSingleTagWithInvalidTagName()'><b>deleteSingleTagWithInvalidTagName</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.RoleFolder.verifyAddRoleWithAuthorization()'><b>verifyAddRoleWithAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.updateDesignationByGivingNonExistingDesignationId()'><b>updateDesignationByGivingNonExistingDesignationId</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.StatusFolder.verifyGetAllStatusWithAuthorization()'><b>verifyGetAllStatusWithAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.RoleFolder.verifyAddRoleWithoutAuthorization()'><b>verifyAddRoleWithoutAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.verifyAddPriorityWithoutAuthorization()'><b>verifyAddPriorityWithoutAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.updatePriorityWithAuthorization()'><b>updatePriorityWithAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.RoleFolder.addRoleWithSamePayloadAsPrevious()'><b>addRoleWithSamePayloadAsPrevious</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.verifyAddPriorityWithAuthorization()'><b>verifyAddPriorityWithAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.TagFolder.verifyGetAllTagWithoutAuthorization()'><b>verifyGetAllTagWithoutAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.TagFolder.addTagWithSamePayloadAsPrevious()'><b>addTagWithSamePayloadAsPrevious</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.deleteSinglePriorityWithInvalidPriorityName()'><b>deleteSinglePriorityWithInvalidPriorityName</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.RoleFolder.getRoleByLevelWithAuthorization()'><b>getRoleByLevelWithAuthorization</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.addDesignationWithInvalidPayload()'><b>addDesignationWithInvalidPayload</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.StatusFolder.addStatusWithInvalidPayload()'><b>addStatusWithInvalidPayload</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.verifyGetAllDesignationWithAuthorization()'><b>verifyGetAllDesignationWithAuthorization</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.TagFolder.verifyGetAllTagWithAuthorization()'><b>verifyGetAllTagWithAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.verifyAddProjectWithAuthorization()'><b>verifyAddProjectWithAuthorization</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.verifyAddDesignationWithoutAuthorization()'><b>verifyAddDesignationWithoutAuthorization</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.updateDesignationWithAuthorization()'><b>updateDesignationWithAuthorization</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.TagFolder.verifyAddTagWithoutAuthorization()'><b>verifyAddTagWithoutAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.RoleFolder.addRoleWithInvalidPayload()'><b>addRoleWithInvalidPayload</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.RoleFolder.updateRoleByGivingNonExistingRoleId()'><b>updateRoleByGivingNonExistingRoleId</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.PriorityFolder.verifyGetAllPriorityWithAuthorization()'><b>verifyGetAllPriorityWithAuthorization</b><br>Test class: testcases.PriorityFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.PriorityFolder@5910de75</td></tr>
+<tr>
+<td title='testcases.StatusFolder.verifyGetAllStatusWithoutAuthorization()'><b>verifyGetAllStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.StatusFolder.deleteSingleStatusWithoutAuthorization()'><b>deleteSingleStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.verifyGetAllProjectWithoutAuthorization()'><b>verifyGetAllProjectWithoutAuthorization</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.verifyGetAllProjectWithAuthorization()'><b>verifyGetAllProjectWithAuthorization</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.TagFolder.addTagWithInvalidPayload()'><b>addTagWithInvalidPayload</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.TagFolder.deleteSingleTagWithoutAuthorization()'><b>deleteSingleTagWithoutAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.ProjectFolder.addProjectWithSamePayloadAsPrevious()'><b>addProjectWithSamePayloadAsPrevious</b><br>Test class: testcases.ProjectFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProjectFolder@4263b080</td></tr>
+<tr>
+<td title='testcases.DesignationFolder.deleteSingleDesignationWithInvalidDesignationName()'><b>deleteSingleDesignationWithInvalidDesignationName</b><br>Test class: testcases.DesignationFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.DesignationFolder@5ef8df1e</td></tr>
+<tr>
+<td title='testcases.TagFolder.updateTagWithoutAuthorization()'><b>updateTagWithoutAuthorization</b><br>Test class: testcases.TagFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.TagFolder@127e70c5</td></tr>
+<tr>
+<td title='testcases.StatusFolder.verifyUpdateStatusWithoutAuthorization()'><b>verifyUpdateStatusWithoutAuthorization</b><br>Test class: testcases.StatusFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.StatusFolder@3aee3976</td></tr>
+<tr>
+<td title='testcases.RoleFolder.deleteSingleRoleWithInvalidRoleId()'><b>deleteSingleRoleWithInvalidRoleId</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
+<tr>
+<td title='testcases.RoleFolder.updateRoleWithoutGivingRoleId()'><b>updateRoleWithoutGivingRoleId</b><br>Test class: testcases.RoleFolder</td>
+<td></td>
+<td>0</td>
+<td>testcases.RoleFolder@27cf3151</td></tr>
 </table><p>
 </body>
 </html>

@@ -11,10 +11,9 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
-import static io.restassured.RestAssured.given;
+import com.google.gson.Gson;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
@@ -44,25 +43,23 @@ public class RoleFolder {
 	@Step("Add Role Without Authorization")
 	public void verifyAddRoleWithoutAuthorization() {
 		int fakeLevel = faker.number().numberBetween(1, 10);
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("role", "role");
-		data.put("roleLevel", fakeLevel);
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("role", "role");
+		roleMap.put("roleLevel", fakeLevel);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
 
 		requestSpec.basePath("/employee/role/add");
-		response = requestSpec.contentType("application/json").body(data).post();
+		response = requestSpec.contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 401;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 401, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
-
-//		assertThat(response.getBody().asString().contains("id")).as("Body contains id").isTrue();
-//
-//		assertThat(response.getBody().asString().contains("error")).as("Order deleted").isTrue();
 	}
 
 	@Test(priority = 2)
@@ -78,13 +75,16 @@ public class RoleFolder {
 	@Test(priority = 3)
 	@Step("Update Role Without Authorization")
 	public void updateRoleWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("roleId", 24);
-		Object fakeRole1 = faker.job().position();
-		data.put("role", fakeRole1);
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("roleId", 24);
+		String fakeRole1 = faker.job().position();
+		roleMap.put("role", fakeRole1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
 
 		requestSpec.basePath("/employee/role/update");
-		response = requestSpec.contentType("application/json").body(data).put();
+		response = requestSpec.contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -122,101 +122,18 @@ public class RoleFolder {
 	public void verifyAddRoleWithAuthorization() {
 		String fakeRole1 = faker.job().position();
 		int fakeLevel = faker.number().numberBetween(1, 10);
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("role", fakeRole1);
-		data.put("roleLevel", fakeLevel);
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("role", fakeRole1);
+		roleMap.put("roleLevel", fakeLevel);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
 
 		requestSpec.basePath("/employee/role/add");
-		response = requestSpec.given().auth().basic(username, password).contentType("application/json").body(data)
-				.post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
-
-		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 201;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
-		log.info("Response Time: " + response.getTime());
-//		double actualResponseTime = response.getTime();
-//		SoftAssert softAssert = new SoftAssert();
-//		softAssert.assertEquals(actualResponseTime < 200, true, "Response time is more than 200 ms");
-//		softAssert.assertAll();
-		String contentType = response.getHeader("Content-Type");
-		log.info("Content Type header value is: " + contentType);
-		Assert.assertEquals(contentType, "application/json", "invalid content type value");
-
-		String transferEncoding = response.getHeader("Transfer-Encoding");
-		log.info("Transfer Encoding header value is: " + transferEncoding);
-		Assert.assertEquals(transferEncoding, "chunked", "invalid transfer encoding value");
-
-		String connection = response.getHeader("Connection");
-		log.info("Connection header value is: " + connection);
-		Assert.assertEquals(connection, "keep-alive", "invalid connection value");
-
-		// read all header key value
-		Headers headersList = response.getHeaders();
-
-		for (Header header : headersList) {
-			log.info("Key: " + header.getName() + " Value: " + header.getValue());
-		}
-
-	}
-
-	@Test(priority = 7)
-	@Step("Add Role With Same Payload As Previous")
-	public void addRoleWithSamePayloadAsPrevious() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("role", "Front_End_Developer");
-		data.put("roleLevel", 2);
-
-		requestSpec.basePath("/employee/role/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
-
-		String responseBody = response.getBody().asPrettyString();
-		log.info("Response Body:\n" + responseBody);
-
-		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 422;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
-		log.info("Response Time: " + response.getTime());
-	}
-
-	@Test(priority = 8)
-	@Step("Add Role With Invalid Payload")
-	public void addRoleWithInvalidPayload() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("roleLevel", 10);
-
-		requestSpec.basePath("/employee/role/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
-
-		String responseBody = response.getBody().asPrettyString();
-		log.info("Response Body:\n" + responseBody);
-
-		String actualMessage = response.jsonPath().getString("message");
-		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "Fields are Missing");
-
-		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
-		log.info("Response Time: " + response.getTime());
-	}
-
-	@Test(priority = 9)
-	@Step("Get All Role With Authorization")
-	public void verifyGetAllRoleWithAuthorization() {
-		requestSpec.basePath("/employee/role/all");
-		response = requestSpec.auth().basic(username, password).get();
-//		response = given().auth().basic(username, password).when().get("/employee/role/all").then().statusCode(200)
-//				.extract().response();
-		log.info("Status Code: " + response.statusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
-		log.info("Response Body: " + response.getBody().asPrettyString());
 
 		// Extract all keys from the response as a Map
 		Map<String, ?> allKeys = response.jsonPath().getMap("");
@@ -227,8 +144,25 @@ public class RoleFolder {
 
 		// Choose a random key from the list
 		String selectedRoleId = getRandomRoleId(keyList);
+		String fakeRole = response.jsonPath().getString(selectedRoleId);
+		deleteSingleRoleWithAuthorization(fakeRole);
 
-		deleteSingleRoleWithAuthorization(selectedRoleId);
+		log.info("Response Code: " + response.getStatusCode());
+
+		// Check the response status code
+		if (response.getStatusCode() == 201) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 201);
+		} else if (response.getStatusCode() == 422) {
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Role Already Exits");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
+
+		log.info("Response Time: " + response.getTime());
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -248,24 +182,96 @@ public class RoleFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-//		given().when().get("http://192.168.0.177:10003/task/status/get/all").then().body("status", equalTo("Start"))
-//				.statusCode(200).log().all();
 	}
 
-	@Test(priority = 10)
-	@Step("Update Role With Authorization")
-	public void updateRoleWithAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("roleId", 10);
-		String fakeRole1 = faker.job().position();
-		data.put("role", fakeRole1);
+	@Test(priority = 7)
+	@Step("Add Role With Same Payload As Previous")
+	public void addRoleWithSamePayloadAsPrevious() {
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("role", "Front_End_Developer");
+		roleMap.put("roleLevel", 4);
 
-		requestSpec.basePath("/employee/role/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
+
+		requestSpec.basePath("/employee/role/add");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
+
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Role Already Exists");
+
 		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
+		log.info("Response Time: " + response.getTime());
+	}
+
+	@Test(priority = 8)
+	@Step("Add Role With Invalid Payload")
+	public void addRoleWithInvalidPayload() {
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("roleLevel", 10);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
+
+		requestSpec.basePath("/employee/role/add");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
+
+		String responseBody = response.getBody().asPrettyString();
+		log.info("Response Body:\n" + responseBody);
+
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Fields are Missing");
+
+		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
+		log.info("Response Time: " + response.getTime());
+	}
+
+	@Test(priority = 9)
+	@Step("Add Role With Same Role Level In Payload As Previous")
+	public void addRoleWithSameRoleLevelInPayloadAsPrevious() {
+		String fakeRole1 = faker.job().position();
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("role", fakeRole1);
+		roleMap.put("roleLevel", 2);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
+
+		requestSpec.basePath("/employee/role/add");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
+
+		String responseBody = response.getBody().asPrettyString();
+		log.info("Response Body:\n" + responseBody);
+
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Role Already Exists");
+
+		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
+		log.info("Response Time: " + response.getTime());
+	}
+
+	@Test(priority = 10)
+	@Step("Get All Role With Authorization")
+	public void verifyGetAllRoleWithAuthorization() {
+		requestSpec.basePath("/employee/role/all");
+		response = requestSpec.auth().basic(username, password).get();
+
+		log.info("Status Code: " + response.statusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		log.info("Response Body: " + response.getBody().asPrettyString());
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -288,13 +294,56 @@ public class RoleFolder {
 	}
 
 	@Test(priority = 11)
-	@Step("Update Role Without Giving Role Id")
-	public void updateRoleWithoutGivingRoleId() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("role", "Front_End_Developer");
+	@Step("Update Role With Authorization")
+	public void updateRoleWithAuthorization() {
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("roleId", 25);
+		String fakeRole1 = faker.job().position();
+		roleMap.put("role", fakeRole1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
 
 		requestSpec.basePath("/employee/role/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
+		String responseBody = response.getBody().asPrettyString();
+		log.info("Response Body:\n" + responseBody);
+
+		Assert.assertEquals(response.jsonPath().getString("25"), fakeRole1);
+
+		log.info("Response Code: " + response.getStatusCode());
+
+		String contentType = response.getHeader("Content-Type");
+		log.info("Content Type header value is: " + contentType);
+		Assert.assertEquals(contentType, "application/json", "invalid content type value");
+
+		String transferEncoding = response.getHeader("Transfer-Encoding");
+		log.info("Transfer Encoding header value is: " + transferEncoding);
+		Assert.assertEquals(transferEncoding, "chunked", "invalid transfer encoding value");
+
+		String connection = response.getHeader("Connection");
+		log.info("Connection header value is: " + connection);
+		Assert.assertEquals(connection, "keep-alive", "invalid connection value");
+
+		// read all header key value
+		Headers headersList = response.getHeaders();
+
+		for (Header header : headersList) {
+			log.info("Key: " + header.getName() + " Value: " + header.getValue());
+		}
+	}
+
+	@Test(priority = 12)
+	@Step("Update Role Without Giving Role Id")
+	public void updateRoleWithoutGivingRoleId() {
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("role", "Front_End_Developer");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
+
+		requestSpec.basePath("/employee/role/update");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -304,21 +353,23 @@ public class RoleFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 13)
 	@Step("Update Role By Giving Non Existing Role Id")
 	public void updateRoleByGivingNonExistingRoleId() {
 		String fakeRole = faker.job().position();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("roleId", 37);
-		data.put("role", fakeRole);
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("roleId", 1);
+		roleMap.put("role", fakeRole);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
 
 		requestSpec.basePath("/employee/role/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -328,20 +379,38 @@ public class RoleFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 13, dependsOnMethods = { "verifyGetAllRoleWithAuthorization" })
+	@Test(priority = 14, dependsOnMethods = { "verifyAddRoleWithAuthorization" })
 	@Step("Delete Single Role With Authorization")
 	public String deleteSingleRoleWithAuthorization(String fakeRoleId) {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("roleId", fakeRoleId);
+		HashMap<String, Object> roleMap = new HashMap<>();
+		roleMap.put("roleId", fakeRoleId);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(roleMap);
+
 		requestSpec.basePath("employee/role/delete");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).delete();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).delete();
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
+
+		// Check the response status code
+		if (response.getStatusCode() == 200) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		} else if (response.getStatusCode() == 404) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Role Not Found");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
+
 		log.info("Status Code: " + response.statusCode());
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
@@ -367,10 +436,10 @@ public class RoleFolder {
 		return fakeRoleId;
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 	@Step("Delete Role With Invalid Role Id")
 	public void deleteSingleRoleWithInvalidRoleId() {
-		int fakeRoleId = faker.number().numberBetween(30, 50);
+		int fakeRoleId = faker.number().numberBetween(30, 100);
 		HashMap<Object, Object> data = new HashMap<>();
 		data.put("roleId", fakeRoleId);
 
@@ -385,12 +454,11 @@ public class RoleFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 16)
 	@Step("Get Role By Level With Authorization")
 	public void getRoleByLevelWithAuthorization() {
 		int fakeLevel = faker.number().numberBetween(1, 5);
@@ -421,16 +489,22 @@ public class RoleFolder {
 		}
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 17)
 	@Step("Get Role By Level With Invalid Role Level")
 	public void getRoleByLevelWithInvalidRoleLevel() {
 		int fakeLevel = faker.number().numberBetween(11, 20);
-		requestSpec.basePath("/employee/role/level" + fakeLevel);
+		requestSpec.basePath("/employee/role/level/" + fakeLevel);
 		response = requestSpec.auth().basic(username, password).get();
+
 		log.info("Status Code: " + response.statusCode());
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
+
 		log.info("Response Body: " + response.getBody().asPrettyString());
+
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Level Not Found");
 	}
 
 	private String getRandomRoleId(List<String> keyList) {

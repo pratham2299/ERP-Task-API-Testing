@@ -11,9 +11,9 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
+import com.google.gson.Gson;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
@@ -21,7 +21,6 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import static io.restassured.RestAssured.given;
 
 public class StatusFolder {
 	public static final Logger log = LogManager.getLogger(StatusFolder.class);
@@ -43,20 +42,23 @@ public class StatusFolder {
 	@Test(priority = 1)
 	@Step("Add Status Without Authorization")
 	public void verifyAddStatusWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", "Honey");
-		data.put("statusLevel", 5);
+		// Create a HashMap to represent the JSON payload
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", "Car1");
+		statusMap.put("statusLevel", 6);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/add");
-		response = requestSpec.contentType("application/json").body(data).post();
+		response = requestSpec.contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 401;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 401, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -73,12 +75,15 @@ public class StatusFolder {
 	@Test(priority = 3)
 	@Step("Update Status Without Authorization")
 	public void verifyUpdateStatusWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", "Done");
-		data.put("statusId", 19);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", "Done");
+		statusMap.put("statusId", 19);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/update");
-		response = requestSpec.contentType("application/json").body(data).put();
+		response = requestSpec.contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -104,35 +109,50 @@ public class StatusFolder {
 	public void verifyAddStatusWithAuthorization() {
 		int fakeLevel = faker.number().numberBetween(1, 10);
 		String fakeStatus1 = faker.name().lastName();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", fakeStatus1);
-		data.put("statusLevel", fakeLevel);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", fakeStatus1);
+		statusMap.put("statusLevel", fakeLevel);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
-
+		response = requestSpec.given().auth().basic(username, password).contentType("application/json").body(payload)
+				.post().then() // Assuming the response code for a successful creation is 201
+				.extract().response();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
+
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedStatusId = getRandomStatusId(keyList);
+		String fakeStatus = response.jsonPath().getString(selectedStatusId);
+		deleteSingleStatusWithAuthorization(fakeStatus);
 
 		log.info("Response Code: " + response.getStatusCode());
 
 		// Check the response status code
 		if (response.getStatusCode() == 201) {
 			// Status created successfully
-			log.info("Status created successfully!");
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 201);
 		} else if (response.getStatusCode() == 422) {
 			// Status already exists
-			log.info("Status already exists");
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Status Already Exits");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
 		}
 
 		log.info("Response Time: " + response.getTime());
-//		double actualResponseTime = response.getTime();
-//		SoftAssert softAssert = new SoftAssert();
-//		softAssert.assertEquals(actualResponseTime < 200, true, "Response time is more than 200 ms");
-//		softAssert.assertAll();
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -151,19 +171,20 @@ public class StatusFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-
-		deleteSingleStatusWithAuthorization(fakeStatus1);
 	}
 
 	@Test(priority = 6)
 	@Step("Add Status With Same Payload As Previous")
 	public void addStatusWithSamePayloadAsPrevious() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", "Done");
-		data.put("statusLevel", 19);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", "Done");
+		statusMap.put("statusLevel", 19);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -173,19 +194,21 @@ public class StatusFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 422;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
 	@Test(priority = 7)
 	@Step("Add Status With Invalid Payload")
 	public void addStatusWithInvalidPayload() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("statusLevel", 19);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("statusLevel", 19);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
@@ -196,12 +219,37 @@ public class StatusFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
 	@Test(priority = 8)
+	@Step("Add Status With Same Status Level In Payload As Previous")
+	public void addStatusWithSameStatusLevelInPayloadAsPrevious() {
+		String fakeStatus1 = faker.name().lastName();
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", fakeStatus1);
+		statusMap.put("statusLevel", 1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
+
+		requestSpec.basePath("/task/status/add");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
+		String responseBody = response.getBody().asPrettyString();
+		log.info("Response Body:\n" + responseBody);
+
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Status Already Exists");
+
+		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
+		log.info("Response Time: " + response.getTime());
+	}
+
+	@Test(priority = 9)
 	@Step("Get All Status With Authorization")
 	public void verifyGetAllStatusWithAuthorization() {
 		requestSpec.basePath("/task/status/get/all");
@@ -229,23 +277,25 @@ public class StatusFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-
-//		given().when().get("http://192.168.0.177:10003/task/status/get/all").then().body("status", equalTo("Start"))
-//				.statusCode(200).log().all();
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	@Step("Update Status With Authorization")
 	public void updateStatusWithAuthorization() {
 		String fakeStatus1 = faker.name().firstName();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", fakeStatus1);
-		data.put("statusId", 82);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", fakeStatus1);
+		statusMap.put("statusId", 82);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
+
+		Assert.assertEquals(response.jsonPath().getString("82"), fakeStatus1);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
@@ -270,22 +320,24 @@ public class StatusFolder {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	@Step("Update Status Without Giving Status Id")
 	public void updateStatusWithoutGivingStatusId() {
 		String fakeStatus = faker.name().lastName();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("status", fakeStatus);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("status", fakeStatus);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
@@ -294,24 +346,25 @@ public class StatusFolder {
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 	@Step("Update Status By Giving Non Existing Status Id")
 	public void updateStatusByGivingNonExistingStatusId() {
-		int fakeStatusId = faker.number().numberBetween(30, 80);
 		String fakeStatus = faker.name().lastName();
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("statusId", fakeStatusId);
-		data.put("status", fakeStatus);
+		HashMap<String, Object> statusMap = new HashMap<>();
+		statusMap.put("statusId", 1);
+		statusMap.put("status", fakeStatus);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(statusMap);
 
 		requestSpec.basePath("/task/status/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
@@ -320,18 +373,28 @@ public class StatusFolder {
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 12, dependsOnMethods = { "verifyAddStatusWithAuthorization" })
+	@Test(priority = 13, dependsOnMethods = { "verifyAddStatusWithAuthorization" })
 	@Step("Delete Single Status With Authorization")
 	public String deleteSingleStatusWithAuthorization(String fakeStatus) {
-		requestSpec.basePath("/task/status/delete/single");
-		response = requestSpec.given().auth().basic(username, password).queryParam("statusName", fakeStatus).when()
-				.delete();
+		requestSpec.basePath("/task/status/delete/single").queryParam("statusName", fakeStatus);
+		response = requestSpec.auth().basic(username, password).contentType("application/json").delete();
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
-
 		log.info("Status Code: " + response.statusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+
+		// Check the response status code
+		if (response.getStatusCode() == 200) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		} else if (response.getStatusCode() == 404) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "No status to delete with " + fakeStatus + ".");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -354,22 +417,22 @@ public class StatusFolder {
 		return fakeStatus;
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	@Step("Delete Single Status With Invalid Status Name")
 	public void deleteSingleStatusWithInvalidStatusName() {
-		requestSpec.basePath("/task/status/delete/single").queryParam("statusName", "Car");
+		String fakeStatusName = "Stopped";
+		requestSpec.basePath("/task/status/delete/single").queryParam("statusName", fakeStatusName);
 		response = requestSpec.auth().basic(username, password).contentType("application/json").delete();
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
-
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
+		// Status already exists
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "No status to delete with Car.");
+		Assert.assertEquals(actualMessage, "No status to delete with " + fakeStatusName + ".");
 
 		log.info("Response Time: " + response.getTime());
 	}

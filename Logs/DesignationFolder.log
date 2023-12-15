@@ -901,3 +901,678 @@
 15:31:01.952 [main] INFO  testcases.DesignationFolder - Key: Date Value: Thu, 14 Dec 2023 10:01:03 GMT
 15:31:01.952 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
 15:31:01.952 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+18:05:22.678 [main] INFO  testcases.DesignationFolder - Response Body:
+
+18:05:22.680 [main] INFO  testcases.DesignationFolder - Response Code: 401
+18:05:22.680 [main] INFO  testcases.DesignationFolder - Response Time: 17
+18:05:22.705 [main] INFO  testcases.DesignationFolder - Status Code: 401
+18:05:22.755 [main] INFO  testcases.DesignationFolder - Response Body:
+
+18:05:22.756 [main] INFO  testcases.DesignationFolder - Response Code: 401
+18:05:22.780 [main] INFO  testcases.DesignationFolder - Response Body: 
+18:05:22.781 [main] INFO  testcases.DesignationFolder - Status Code: 401
+18:05:23.290 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:24.424+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+18:05:23.291 [main] INFO  testcases.DesignationFolder - Response Code: 422
+18:05:23.752 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:24.887+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/designation/add"
+}
+18:05:23.763 [main] INFO  testcases.DesignationFolder - Message: Fields are Missing
+18:05:23.763 [main] INFO  testcases.DesignationFolder - Response Code: 400
+18:05:23.763 [main] INFO  testcases.DesignationFolder - Response Time: 446
+18:05:24.313 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:25.446+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+18:05:24.343 [main] INFO  testcases.DesignationFolder - Message: Designation Already Exits
+18:05:24.344 [main] INFO  testcases.DesignationFolder - Response Code: 422
+18:05:24.344 [main] INFO  testcases.DesignationFolder - Response Time: 541
+18:05:24.969 [main] INFO  testcases.DesignationFolder - Status Code: 200
+18:05:24.970 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Assistant",
+    "15": "Coordinator"
+}
+18:05:24.971 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+18:05:24.972 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+18:05:24.972 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+18:05:24.972 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+18:05:24.972 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+18:05:24.973 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:05:24.973 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+18:05:24.973 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+18:05:24.973 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+18:05:24.973 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+18:05:24.974 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+18:05:24.974 [main] INFO  testcases.DesignationFolder - Key: Date Value: Thu, 14 Dec 2023 12:35:26 GMT
+18:05:24.974 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+18:05:24.974 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+18:05:25.600 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Technician",
+    "15": "Coordinator"
+}
+18:05:25.601 [main] INFO  testcases.DesignationFolder - Response Code: 200
+18:05:25.601 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+18:05:25.601 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+18:05:25.602 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: Date Value: Thu, 14 Dec 2023 12:35:26 GMT
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+18:05:25.603 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+18:05:26.114 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:27.227+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/designation/update"
+}
+18:05:26.133 [main] INFO  testcases.DesignationFolder - Message: Fields are missing
+18:05:26.133 [main] INFO  testcases.DesignationFolder - Response Code: 400
+18:05:26.133 [main] INFO  testcases.DesignationFolder - Response Time: 500
+18:05:26.630 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:35:27.763+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Designation Present For Given Id",
+    "path": "/employee/designation/update"
+}
+18:05:26.644 [main] INFO  testcases.DesignationFolder - Message: No Designation Present For Given Id
+18:05:26.645 [main] INFO  testcases.DesignationFolder - Response Code: 404
+18:05:26.645 [main] INFO  testcases.DesignationFolder - Response Time: 488
+18:05:27.062 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-14T12:35:28.195+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Lawyer1.",
+    "path": "/employee/designation/delete"
+}
+18:05:27.081 [main] INFO  testcases.DesignationFolder - Message: No status to delete with designation,Lawyer1.
+18:10:45.040 [main] INFO  testcases.DesignationFolder - Response Body:
+
+18:10:45.041 [main] INFO  testcases.DesignationFolder - Response Code: 401
+18:10:45.041 [main] INFO  testcases.DesignationFolder - Response Time: 18
+18:10:45.068 [main] INFO  testcases.DesignationFolder - Status Code: 401
+18:10:45.115 [main] INFO  testcases.DesignationFolder - Response Body:
+
+18:10:45.115 [main] INFO  testcases.DesignationFolder - Response Code: 401
+18:10:45.138 [main] INFO  testcases.DesignationFolder - Response Body: 
+18:10:45.138 [main] INFO  testcases.DesignationFolder - Status Code: 401
+18:10:45.707 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:46.834+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+18:10:45.707 [main] INFO  testcases.DesignationFolder - Response Code: 422
+18:10:46.225 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:47.319+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/designation/add"
+}
+18:10:46.240 [main] INFO  testcases.DesignationFolder - Message: Fields are Missing
+18:10:46.240 [main] INFO  testcases.DesignationFolder - Response Code: 400
+18:10:46.241 [main] INFO  testcases.DesignationFolder - Response Time: 505
+18:10:46.757 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:47.872+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+18:10:46.771 [main] INFO  testcases.DesignationFolder - Message: Designation Already Exits
+18:10:46.771 [main] INFO  testcases.DesignationFolder - Response Code: 422
+18:10:46.772 [main] INFO  testcases.DesignationFolder - Response Time: 508
+18:10:47.200 [main] INFO  testcases.DesignationFolder - Status Code: 200
+18:10:47.201 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Technician",
+    "15": "Coordinator"
+}
+18:10:47.202 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+18:10:47.202 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+18:10:47.202 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+18:10:47.203 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+18:10:47.204 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+18:10:47.204 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+18:10:47.204 [main] INFO  testcases.DesignationFolder - Key: Date Value: Thu, 14 Dec 2023 12:40:47 GMT
+18:10:47.204 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+18:10:47.204 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+18:10:47.701 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:48.831+00:00",
+    "status": 409,
+    "error": "Conflict",
+    "message": "Data Must be Unique",
+    "path": "/employee/designation/update"
+}
+18:10:47.702 [main] INFO  testcases.DesignationFolder - Response Code: 409
+18:10:47.702 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+18:10:47.702 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+18:10:47.703 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+18:10:47.703 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+18:10:47.703 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+18:10:47.704 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+18:10:47.704 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+18:10:47.704 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+18:10:47.704 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+18:10:47.705 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+18:10:47.705 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+18:10:47.705 [main] INFO  testcases.DesignationFolder - Key: Date Value: Thu, 14 Dec 2023 12:40:47 GMT
+18:10:47.705 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+18:10:47.705 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+18:10:48.272 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:49.384+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/designation/update"
+}
+18:10:48.289 [main] INFO  testcases.DesignationFolder - Message: Fields are missing
+18:10:48.289 [main] INFO  testcases.DesignationFolder - Response Code: 400
+18:10:48.289 [main] INFO  testcases.DesignationFolder - Response Time: 551
+18:10:48.782 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-14T12:40:49.884+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Designation Present For Given Id",
+    "path": "/employee/designation/update"
+}
+18:10:48.795 [main] INFO  testcases.DesignationFolder - Message: No Designation Present For Given Id
+18:10:48.795 [main] INFO  testcases.DesignationFolder - Response Code: 404
+18:10:48.795 [main] INFO  testcases.DesignationFolder - Response Time: 485
+18:10:49.397 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-14T12:40:50.421+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Lawyer1.",
+    "path": "/employee/designation/delete"
+}
+18:10:49.412 [main] INFO  testcases.DesignationFolder - Message: No status to delete with designation,Lawyer1.
+18:10:49.413 [main] INFO  testcases.DesignationFolder - Response Code: 404
+18:10:49.413 [main] INFO  testcases.DesignationFolder - Response Time: 592
+10:53:52.081 [main] INFO  testcases.DesignationFolder - Response Body:
+
+10:53:52.082 [main] INFO  testcases.DesignationFolder - Response Code: 401
+10:53:52.082 [main] INFO  testcases.DesignationFolder - Response Time: 31
+10:53:52.112 [main] INFO  testcases.DesignationFolder - Status Code: 401
+10:53:52.171 [main] INFO  testcases.DesignationFolder - Response Body:
+
+10:53:52.172 [main] INFO  testcases.DesignationFolder - Response Code: 401
+10:53:52.209 [main] INFO  testcases.DesignationFolder - Response Body: 
+10:53:52.209 [main] INFO  testcases.DesignationFolder - Status Code: 401
+10:53:52.624 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Technician",
+    "15": "Coordinator"
+}
+10:53:52.624 [main] INFO  testcases.DesignationFolder - Response Code: 201
+10:53:52.625 [main] INFO  testcases.DesignationFolder - Response Time: 400
+10:53:52.625 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+10:53:52.625 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+10:53:52.625 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+10:53:52.626 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+10:53:52.626 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+10:53:52.626 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:53:52.626 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+10:53:52.626 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:23:53 GMT
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+10:53:52.627 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+10:53:53.018 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-15T05:23:53.862+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Associate.",
+    "path": "/employee/designation/delete"
+}
+10:53:53.019 [main] INFO  testcases.DesignationFolder - Status Code: 404
+10:53:53.412 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:23:54.257+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/designation/add"
+}
+10:53:53.422 [main] INFO  testcases.DesignationFolder - Message: Fields are Missing
+10:53:53.422 [main] INFO  testcases.DesignationFolder - Response Code: 400
+10:53:53.422 [main] INFO  testcases.DesignationFolder - Response Time: 382
+10:53:53.855 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:23:54.701+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+10:53:53.865 [main] INFO  testcases.DesignationFolder - Message: Designation Already Exits
+10:53:53.866 [main] INFO  testcases.DesignationFolder - Response Code: 422
+10:53:53.866 [main] INFO  testcases.DesignationFolder - Response Time: 424
+10:53:54.300 [main] INFO  testcases.DesignationFolder - Status Code: 200
+10:53:54.301 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Technician",
+    "15": "Coordinator"
+}
+10:53:54.302 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:53:54.303 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:23:54 GMT
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+10:53:54.304 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+10:53:54.729 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Representative",
+    "15": "Coordinator"
+}
+10:53:54.730 [main] INFO  testcases.DesignationFolder - Response Code: 200
+10:53:54.730 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+10:53:54.730 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+10:53:54.730 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+10:53:54.731 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+10:53:54.732 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+10:53:54.732 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+10:53:54.732 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:23:55 GMT
+10:53:54.732 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+10:53:54.732 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+10:53:55.182 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:23:56.029+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/designation/update"
+}
+10:53:55.193 [main] INFO  testcases.DesignationFolder - Message: Fields are missing
+10:53:55.193 [main] INFO  testcases.DesignationFolder - Response Code: 400
+10:53:55.193 [main] INFO  testcases.DesignationFolder - Response Time: 440
+10:53:55.597 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:23:56.442+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Designation Present For Given Id",
+    "path": "/employee/designation/update"
+}
+10:53:55.607 [main] INFO  testcases.DesignationFolder - Message: No Designation Present For Given Id
+10:53:55.607 [main] INFO  testcases.DesignationFolder - Response Code: 404
+10:53:55.607 [main] INFO  testcases.DesignationFolder - Response Time: 395
+10:53:56.039 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-15T05:23:56.884+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Associate,Lawyer1.",
+    "path": "/employee/designation/delete"
+}
+10:53:56.049 [main] INFO  testcases.DesignationFolder - Message: No status to delete with designation,Associate,Lawyer1.
+10:53:56.049 [main] INFO  testcases.DesignationFolder - Response Code: 404
+10:53:56.049 [main] INFO  testcases.DesignationFolder - Response Time: 424
+11:05:03.998 [main] INFO  testcases.DesignationFolder - Response Body:
+
+11:05:03.999 [main] INFO  testcases.DesignationFolder - Response Code: 401
+11:05:03.999 [main] INFO  testcases.DesignationFolder - Response Time: 37
+11:05:04.031 [main] INFO  testcases.DesignationFolder - Status Code: 401
+11:05:04.142 [main] INFO  testcases.DesignationFolder - Response Body:
+
+11:05:04.142 [main] INFO  testcases.DesignationFolder - Response Code: 401
+11:05:04.176 [main] INFO  testcases.DesignationFolder - Response Body: 
+11:05:04.177 [main] INFO  testcases.DesignationFolder - Status Code: 401
+11:05:04.585 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:35:03.801+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+11:05:04.586 [main] INFO  testcases.DesignationFolder - Response Code: 422
+11:05:04.606 [main] INFO  testcases.DesignationFolder - Message: Designation Already Exits
+11:05:04.607 [main] INFO  testcases.DesignationFolder - Response Time: 389
+11:05:04.607 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+11:05:04.608 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+11:05:04.608 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+11:05:04.608 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+11:05:04.609 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+11:05:04.609 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:05:04.609 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+11:05:04.610 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+11:05:04.610 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+11:05:04.610 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+11:05:04.610 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+11:05:04.611 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:35:03 GMT
+11:05:04.611 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+11:05:04.611 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+11:05:04.999 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-15T05:35:04.219+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Coordinator.",
+    "path": "/employee/designation/delete"
+}
+11:05:04.999 [main] INFO  testcases.DesignationFolder - Status Code: 404
+11:05:05.401 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:35:04.598+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/designation/add"
+}
+11:05:05.421 [main] INFO  testcases.DesignationFolder - Message: Fields are Missing
+11:05:05.421 [main] INFO  testcases.DesignationFolder - Response Code: 400
+11:05:05.421 [main] INFO  testcases.DesignationFolder - Response Time: 383
+11:05:05.841 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:35:05.062+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Designation Already Exits",
+    "path": "/employee/designation/add"
+}
+11:05:05.859 [main] INFO  testcases.DesignationFolder - Message: Designation Already Exits
+11:05:05.860 [main] INFO  testcases.DesignationFolder - Response Code: 422
+11:05:05.860 [main] INFO  testcases.DesignationFolder - Response Time: 397
+11:05:06.244 [main] INFO  testcases.DesignationFolder - Status Code: 200
+11:05:06.245 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Representative",
+    "15": "Coordinator"
+}
+11:05:06.246 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+11:05:06.246 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+11:05:06.247 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+11:05:06.247 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+11:05:06.247 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+11:05:06.247 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:05:06.248 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+11:05:06.248 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+11:05:06.248 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+11:05:06.248 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+11:05:06.248 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+11:05:06.249 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:35:04 GMT
+11:05:06.249 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+11:05:06.249 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+11:05:06.644 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Engineer",
+    "15": "Coordinator"
+}
+11:05:06.645 [main] INFO  testcases.DesignationFolder - Response Code: 200
+11:05:06.645 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+11:05:06.645 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+11:05:06.646 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+11:05:06.647 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+11:05:06.647 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+11:05:06.647 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+11:05:06.648 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 05:35:05 GMT
+11:05:06.648 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+11:05:06.648 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+11:05:07.062 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:35:06.262+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/designation/update"
+}
+11:05:07.084 [main] INFO  testcases.DesignationFolder - Message: Fields are missing
+11:05:07.084 [main] INFO  testcases.DesignationFolder - Response Code: 400
+11:05:07.085 [main] INFO  testcases.DesignationFolder - Response Time: 401
+11:05:07.469 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "timestamp": "2023-12-15T05:35:06.692+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Designation Present For Given Id",
+    "path": "/employee/designation/update"
+}
+11:05:07.489 [main] INFO  testcases.DesignationFolder - Message: No Designation Present For Given Id
+11:05:07.490 [main] INFO  testcases.DesignationFolder - Response Code: 404
+11:05:07.490 [main] INFO  testcases.DesignationFolder - Response Time: 372
+11:05:07.909 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-15T05:35:07.130+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with designation,Coordinator,Lawyer1.",
+    "path": "/employee/designation/delete"
+}
+11:05:07.928 [main] INFO  testcases.DesignationFolder - Message: No status to delete with designation,Coordinator,Lawyer1.
+11:05:07.928 [main] INFO  testcases.DesignationFolder - Response Code: 404
+11:05:07.929 [main] INFO  testcases.DesignationFolder - Response Time: 405
+11:35:25.920 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "36": "Facilitator",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Engineer",
+    "15": "Coordinator"
+}
+11:35:25.922 [main] INFO  testcases.DesignationFolder - Response Code: 201
+11:35:25.925 [main] INFO  testcases.DesignationFolder - Response Time: 792
+11:35:25.925 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+11:35:25.925 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+11:35:25.925 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+11:35:25.925 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+11:35:25.926 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+11:35:25.926 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:35:25.926 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+11:35:25.926 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+11:35:25.926 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+11:35:25.927 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+11:35:25.927 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+11:35:25.927 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 06:05:24 GMT
+11:35:25.928 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+11:35:25.928 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+11:35:26.360 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Engineer",
+    "15": "Coordinator"
+}
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Status Code: 200
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+11:35:26.361 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 06:05:24 GMT
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+11:35:26.362 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+17:30:21.745 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Architect",
+    "15": "Coordinator"
+}
+17:31:28.384 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Facilitator",
+    "15": "Coordinator"
+}
+17:32:23.666 [main] INFO  testcases.DesignationFolder - Response Body:
+{
+    "32": "Associate",
+    "19": "Consultant",
+    "21": "Officer",
+    "23": "Administrator",
+    "8": "Project Lead",
+    "9": "COO",
+    "25": "Orchestrator",
+    "10": "Accountant",
+    "13": "Supervisor",
+    "15": "Coordinator"
+}
+17:32:24.168 [main] INFO  testcases.DesignationFolder - Response Code: 200
+17:32:24.169 [main] INFO  testcases.DesignationFolder - Content Type header value is: application/json
+17:32:24.169 [main] INFO  testcases.DesignationFolder - Transfer Encoding header value is: chunked
+17:32:24.169 [main] INFO  testcases.DesignationFolder - Connection header value is: keep-alive
+17:32:24.169 [main] INFO  testcases.DesignationFolder - Key: X-Content-Type-Options Value: nosniff
+17:32:24.170 [main] INFO  testcases.DesignationFolder - Key: X-XSS-Protection Value: 0
+17:32:24.170 [main] INFO  testcases.DesignationFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+17:32:24.170 [main] INFO  testcases.DesignationFolder - Key: Pragma Value: no-cache
+17:32:24.170 [main] INFO  testcases.DesignationFolder - Key: Expires Value: 0
+17:32:24.170 [main] INFO  testcases.DesignationFolder - Key: X-Frame-Options Value: DENY
+17:32:24.171 [main] INFO  testcases.DesignationFolder - Key: Content-Type Value: application/json
+17:32:24.171 [main] INFO  testcases.DesignationFolder - Key: Transfer-Encoding Value: chunked
+17:32:24.172 [main] INFO  testcases.DesignationFolder - Key: Date Value: Fri, 15 Dec 2023 12:02:22 GMT
+17:32:24.172 [main] INFO  testcases.DesignationFolder - Key: Keep-Alive Value: timeout=60
+17:32:24.172 [main] INFO  testcases.DesignationFolder - Key: Connection Value: keep-alive
+17:35:46.024 [main] INFO  testcases.DesignationFolder - Response Body: {
+    "timestamp": "2023-12-15T12:05:45.113+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No status to delete with Lawyer2.",
+    "path": "/employee/designation/delete"
+}
+17:35:46.536 [main] INFO  testcases.DesignationFolder - Message: No status to delete with Lawyer2.
+17:35:46.539 [main] INFO  testcases.DesignationFolder - Response Code: 404
+17:35:46.541 [main] INFO  testcases.DesignationFolder - Response Time: 819

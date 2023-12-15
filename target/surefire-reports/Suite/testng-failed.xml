@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testcases.StatusFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="verifyAddStatusWithAuthorization"/>
+        </methods>
+      </class> <!-- testcases.StatusFolder -->
+      <class name="testcases.RoleFolder">
+        <methods>
+          <include name="getRoleByLevelWithAuthorization"/>
+          <include name="baseURL"/>
+        </methods>
+      </class> <!-- testcases.RoleFolder -->
+      <class name="testcases.TagFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="verifyAddTagWithAuthorization"/>
+        </methods>
+      </class> <!-- testcases.TagFolder -->
+      <class name="testcases.DesignationFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="verifyAddDesignationWithAuthorization"/>
+        </methods>
+      </class> <!-- testcases.DesignationFolder -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

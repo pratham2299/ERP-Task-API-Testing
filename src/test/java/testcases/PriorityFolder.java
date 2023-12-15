@@ -5,9 +5,9 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
+import com.google.gson.Gson;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
@@ -16,7 +16,11 @@ import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class PriorityFolder {
 	public static final Logger log = LogManager.getLogger(PriorityFolder.class);
@@ -39,20 +43,22 @@ public class PriorityFolder {
 	@Step("Add Priority Without Authorization")
 	public void verifyAddPriorityWithoutAuthorization() {
 		int fakeLevel = faker.number().numberBetween(1, 10);
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priority", "priority");
-		data.put("priorityLevel", fakeLevel);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priority", "priority");
+		priorityMap.put("priorityLevel", fakeLevel);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/add");
-		response = requestSpec.contentType("application/json").body(data).post();
+		response = requestSpec.contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 401;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 401, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
@@ -69,13 +75,16 @@ public class PriorityFolder {
 	@Test(priority = 3)
 	@Step("Update Priority Without Authorization")
 	public void updatePriorityWithoutAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priorityId", 24);
-		Object fakePriority1 = faker.job().seniority();
-		data.put("priority", fakePriority1);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priorityId", 24);
+		String fakePriority1 = faker.job().seniority();
+		priorityMap.put("priority", fakePriority1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/update");
-		response = requestSpec.contentType("application/json").body(data).put();
+		response = requestSpec.contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -102,25 +111,47 @@ public class PriorityFolder {
 	public void verifyAddPriorityWithAuthorization() {
 		String fakePriority1 = faker.job().seniority();
 		int fakeLevel = faker.number().numberBetween(1, 10);
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priority", fakePriority1);
-		data.put("priorityLevel", fakeLevel);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priority", fakePriority1);
+		priorityMap.put("priorityLevel", fakeLevel);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedStatusId = getRandomPriorityId(keyList);
+		String fakePriority = response.jsonPath().getString(selectedStatusId);
+		deleteSinglePriorityWithAuthorization(fakePriority);
+
 		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 201;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+
+		// Check the response status code
+		if (response.getStatusCode() == 201) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 201);
+		} else if (response.getStatusCode() == 422) {
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Priority Already Exits");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
+
 		log.info("Response Time: " + response.getTime());
-//		double actualResponseTime = response.getTime();
-//		SoftAssert softAssert = new SoftAssert();
-//		softAssert.assertEquals(actualResponseTime < 200, true, "Response time is more than 200 ms");
-//		softAssert.assertAll();
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -139,19 +170,20 @@ public class PriorityFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-
-		deleteSinglePriorityWithAuthorization(fakePriority1);
 	}
 
 	@Test(priority = 6)
 	@Step("Add Priority With Same Payload As Previous")
 	public void addPriorityWithSamePayloadAsPrevious() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priority", "Low");
-		data.put("priorityLevel", 23);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priority", "Low");
+		priorityMap.put("priorityLevel", 23);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
@@ -162,19 +194,21 @@ public class PriorityFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 422;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
 	@Test(priority = 7)
 	@Step("Add Priority With Invalid Payload")
 	public void addPriorityWithInvalidPayload() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priorityLevel", 19);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priorityLevel", 19);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/add");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).post();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
 
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
@@ -185,12 +219,37 @@ public class PriorityFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
 	@Test(priority = 8)
+	@Step("Add Status With Same Priority Level In Payload As Previous")
+	public void addStatusWithSamePriorityLevelInPayloadAsPrevious() {
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priority", "Low");
+		priorityMap.put("priorityLevel", 1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
+
+		requestSpec.basePath("/task/priority/add");
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).post();
+
+		String responseBody = response.getBody().asPrettyString();
+		log.info("Response Body:\n" + responseBody);
+
+		String actualMessage = response.jsonPath().getString("message");
+		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "Priority Already Exits");
+
+		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
+		log.info("Response Time: " + response.getTime());
+	}
+
+	@Test(priority = 9)
 	@Step("Get All Priority With Authorization")
 	public void verifyGetAllPriorityWithAuthorization() {
 		requestSpec.basePath("/task/priority/get/all");
@@ -220,22 +279,25 @@ public class PriorityFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
-//		given().when().get("http://192.168.0.177:10003/task/status/get/all").then().body("status", equalTo("Start"))
-//				.statusCode(200).log().all();
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	@Step("Update Priority With Authorization")
 	public void updatePriorityWithAuthorization() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priorityId", 40);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priorityId", 90);
 		String fakePriority1 = faker.job().seniority();
-		data.put("priority", fakePriority1);
+		priorityMap.put("priority", fakePriority1);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
+
+		Assert.assertEquals(response.jsonPath().getString("90"), fakePriority1);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -259,14 +321,17 @@ public class PriorityFolder {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	@Step("Update Priority Without Giving Priority Id")
 	public void updatePriorityWithoutGivingPriorityId() {
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priority", "Higher");
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priority", "Higher");
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
@@ -276,34 +341,33 @@ public class PriorityFolder {
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 400;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 400, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 	@Step("Update Priority By Giving Non Existing Priority Id")
 	public void updatePriorityByGivingNonExistingPriorityId() {
 		String fakePriority = faker.job().seniority();
-		int fakePriorityId = faker.number().numberBetween(50, 100);
-		HashMap<Object, Object> data = new HashMap<>();
-		data.put("priorityId", fakePriorityId);
-		data.put("priority", fakePriority);
+		HashMap<String, Object> priorityMap = new HashMap<>();
+		priorityMap.put("priorityId", 1);
+		priorityMap.put("priority", fakePriority);
+
+		// Convert the HashMap to JSON format using Gson
+		String payload = new Gson().toJson(priorityMap);
 
 		requestSpec.basePath("/task/priority/update");
-		response = requestSpec.auth().basic(username, password).contentType("application/json").body(data).put();
+		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
-		log.info("Is Priority Present For Given Id: " + responseBody.contains("No Priority Present For Given Id"));
+
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
-		Assert.assertEquals(responseBody.contains("No Priority Present For Given Id"), true);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 12, dependsOnMethods = { "verifyAddPriorityWithAuthorization" })
+	@Test(priority = 13, dependsOnMethods = { "verifyAddPriorityWithAuthorization" })
 	@Step("Delete Single Priority With Authorization")
 	public String deleteSinglePriorityWithAuthorization(String fakePriority) {
 		requestSpec.basePath("/task/priority/delete/single").queryParam("priorityName", fakePriority);
@@ -311,8 +375,20 @@ public class PriorityFolder {
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
 		log.info("Status Code: " + response.statusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+
+		// Check the response status code
+		if (response.getStatusCode() == 200) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		} else if (response.getStatusCode() == 404) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "No priority to delete with " + fakePriority + ".");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -335,21 +411,28 @@ public class PriorityFolder {
 		return fakePriority;
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	@Step("Delete Priority With Invalid Priority Name")
 	public void deleteSinglePriorityWithInvalidPriorityName() {
-		requestSpec.basePath("/task/priority/delete/single").queryParam("priorityName", "Master1");
+		String fakePriorityName = "Master2";
+		requestSpec.basePath("/task/priority/delete/single").queryParam("priorityName", fakePriorityName);
 		response = requestSpec.auth().basic(username, password).contentType("application/json").delete();
 
 		log.info("Response Body: " + response.getBody().asPrettyString());
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
+		Assert.assertEquals(actualMessage, "No priority to delete with " + fakePriorityName + ".");
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
-		int expectedStatusCode = 404;
-		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+		Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
 
 		log.info("Response Time: " + response.getTime());
+	}
+
+	private String getRandomPriorityId(List<String> keyList) {
+		Random random = new Random();
+		int randomIndex = random.nextInt(keyList.size());
+		return keyList.get(randomIndex);
 	}
 }

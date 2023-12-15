@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">69 methods, 4 failed,   65 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="getRoleByLevelWithAuthorization">getRoleByLevelWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="verifyAddDesignationWithAuthorization">verifyAddDesignationWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="verifyAddStatusWithAuthorization">verifyAddStatusWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="verifyAddTagWithAuthorization">verifyAddTagWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +132,327 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TaskModule" class="method navigator-link" hash-for-method="addPriority">addPriority</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="addDesignationWithInvalidPayload">addDesignationWithInvalidPayload</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TaskModule" class="method navigator-link" hash-for-method="addStatus">addStatus</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="addDesignationWithSamePayloadAsPrevious">addDesignationWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TaskModule" class="method navigator-link" hash-for-method="getPriority">getPriority</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="addPriorityWithInvalidPayload">addPriorityWithInvalidPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="addPriorityWithSamePayloadAsPrevious">addPriorityWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="addProjectWithInvalidPayload">addProjectWithInvalidPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="addProjectWithSamePayloadAsPrevious">addProjectWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="addProjectWithoutGivingProjectStartDateInPayload">addProjectWithoutGivingProjectStartDateInPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="addRoleWithInvalidPayload">addRoleWithInvalidPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="addRoleWithSamePayloadAsPrevious">addRoleWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="addStatusWithInvalidPayload">addStatusWithInvalidPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="addStatusWithSamePayloadAsPrevious">addStatusWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="addTagWithInvalidPayload">addTagWithInvalidPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="addTagWithSamePayloadAsPrevious">addTagWithSamePayloadAsPrevious</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="deleteSingleDesignationWithInvalidDesignationName">deleteSingleDesignationWithInvalidDesignationName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="deleteSingleDesignationWithoutAuthorization">deleteSingleDesignationWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="deleteSinglePriorityWithInvalidPriorityName">deleteSinglePriorityWithInvalidPriorityName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="deleteSingleRoleWithInvalidRoleId">deleteSingleRoleWithInvalidRoleId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="deleteSingleRoleWithoutAuthorization">deleteSingleRoleWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="deleteSingleStatusWithInvalidStatusName">deleteSingleStatusWithInvalidStatusName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="deleteSingleStatusWithoutAuthorization">deleteSingleStatusWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="deleteSingleTagWithInvalidTagName">deleteSingleTagWithInvalidTagName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="deleteSingleTagWithoutAuthorization">deleteSingleTagWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="getRoleByLevelWithInvalidRoleLevel">getRoleByLevelWithInvalidRoleLevel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="getRoleByLevelWithoutAuthorization">getRoleByLevelWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="updateDesignationByGivingNonExistingDesignationId">updateDesignationByGivingNonExistingDesignationId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="updateDesignationWithAuthorization">updateDesignationWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="updateDesignationWithoutAuthorization">updateDesignationWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="updateDesignationWithoutGivingDesignationId">updateDesignationWithoutGivingDesignationId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="updatePriorityByGivingNonExistingPriorityId">updatePriorityByGivingNonExistingPriorityId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="updatePriorityWithAuthorization">updatePriorityWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="updatePriorityWithoutAuthorization">updatePriorityWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="updatePriorityWithoutGivingPriorityId">updatePriorityWithoutGivingPriorityId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="updateRoleByGivingNonExistingRoleId">updateRoleByGivingNonExistingRoleId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="updateRoleWithAuthorization">updateRoleWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="updateRoleWithoutAuthorization">updateRoleWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="updateRoleWithoutGivingRoleId">updateRoleWithoutGivingRoleId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="updateStatusByGivingNonExistingStatusId">updateStatusByGivingNonExistingStatusId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="updateStatusWithAuthorization">updateStatusWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="updateStatusWithoutGivingStatusId">updateStatusWithoutGivingStatusId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="updateTagByGivingNonExistingTagId">updateTagByGivingNonExistingTagId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="updateTagWithAuthorization">updateTagWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="updateTagWithoutAuthorization">updateTagWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="updateTagWithoutGivingTagId">updateTagWithoutGivingTagId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="verifyAddDesignationWithoutAuthorization">verifyAddDesignationWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="verifyAddPriorityWithAuthorization">verifyAddPriorityWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="verifyAddPriorityWithoutAuthorization">verifyAddPriorityWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="verifyAddProjectWithAuthorization">verifyAddProjectWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="verifyAddProjectWithoutAuthorization">verifyAddProjectWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="verifyAddRoleWithAuthorization">verifyAddRoleWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="verifyAddRoleWithoutAuthorization">verifyAddRoleWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="verifyAddStatusWithoutAuthorization">verifyAddStatusWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="verifyAddTagWithoutAuthorization">verifyAddTagWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="verifyGetAllDesignationWithAuthorization">verifyGetAllDesignationWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DesignationFolder" class="method navigator-link" hash-for-method="verifyGetAllDesignationWithoutAuthorization">verifyGetAllDesignationWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="verifyGetAllPriorityWithAuthorization">verifyGetAllPriorityWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PriorityFolder" class="method navigator-link" hash-for-method="verifyGetAllPriorityWithoutAuthorization">verifyGetAllPriorityWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="verifyGetAllProjectWithAuthorization">verifyGetAllProjectWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProjectFolder" class="method navigator-link" hash-for-method="verifyGetAllProjectWithoutAuthorization">verifyGetAllProjectWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="verifyGetAllRoleWithAuthorization">verifyGetAllRoleWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RoleFolder" class="method navigator-link" hash-for-method="verifyGetAllRoleWithoutAuthorization">verifyGetAllRoleWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="verifyGetAllStatusWithAuthorization">verifyGetAllStatusWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="verifyGetAllStatusWithoutAuthorization">verifyGetAllStatusWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="verifyGetAllTagWithAuthorization">verifyGetAllTagWithAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TagFolder" class="method navigator-link" hash-for-method="verifyGetAllTagWithoutAuthorization">verifyGetAllTagWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="verifyUpdateStatusWithoutAuthorization">verifyUpdateStatusWithoutAuthorization</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -128,31 +467,587 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TaskModule</span>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.StatusFolder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addPriority">
-                  </a> <!-- addPriority -->
-                  <span class="method-name">addPriority</span>
+                  <a name="verifyAddStatusWithAuthorization">
+                  </a> <!-- verifyAddStatusWithAuthorization -->
+                  <span class="method-name">verifyAddStatusWithAuthorization</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Status Already Exits] but found [Status Already Exists]
+	at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.RoleFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRoleByLevelWithAuthorization">
+                  </a> <!-- getRoleByLevelWithAuthorization -->
+                  <span class="method-name">getRoleByLevelWithAuthorization</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.RoleFolder.getRoleByLevelWithAuthorization(RoleFolder.java:404)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TagFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddTagWithAuthorization">
+                  </a> <!-- verifyAddTagWithAuthorization -->
+                  <span class="method-name">verifyAddTagWithAuthorization</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.TagFolder.deleteSingleTagWithAuthorization(TagFolder.java:320)
+	at testcases.TagFolder.verifyAddTagWithAuthorization(TagFolder.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.DesignationFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDesignationWithAuthorization">
+                  </a> <!-- verifyAddDesignationWithAuthorization -->
+                  <span class="method-name">verifyAddDesignationWithAuthorization</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid status code expected [200] but found [404]
+	at testcases.DesignationFolder.deleteSingleDesignationWithAuthorization(DesignationFolder.java:320)
+	at testcases.DesignationFolder.verifyAddDesignationWithAuthorization(DesignationFolder.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.StatusFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addStatusWithInvalidPayload">
+                  </a> <!-- addStatusWithInvalidPayload -->
+                  <span class="method-name">addStatusWithInvalidPayload</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addStatus">
-                  </a> <!-- addStatus -->
-                  <span class="method-name">addStatus</span>
+                  <a name="addStatusWithSamePayloadAsPrevious">
+                  </a> <!-- addStatusWithSamePayloadAsPrevious -->
+                  <span class="method-name">addStatusWithSamePayloadAsPrevious</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getPriority">
-                  </a> <!-- getPriority -->
-                  <span class="method-name">getPriority</span>
+                  <a name="deleteSingleStatusWithInvalidStatusName">
+                  </a> <!-- deleteSingleStatusWithInvalidStatusName -->
+                  <span class="method-name">deleteSingleStatusWithInvalidStatusName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleStatusWithoutAuthorization">
+                  </a> <!-- deleteSingleStatusWithoutAuthorization -->
+                  <span class="method-name">deleteSingleStatusWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateStatusByGivingNonExistingStatusId">
+                  </a> <!-- updateStatusByGivingNonExistingStatusId -->
+                  <span class="method-name">updateStatusByGivingNonExistingStatusId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateStatusWithAuthorization">
+                  </a> <!-- updateStatusWithAuthorization -->
+                  <span class="method-name">updateStatusWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateStatusWithoutGivingStatusId">
+                  </a> <!-- updateStatusWithoutGivingStatusId -->
+                  <span class="method-name">updateStatusWithoutGivingStatusId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddStatusWithoutAuthorization">
+                  </a> <!-- verifyAddStatusWithoutAuthorization -->
+                  <span class="method-name">verifyAddStatusWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllStatusWithAuthorization">
+                  </a> <!-- verifyGetAllStatusWithAuthorization -->
+                  <span class="method-name">verifyGetAllStatusWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllStatusWithoutAuthorization">
+                  </a> <!-- verifyGetAllStatusWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllStatusWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateStatusWithoutAuthorization">
+                  </a> <!-- verifyUpdateStatusWithoutAuthorization -->
+                  <span class="method-name">verifyUpdateStatusWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.ProjectFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProjectWithInvalidPayload">
+                  </a> <!-- addProjectWithInvalidPayload -->
+                  <span class="method-name">addProjectWithInvalidPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProjectWithSamePayloadAsPrevious">
+                  </a> <!-- addProjectWithSamePayloadAsPrevious -->
+                  <span class="method-name">addProjectWithSamePayloadAsPrevious</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProjectWithoutGivingProjectStartDateInPayload">
+                  </a> <!-- addProjectWithoutGivingProjectStartDateInPayload -->
+                  <span class="method-name">addProjectWithoutGivingProjectStartDateInPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddProjectWithAuthorization">
+                  </a> <!-- verifyAddProjectWithAuthorization -->
+                  <span class="method-name">verifyAddProjectWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddProjectWithoutAuthorization">
+                  </a> <!-- verifyAddProjectWithoutAuthorization -->
+                  <span class="method-name">verifyAddProjectWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllProjectWithAuthorization">
+                  </a> <!-- verifyGetAllProjectWithAuthorization -->
+                  <span class="method-name">verifyGetAllProjectWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllProjectWithoutAuthorization">
+                  </a> <!-- verifyGetAllProjectWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllProjectWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.RoleFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRoleWithInvalidPayload">
+                  </a> <!-- addRoleWithInvalidPayload -->
+                  <span class="method-name">addRoleWithInvalidPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRoleWithSamePayloadAsPrevious">
+                  </a> <!-- addRoleWithSamePayloadAsPrevious -->
+                  <span class="method-name">addRoleWithSamePayloadAsPrevious</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleRoleWithInvalidRoleId">
+                  </a> <!-- deleteSingleRoleWithInvalidRoleId -->
+                  <span class="method-name">deleteSingleRoleWithInvalidRoleId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleRoleWithoutAuthorization">
+                  </a> <!-- deleteSingleRoleWithoutAuthorization -->
+                  <span class="method-name">deleteSingleRoleWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRoleByLevelWithInvalidRoleLevel">
+                  </a> <!-- getRoleByLevelWithInvalidRoleLevel -->
+                  <span class="method-name">getRoleByLevelWithInvalidRoleLevel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRoleByLevelWithoutAuthorization">
+                  </a> <!-- getRoleByLevelWithoutAuthorization -->
+                  <span class="method-name">getRoleByLevelWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateRoleByGivingNonExistingRoleId">
+                  </a> <!-- updateRoleByGivingNonExistingRoleId -->
+                  <span class="method-name">updateRoleByGivingNonExistingRoleId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateRoleWithAuthorization">
+                  </a> <!-- updateRoleWithAuthorization -->
+                  <span class="method-name">updateRoleWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateRoleWithoutAuthorization">
+                  </a> <!-- updateRoleWithoutAuthorization -->
+                  <span class="method-name">updateRoleWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateRoleWithoutGivingRoleId">
+                  </a> <!-- updateRoleWithoutGivingRoleId -->
+                  <span class="method-name">updateRoleWithoutGivingRoleId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddRoleWithAuthorization">
+                  </a> <!-- verifyAddRoleWithAuthorization -->
+                  <span class="method-name">verifyAddRoleWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddRoleWithoutAuthorization">
+                  </a> <!-- verifyAddRoleWithoutAuthorization -->
+                  <span class="method-name">verifyAddRoleWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllRoleWithAuthorization">
+                  </a> <!-- verifyGetAllRoleWithAuthorization -->
+                  <span class="method-name">verifyGetAllRoleWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllRoleWithoutAuthorization">
+                  </a> <!-- verifyGetAllRoleWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllRoleWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TagFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTagWithInvalidPayload">
+                  </a> <!-- addTagWithInvalidPayload -->
+                  <span class="method-name">addTagWithInvalidPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTagWithSamePayloadAsPrevious">
+                  </a> <!-- addTagWithSamePayloadAsPrevious -->
+                  <span class="method-name">addTagWithSamePayloadAsPrevious</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleTagWithInvalidTagName">
+                  </a> <!-- deleteSingleTagWithInvalidTagName -->
+                  <span class="method-name">deleteSingleTagWithInvalidTagName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleTagWithoutAuthorization">
+                  </a> <!-- deleteSingleTagWithoutAuthorization -->
+                  <span class="method-name">deleteSingleTagWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTagByGivingNonExistingTagId">
+                  </a> <!-- updateTagByGivingNonExistingTagId -->
+                  <span class="method-name">updateTagByGivingNonExistingTagId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTagWithAuthorization">
+                  </a> <!-- updateTagWithAuthorization -->
+                  <span class="method-name">updateTagWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTagWithoutAuthorization">
+                  </a> <!-- updateTagWithoutAuthorization -->
+                  <span class="method-name">updateTagWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTagWithoutGivingTagId">
+                  </a> <!-- updateTagWithoutGivingTagId -->
+                  <span class="method-name">updateTagWithoutGivingTagId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddTagWithoutAuthorization">
+                  </a> <!-- verifyAddTagWithoutAuthorization -->
+                  <span class="method-name">verifyAddTagWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllTagWithAuthorization">
+                  </a> <!-- verifyGetAllTagWithAuthorization -->
+                  <span class="method-name">verifyGetAllTagWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllTagWithoutAuthorization">
+                  </a> <!-- verifyGetAllTagWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllTagWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.PriorityFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPriorityWithInvalidPayload">
+                  </a> <!-- addPriorityWithInvalidPayload -->
+                  <span class="method-name">addPriorityWithInvalidPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPriorityWithSamePayloadAsPrevious">
+                  </a> <!-- addPriorityWithSamePayloadAsPrevious -->
+                  <span class="method-name">addPriorityWithSamePayloadAsPrevious</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSinglePriorityWithInvalidPriorityName">
+                  </a> <!-- deleteSinglePriorityWithInvalidPriorityName -->
+                  <span class="method-name">deleteSinglePriorityWithInvalidPriorityName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePriorityByGivingNonExistingPriorityId">
+                  </a> <!-- updatePriorityByGivingNonExistingPriorityId -->
+                  <span class="method-name">updatePriorityByGivingNonExistingPriorityId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePriorityWithAuthorization">
+                  </a> <!-- updatePriorityWithAuthorization -->
+                  <span class="method-name">updatePriorityWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePriorityWithoutAuthorization">
+                  </a> <!-- updatePriorityWithoutAuthorization -->
+                  <span class="method-name">updatePriorityWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePriorityWithoutGivingPriorityId">
+                  </a> <!-- updatePriorityWithoutGivingPriorityId -->
+                  <span class="method-name">updatePriorityWithoutGivingPriorityId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddPriorityWithAuthorization">
+                  </a> <!-- verifyAddPriorityWithAuthorization -->
+                  <span class="method-name">verifyAddPriorityWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddPriorityWithoutAuthorization">
+                  </a> <!-- verifyAddPriorityWithoutAuthorization -->
+                  <span class="method-name">verifyAddPriorityWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllPriorityWithAuthorization">
+                  </a> <!-- verifyGetAllPriorityWithAuthorization -->
+                  <span class="method-name">verifyGetAllPriorityWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllPriorityWithoutAuthorization">
+                  </a> <!-- verifyGetAllPriorityWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllPriorityWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.DesignationFolder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDesignationWithInvalidPayload">
+                  </a> <!-- addDesignationWithInvalidPayload -->
+                  <span class="method-name">addDesignationWithInvalidPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDesignationWithSamePayloadAsPrevious">
+                  </a> <!-- addDesignationWithSamePayloadAsPrevious -->
+                  <span class="method-name">addDesignationWithSamePayloadAsPrevious</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleDesignationWithInvalidDesignationName">
+                  </a> <!-- deleteSingleDesignationWithInvalidDesignationName -->
+                  <span class="method-name">deleteSingleDesignationWithInvalidDesignationName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSingleDesignationWithoutAuthorization">
+                  </a> <!-- deleteSingleDesignationWithoutAuthorization -->
+                  <span class="method-name">deleteSingleDesignationWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDesignationByGivingNonExistingDesignationId">
+                  </a> <!-- updateDesignationByGivingNonExistingDesignationId -->
+                  <span class="method-name">updateDesignationByGivingNonExistingDesignationId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDesignationWithAuthorization">
+                  </a> <!-- updateDesignationWithAuthorization -->
+                  <span class="method-name">updateDesignationWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDesignationWithoutAuthorization">
+                  </a> <!-- updateDesignationWithoutAuthorization -->
+                  <span class="method-name">updateDesignationWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDesignationWithoutGivingDesignationId">
+                  </a> <!-- updateDesignationWithoutGivingDesignationId -->
+                  <span class="method-name">updateDesignationWithoutGivingDesignationId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDesignationWithoutAuthorization">
+                  </a> <!-- verifyAddDesignationWithoutAuthorization -->
+                  <span class="method-name">verifyAddDesignationWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllDesignationWithAuthorization">
+                  </a> <!-- verifyGetAllDesignationWithAuthorization -->
+                  <span class="method-name">verifyGetAllDesignationWithAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAllDesignationWithoutAuthorization">
+                  </a> <!-- verifyGetAllDesignationWithoutAuthorization -->
+                  <span class="method-name">verifyGetAllDesignationWithoutAuthorization</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +1064,12 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TaskModule&quot;/&gt;
+      &lt;class name=&quot;testcases.ProjectFolder&quot;/&gt;
+      &lt;class name=&quot;testcases.StatusFolder&quot;/&gt;
+      &lt;class name=&quot;testcases.DesignationFolder&quot;/&gt;
+      &lt;class name=&quot;testcases.RoleFolder&quot;/&gt;
+      &lt;class name=&quot;testcases.TagFolder&quot;/&gt;
+      &lt;class name=&quot;testcases.PriorityFolder&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -183,7 +1083,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,24 +1109,288 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(69);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addStatus')
-data.setCell(0, 2, 'testcases.TaskModule')
-data.setCell(0, 3, 1662);
+data.setCell(0, 1, 'verifyAddProjectWithoutAuthorization')
+data.setCell(0, 2, 'testcases.ProjectFolder')
+data.setCell(0, 3, 1100);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getPriority')
-data.setCell(1, 2, 'testcases.TaskModule')
-data.setCell(1, 3, 164);
+data.setCell(1, 1, 'addProjectWithInvalidPayload')
+data.setCell(1, 2, 'testcases.ProjectFolder')
+data.setCell(1, 3, 909);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addPriority')
-data.setCell(2, 2, 'testcases.TaskModule')
-data.setCell(2, 3, 63);
+data.setCell(2, 1, 'verifyAddDesignationWithAuthorization')
+data.setCell(2, 2, 'testcases.DesignationFolder')
+data.setCell(2, 3, 818);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAddPriorityWithAuthorization')
+data.setCell(3, 2, 'testcases.PriorityFolder')
+data.setCell(3, 3, 808);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAddTagWithAuthorization')
+data.setCell(4, 2, 'testcases.TagFolder')
+data.setCell(4, 3, 781);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyGetAllRoleWithAuthorization')
+data.setCell(5, 2, 'testcases.RoleFolder')
+data.setCell(5, 3, 775);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAddStatusWithAuthorization')
+data.setCell(6, 2, 'testcases.StatusFolder')
+data.setCell(6, 3, 603);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addStatusWithInvalidPayload')
+data.setCell(7, 2, 'testcases.StatusFolder')
+data.setCell(7, 3, 577);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddProjectWithAuthorization')
+data.setCell(8, 2, 'testcases.ProjectFolder')
+data.setCell(8, 3, 577);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyGetAllProjectWithAuthorization')
+data.setCell(9, 2, 'testcases.ProjectFolder')
+data.setCell(9, 3, 550);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addStatusWithSamePayloadAsPrevious')
+data.setCell(10, 2, 'testcases.StatusFolder')
+data.setCell(10, 3, 488);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addProjectWithoutGivingProjectStartDateInPayload')
+data.setCell(11, 2, 'testcases.ProjectFolder')
+data.setCell(11, 3, 470);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'addPriorityWithSamePayloadAsPrevious')
+data.setCell(12, 2, 'testcases.PriorityFolder')
+data.setCell(12, 3, 444);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addTagWithInvalidPayload')
+data.setCell(13, 2, 'testcases.TagFolder')
+data.setCell(13, 3, 441);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateStatusWithAuthorization')
+data.setCell(14, 2, 'testcases.StatusFolder')
+data.setCell(14, 3, 437);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteSingleDesignationWithInvalidDesignationName')
+data.setCell(15, 2, 'testcases.DesignationFolder')
+data.setCell(15, 3, 434);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'updateDesignationWithoutGivingDesignationId')
+data.setCell(16, 2, 'testcases.DesignationFolder')
+data.setCell(16, 3, 433);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'deleteSingleTagWithInvalidTagName')
+data.setCell(17, 2, 'testcases.TagFolder')
+data.setCell(17, 3, 426);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addDesignationWithSamePayloadAsPrevious')
+data.setCell(18, 2, 'testcases.DesignationFolder')
+data.setCell(18, 3, 425);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addProjectWithSamePayloadAsPrevious')
+data.setCell(19, 2, 'testcases.ProjectFolder')
+data.setCell(19, 3, 418);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyGetAllStatusWithAuthorization')
+data.setCell(20, 2, 'testcases.StatusFolder')
+data.setCell(20, 3, 418);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'deleteSingleStatusWithInvalidStatusName')
+data.setCell(21, 2, 'testcases.StatusFolder')
+data.setCell(21, 3, 415);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addDesignationWithInvalidPayload')
+data.setCell(22, 2, 'testcases.DesignationFolder')
+data.setCell(22, 3, 415);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'addTagWithSamePayloadAsPrevious')
+data.setCell(23, 2, 'testcases.TagFolder')
+data.setCell(23, 3, 415);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'updateRoleByGivingNonExistingRoleId')
+data.setCell(24, 2, 'testcases.RoleFolder')
+data.setCell(24, 3, 414);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'updateRoleWithoutGivingRoleId')
+data.setCell(25, 2, 'testcases.RoleFolder')
+data.setCell(25, 3, 412);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'deleteSingleRoleWithInvalidRoleId')
+data.setCell(26, 2, 'testcases.RoleFolder')
+data.setCell(26, 3, 412);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'updateStatusWithoutGivingStatusId')
+data.setCell(27, 2, 'testcases.StatusFolder')
+data.setCell(27, 3, 410);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addRoleWithInvalidPayload')
+data.setCell(28, 2, 'testcases.RoleFolder')
+data.setCell(28, 3, 409);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'updatePriorityWithoutGivingPriorityId')
+data.setCell(29, 2, 'testcases.PriorityFolder')
+data.setCell(29, 3, 408);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'updateTagByGivingNonExistingTagId')
+data.setCell(30, 2, 'testcases.TagFolder')
+data.setCell(30, 3, 404);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'addPriorityWithInvalidPayload')
+data.setCell(31, 2, 'testcases.PriorityFolder')
+data.setCell(31, 3, 404);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'updateDesignationByGivingNonExistingDesignationId')
+data.setCell(32, 2, 'testcases.DesignationFolder')
+data.setCell(32, 3, 403);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'updatePriorityWithAuthorization')
+data.setCell(33, 2, 'testcases.PriorityFolder')
+data.setCell(33, 3, 402);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'deleteSinglePriorityWithInvalidPriorityName')
+data.setCell(34, 2, 'testcases.PriorityFolder')
+data.setCell(34, 3, 401);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'updateTagWithoutGivingTagId')
+data.setCell(35, 2, 'testcases.TagFolder')
+data.setCell(35, 3, 397);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'updateDesignationWithAuthorization')
+data.setCell(36, 2, 'testcases.DesignationFolder')
+data.setCell(36, 3, 395);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyGetAllTagWithAuthorization')
+data.setCell(37, 2, 'testcases.TagFolder')
+data.setCell(37, 3, 394);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'updateTagWithAuthorization')
+data.setCell(38, 2, 'testcases.TagFolder')
+data.setCell(38, 3, 391);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'updateStatusByGivingNonExistingStatusId')
+data.setCell(39, 2, 'testcases.StatusFolder')
+data.setCell(39, 3, 389);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'updatePriorityByGivingNonExistingPriorityId')
+data.setCell(40, 2, 'testcases.PriorityFolder')
+data.setCell(40, 3, 389);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifyGetAllDesignationWithAuthorization')
+data.setCell(41, 2, 'testcases.DesignationFolder')
+data.setCell(41, 3, 386);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyAddRoleWithAuthorization')
+data.setCell(42, 2, 'testcases.RoleFolder')
+data.setCell(42, 3, 383);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifyGetAllPriorityWithAuthorization')
+data.setCell(43, 2, 'testcases.PriorityFolder')
+data.setCell(43, 3, 380);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'addRoleWithSamePayloadAsPrevious')
+data.setCell(44, 2, 'testcases.RoleFolder')
+data.setCell(44, 3, 376);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'updateRoleWithAuthorization')
+data.setCell(45, 2, 'testcases.RoleFolder')
+data.setCell(45, 3, 372);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'getRoleByLevelWithAuthorization')
+data.setCell(46, 2, 'testcases.RoleFolder')
+data.setCell(46, 3, 370);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'getRoleByLevelWithInvalidRoleLevel')
+data.setCell(47, 2, 'testcases.RoleFolder')
+data.setCell(47, 3, 369);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'updateDesignationWithoutAuthorization')
+data.setCell(48, 2, 'testcases.DesignationFolder')
+data.setCell(48, 3, 108);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'updateTagWithoutAuthorization')
+data.setCell(49, 2, 'testcases.TagFolder')
+data.setCell(49, 3, 88);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyAddDesignationWithoutAuthorization')
+data.setCell(50, 2, 'testcases.DesignationFolder')
+data.setCell(50, 3, 49);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyGetAllProjectWithoutAuthorization')
+data.setCell(51, 2, 'testcases.ProjectFolder')
+data.setCell(51, 3, 40);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'deleteSingleStatusWithoutAuthorization')
+data.setCell(52, 2, 'testcases.StatusFolder')
+data.setCell(52, 3, 35);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifyAddStatusWithoutAuthorization')
+data.setCell(53, 2, 'testcases.StatusFolder')
+data.setCell(53, 3, 35);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyGetAllTagWithoutAuthorization')
+data.setCell(54, 2, 'testcases.TagFolder')
+data.setCell(54, 3, 31);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'deleteSingleDesignationWithoutAuthorization')
+data.setCell(55, 2, 'testcases.DesignationFolder')
+data.setCell(55, 3, 31);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyAddTagWithoutAuthorization')
+data.setCell(56, 2, 'testcases.TagFolder')
+data.setCell(56, 3, 31);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'updatePriorityWithoutAuthorization')
+data.setCell(57, 2, 'testcases.PriorityFolder')
+data.setCell(57, 3, 30);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifyGetAllDesignationWithoutAuthorization')
+data.setCell(58, 2, 'testcases.DesignationFolder')
+data.setCell(58, 3, 30);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'updateRoleWithoutAuthorization')
+data.setCell(59, 2, 'testcases.RoleFolder')
+data.setCell(59, 3, 28);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifyGetAllStatusWithoutAuthorization')
+data.setCell(60, 2, 'testcases.StatusFolder')
+data.setCell(60, 3, 28);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyAddRoleWithoutAuthorization')
+data.setCell(61, 2, 'testcases.RoleFolder')
+data.setCell(61, 3, 26);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'deleteSingleTagWithoutAuthorization')
+data.setCell(62, 2, 'testcases.TagFolder')
+data.setCell(62, 3, 26);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'getRoleByLevelWithoutAuthorization')
+data.setCell(63, 2, 'testcases.RoleFolder')
+data.setCell(63, 3, 24);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyGetAllPriorityWithoutAuthorization')
+data.setCell(64, 2, 'testcases.PriorityFolder')
+data.setCell(64, 3, 23);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifyAddPriorityWithoutAuthorization')
+data.setCell(65, 2, 'testcases.PriorityFolder')
+data.setCell(65, 3, 22);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifyGetAllRoleWithoutAuthorization')
+data.setCell(66, 2, 'testcases.RoleFolder')
+data.setCell(66, 3, 21);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifyUpdateStatusWithoutAuthorization')
+data.setCell(67, 2, 'testcases.StatusFolder')
+data.setCell(67, 3, 21);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'deleteSingleRoleWithoutAuthorization')
+data.setCell(68, 2, 'testcases.RoleFolder')
+data.setCell(68, 3, 21);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -252,22 +1416,329 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TaskModule</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.ProjectFolder</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">baseURL</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addStatus</span>
-                <span class="method-start">550 ms</span>
+                <span class="method-name">verifyAddProjectWithoutAuthorization</span>
+                <span class="method-start">524 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">addPriority</span>
-                <span class="method-start">2295 ms</span>
+                <span class="method-name">verifyGetAllProjectWithoutAuthorization</span>
+                <span class="method-start">1699 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getPriority</span>
-                <span class="method-start">2362 ms</span>
+                <span class="method-name">verifyAddProjectWithAuthorization</span>
+                <span class="method-start">1743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addProjectWithSamePayloadAsPrevious</span>
+                <span class="method-start">2322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addProjectWithInvalidPayload</span>
+                <span class="method-start">2744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addProjectWithoutGivingProjectStartDateInPayload</span>
+                <span class="method-start">3656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllProjectWithAuthorization</span>
+                <span class="method-start">4129 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.StatusFolder</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseURL</span>
+                <span class="method-start">4681 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddStatusWithoutAuthorization</span>
+                <span class="method-start">4683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllStatusWithoutAuthorization</span>
+                <span class="method-start">4720 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateStatusWithoutAuthorization</span>
+                <span class="method-start">4750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleStatusWithoutAuthorization</span>
+                <span class="method-start">4773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddStatusWithAuthorization</span>
+                <span class="method-start">4811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addStatusWithSamePayloadAsPrevious</span>
+                <span class="method-start">5419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addStatusWithInvalidPayload</span>
+                <span class="method-start">5910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllStatusWithAuthorization</span>
+                <span class="method-start">6489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateStatusWithAuthorization</span>
+                <span class="method-start">6910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateStatusWithoutGivingStatusId</span>
+                <span class="method-start">7353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateStatusByGivingNonExistingStatusId</span>
+                <span class="method-start">7765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleStatusWithInvalidStatusName</span>
+                <span class="method-start">8158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.DesignationFolder</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseURL</span>
+                <span class="method-start">8577 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDesignationWithoutAuthorization</span>
+                <span class="method-start">8580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllDesignationWithoutAuthorization</span>
+                <span class="method-start">8631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDesignationWithoutAuthorization</span>
+                <span class="method-start">8664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleDesignationWithoutAuthorization</span>
+                <span class="method-start">8776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddDesignationWithAuthorization</span>
+                <span class="method-start">8812 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDesignationWithInvalidPayload</span>
+                <span class="method-start">9636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDesignationWithSamePayloadAsPrevious</span>
+                <span class="method-start">10066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllDesignationWithAuthorization</span>
+                <span class="method-start">10494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDesignationWithAuthorization</span>
+                <span class="method-start">10883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDesignationWithoutGivingDesignationId</span>
+                <span class="method-start">11282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDesignationByGivingNonExistingDesignationId</span>
+                <span class="method-start">11718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleDesignationWithInvalidDesignationName</span>
+                <span class="method-start">12125 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.RoleFolder</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseURL</span>
+                <span class="method-start">12563 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddRoleWithoutAuthorization</span>
+                <span class="method-start">12566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllRoleWithoutAuthorization</span>
+                <span class="method-start">12596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateRoleWithoutAuthorization</span>
+                <span class="method-start">12619 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleRoleWithoutAuthorization</span>
+                <span class="method-start">12650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRoleByLevelWithoutAuthorization</span>
+                <span class="method-start">12673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddRoleWithAuthorization</span>
+                <span class="method-start">12701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addRoleWithSamePayloadAsPrevious</span>
+                <span class="method-start">13087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addRoleWithInvalidPayload</span>
+                <span class="method-start">13467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllRoleWithAuthorization</span>
+                <span class="method-start">13880 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateRoleWithAuthorization</span>
+                <span class="method-start">14659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateRoleWithoutGivingRoleId</span>
+                <span class="method-start">15036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateRoleByGivingNonExistingRoleId</span>
+                <span class="method-start">15451 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleRoleWithInvalidRoleId</span>
+                <span class="method-start">15868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getRoleByLevelWithAuthorization</span>
+                <span class="method-start">16283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRoleByLevelWithInvalidRoleLevel</span>
+                <span class="method-start">16657 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TagFolder</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseURL</span>
+                <span class="method-start">17029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddTagWithoutAuthorization</span>
+                <span class="method-start">17030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllTagWithoutAuthorization</span>
+                <span class="method-start">17064 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateTagWithoutAuthorization</span>
+                <span class="method-start">17099 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleTagWithoutAuthorization</span>
+                <span class="method-start">17190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddTagWithAuthorization</span>
+                <span class="method-start">17218 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addTagWithSamePayloadAsPrevious</span>
+                <span class="method-start">18003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addTagWithInvalidPayload</span>
+                <span class="method-start">18422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllTagWithAuthorization</span>
+                <span class="method-start">18867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateTagWithAuthorization</span>
+                <span class="method-start">19265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateTagWithoutGivingTagId</span>
+                <span class="method-start">19659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateTagByGivingNonExistingTagId</span>
+                <span class="method-start">20059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSingleTagWithInvalidTagName</span>
+                <span class="method-start">20466 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.PriorityFolder</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseURL</span>
+                <span class="method-start">20893 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddPriorityWithoutAuthorization</span>
+                <span class="method-start">20894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllPriorityWithoutAuthorization</span>
+                <span class="method-start">20918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePriorityWithoutAuthorization</span>
+                <span class="method-start">20943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddPriorityWithAuthorization</span>
+                <span class="method-start">20975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPriorityWithSamePayloadAsPrevious</span>
+                <span class="method-start">21787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPriorityWithInvalidPayload</span>
+                <span class="method-start">22234 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAllPriorityWithAuthorization</span>
+                <span class="method-start">22642 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePriorityWithAuthorization</span>
+                <span class="method-start">23025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePriorityWithoutGivingPriorityId</span>
+                <span class="method-start">23432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePriorityByGivingNonExistingPriorityId</span>
+                <span class="method-start">23846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteSinglePriorityWithInvalidPriorityName</span>
+                <span class="method-start">24238 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

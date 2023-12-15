@@ -5,13 +5,22 @@
     <classes>
       <class name="testcases.StatusFolder">
         <methods>
-          <include name="deleteSingleStatusWithInvalidStatusName"/>
           <include name="baseURL"/>
-          <include name="deleteSingleStatusWithAuthorization"/>
           <include name="verifyAddStatusWithAuthorization"/>
-          <include name="updateStatusWithAuthorization"/>
         </methods>
       </class> <!-- testcases.StatusFolder -->
+      <class name="testcases.TagFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="verifyAddTagWithAuthorization"/>
+        </methods>
+      </class> <!-- testcases.TagFolder -->
+      <class name="testcases.DesignationFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="verifyAddDesignationWithAuthorization"/>
+        </methods>
+      </class> <!-- testcases.DesignationFolder -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
