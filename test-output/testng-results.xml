@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T14:36:11 IST" name="Default suite" finished-at="2023-12-16T14:36:33 IST" duration-ms="22557">
+  <suite started-at="2023-12-16T14:42:27 IST" name="Default suite" finished-at="2023-12-16T14:42:49 IST" duration-ms="22773">
     <groups>
     </groups>
-    <test started-at="2023-12-16T14:36:11 IST" name="Default test" finished-at="2023-12-16T14:36:33 IST" duration-ms="22557">
-      <class name="testcases.RoleFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RoleFolder@6bc248ed]" started-at="2023-12-16T14:36:11 IST" name="baseURL" finished-at="2023-12-16T14:36:11 IST" duration-ms="458" status="PASS">
+    <test started-at="2023-12-16T14:42:27 IST" name="Default test" finished-at="2023-12-16T14:42:49 IST" duration-ms="22773">
+      <class name="testcases.RegularTaskFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RegularTaskFolder@5003041b]" started-at="2023-12-16T14:42:27 IST" name="baseURL" finished-at="2023-12-16T14:42:27 IST" duration-ms="618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="addRoleWithSameRoleLevelInPayloadAsPrevious()[pri:9, instance:testcases.RoleFolder@6bc248ed]" started-at="2023-12-16T14:36:11 IST" name="addRoleWithSameRoleLevelInPayloadAsPrevious" finished-at="2023-12-16T14:36:33 IST" duration-ms="21916" status="FAIL">
+        <test-method signature="verifyAddRegularTaskWithAuthorization()[pri:5, instance:testcases.RegularTaskFolder@5003041b]" started-at="2023-12-16T14:42:27 IST" name="verifyAddRegularTaskWithAuthorization" finished-at="2023-12-16T14:42:49 IST" duration-ms="21972" status="FAIL">
           <exception class="java.net.ConnectException">
             <message>
               <![CDATA[Connection timed out: connect]]>
@@ -134,7 +134,7 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:260)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at testcases.RoleFolder.addRoleWithSameRoleLevelInPayloadAsPrevious(RoleFolder.java:255)
+at testcases.RegularTaskFolder.verifyAddRegularTaskWithAuthorization(RegularTaskFolder.java:141)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,8 +168,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.net.ConnectException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRoleWithSameRoleLevelInPayloadAsPrevious -->
-      </class> <!-- testcases.RoleFolder -->
+        </test-method> <!-- verifyAddRegularTaskWithAuthorization -->
+      </class> <!-- testcases.RegularTaskFolder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
