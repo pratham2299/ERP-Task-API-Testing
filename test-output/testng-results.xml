@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T17:48:21 IST" name="Default suite" finished-at="2023-12-15T17:48:24 IST" duration-ms="2272">
+  <suite started-at="2023-12-16T09:38:27 IST" name="Default suite" finished-at="2023-12-16T09:38:32 IST" duration-ms="4785">
     <groups>
     </groups>
-    <test started-at="2023-12-15T17:48:21 IST" name="Default test" finished-at="2023-12-15T17:48:24 IST" duration-ms="2272">
-      <class name="testcases.RoleFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RoleFolder@6bc248ed]" started-at="2023-12-15T17:48:21 IST" name="baseURL" finished-at="2023-12-15T17:48:22 IST" duration-ms="404" status="PASS">
+    <test started-at="2023-12-16T09:38:27 IST" name="Default test" finished-at="2023-12-16T09:38:32 IST" duration-ms="4785">
+      <class name="testcases.ProjectFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:27 IST" name="baseURL" finished-at="2023-12-16T09:38:28 IST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="getRoleByLevelWithInvalidRoleLevel()[pri:17, instance:testcases.RoleFolder@6bc248ed]" started-at="2023-12-15T17:48:22 IST" name="getRoleByLevelWithInvalidRoleLevel" finished-at="2023-12-15T17:48:23 IST" duration-ms="1756" status="PASS">
+        <test-method signature="verifyAddProjectWithoutAuthorization()[pri:1, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:28 IST" name="verifyAddProjectWithoutAuthorization" finished-at="2023-12-16T09:38:29 IST" duration-ms="980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRoleByLevelWithInvalidRoleLevel -->
-      </class> <!-- testcases.RoleFolder -->
+        </test-method> <!-- verifyAddProjectWithoutAuthorization -->
+        <test-method signature="verifyGetAllProjectWithoutAuthorization()[pri:2, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:29 IST" name="verifyGetAllProjectWithoutAuthorization" finished-at="2023-12-16T09:38:29 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectWithoutAuthorization -->
+        <test-method signature="verifyAddProjectWithAuthorization()[pri:3, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:29 IST" name="verifyAddProjectWithAuthorization" finished-at="2023-12-16T09:38:30 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddProjectWithAuthorization -->
+        <test-method signature="addProjectWithSamePayloadAsPrevious()[pri:4, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:30 IST" name="addProjectWithSamePayloadAsPrevious" finished-at="2023-12-16T09:38:30 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProjectWithSamePayloadAsPrevious -->
+        <test-method signature="addProjectWithInvalidPayload()[pri:5, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:30 IST" name="addProjectWithInvalidPayload" finished-at="2023-12-16T09:38:31 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProjectWithInvalidPayload -->
+        <test-method signature="addProjectWithoutGivingProjectStartDateInPayload()[pri:6, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:31 IST" name="addProjectWithoutGivingProjectStartDateInPayload" finished-at="2023-12-16T09:38:32 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProjectWithoutGivingProjectStartDateInPayload -->
+        <test-method signature="verifyGetAllProjectWithAuthorization()[pri:7, instance:testcases.ProjectFolder@2de366bb]" started-at="2023-12-16T09:38:32 IST" name="verifyGetAllProjectWithAuthorization" finished-at="2023-12-16T09:38:32 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectWithAuthorization -->
+      </class> <!-- testcases.ProjectFolder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

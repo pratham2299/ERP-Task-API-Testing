@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.RoleFolder">
+      <class name="testcases.ProjectFolder">
         <methods>
-          <include name="getRoleByLevelWithInvalidRoleLevel"/>
           <include name="baseURL"/>
+          <include name="verifyAddProjectWithAuthorization"/>
         </methods>
-      </class> <!-- testcases.RoleFolder -->
+      </class> <!-- testcases.ProjectFolder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

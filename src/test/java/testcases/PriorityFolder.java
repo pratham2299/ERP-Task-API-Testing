@@ -30,6 +30,7 @@ public class PriorityFolder {
 	public String password = "Pass@123";
 
 	private Faker faker = new Faker();
+	public String selectedPriorityId;
 
 	@BeforeClass
 	public void baseURL() {
@@ -131,8 +132,8 @@ public class PriorityFolder {
 		List<String> keyList = new ArrayList<>(allKeys.keySet());
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
-		String selectedStatusId = getRandomPriorityId(keyList);
-		String fakePriority = response.jsonPath().getString(selectedStatusId);
+		selectedPriorityId = getRandomPriorityId(keyList);
+		String fakePriority = response.jsonPath().getString(selectedPriorityId);
 		deleteSinglePriorityWithAuthorization(fakePriority);
 
 		log.info("Response Code: " + response.getStatusCode());
@@ -385,6 +386,11 @@ public class PriorityFolder {
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
 			Assert.assertEquals(actualMessage, "No priority to delete with " + fakePriority + ".");
+		} else if (response.getStatusCode() == 403) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "This priority is mapped with multiple task");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());

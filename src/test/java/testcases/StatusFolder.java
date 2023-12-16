@@ -391,6 +391,11 @@ public class StatusFolder {
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
 			Assert.assertEquals(actualMessage, "No status to delete with " + fakeStatus + ".");
+		} else if (response.getStatusCode() == 403) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "This status is mapped with multiple task");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
