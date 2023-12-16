@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T14:02:25 IST" name="Default suite" finished-at="2023-12-16T14:02:29 IST" duration-ms="4177">
+  <suite started-at="2023-12-16T14:20:06 IST" name="Default suite" finished-at="2023-12-16T14:20:12 IST" duration-ms="5218">
     <groups>
     </groups>
-    <test started-at="2023-12-16T14:02:25 IST" name="Default test" finished-at="2023-12-16T14:02:29 IST" duration-ms="4177">
+    <test started-at="2023-12-16T14:20:06 IST" name="Default test" finished-at="2023-12-16T14:20:12 IST" duration-ms="5218">
       <class name="testcases.StatusFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.StatusFolder@5003041b]" started-at="2023-12-16T14:02:25 IST" name="baseURL" finished-at="2023-12-16T14:02:25 IST" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.StatusFolder@5003041b]" started-at="2023-12-16T14:20:07 IST" name="baseURL" finished-at="2023-12-16T14:20:07 IST" duration-ms="697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddStatusWithAuthorization()[pri:5, instance:testcases.StatusFolder@5003041b]" started-at="2023-12-16T14:02:25 IST" name="verifyAddStatusWithAuthorization" finished-at="2023-12-16T14:02:29 IST" duration-ms="3574" status="PASS">
+        <test-method signature="addStatusWithSameStatusLevelInPayloadAsPrevious()[pri:8, instance:testcases.StatusFolder@5003041b]" started-at="2023-12-16T14:20:07 IST" name="addStatusWithSameStatusLevelInPayloadAsPrevious" finished-at="2023-12-16T14:20:12 IST" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddStatusWithAuthorization -->
+        </test-method> <!-- addStatusWithSameStatusLevelInPayloadAsPrevious -->
       </class> <!-- testcases.StatusFolder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

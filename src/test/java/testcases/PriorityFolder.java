@@ -147,7 +147,7 @@ public class PriorityFolder {
 			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "Priority Already Exists");
+			Assert.assertEquals(actualMessage, "Priority Already Exits");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());

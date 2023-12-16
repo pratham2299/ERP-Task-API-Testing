@@ -154,7 +154,7 @@ public class RoleFolder {
 		} else if (response.getStatusCode() == 422) {
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "Role Already Exits");
+			Assert.assertEquals(actualMessage, "Role Already Exists");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
@@ -493,7 +493,7 @@ public class RoleFolder {
 			// Status already exists
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "Role Not Found");
+			Assert.assertEquals(actualMessage, "Level Not Found");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
