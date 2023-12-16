@@ -14779,3 +14779,154 @@
 12:17:03.399 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 06:47:02 GMT
 12:17:03.399 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
 12:17:03.399 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+13:57:41.783 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "41": "French Fries with Sausages",
+    "47": "Pork Sausage Roll",
+    "48": "Cauliflower Penne"
+}
+13:57:42.541 [main] INFO  testcases.StatusFolder - Response Body: {
+    "41": "French Fries with Sausages",
+    "47": "Pork Sausage Roll"
+}
+13:57:42.542 [main] INFO  testcases.StatusFolder - Status Code: 200
+13:57:42.548 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+13:57:42.548 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+13:57:42.549 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+13:57:42.549 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+13:57:42.550 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+13:57:42.550 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+13:57:42.550 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+13:57:42.550 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+13:57:42.551 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+13:57:42.551 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+13:57:42.551 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+13:57:42.551 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:27:43 GMT
+13:57:42.552 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+13:57:42.552 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+13:57:42.552 [main] INFO  testcases.StatusFolder - Unexpected status code: 200
+13:57:42.554 [main] INFO  testcases.StatusFolder - Response Time: 579
+13:57:42.555 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+13:57:42.555 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+13:57:42.555 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+13:57:42.555 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+13:57:42.555 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+13:57:42.556 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+13:57:42.557 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:27:43 GMT
+13:57:42.557 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+13:57:42.557 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+13:58:35.883 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "41": "French Fries with Sausages",
+    "47": "Pork Sausage Roll",
+    "49": "Chicken Fajitas"
+}
+13:58:36.021 [main] INFO  testcases.StatusFolder - Response Time: 1038
+13:58:36.022 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+13:58:36.022 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+13:58:36.022 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+13:58:36.022 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+13:58:36.022 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+13:58:36.022 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+13:58:36.023 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:28:35 GMT
+13:58:36.025 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+13:58:36.026 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+13:58:36.571 [main] INFO  testcases.StatusFolder - Response Body: {
+    "41": "French Fries with Sausages",
+    "47": "Pork Sausage Roll"
+}
+13:58:36.571 [main] INFO  testcases.StatusFolder - Status Code: 200
+13:58:36.572 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+13:58:36.573 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+13:58:36.573 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+13:58:36.574 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+13:58:36.575 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+13:58:36.576 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+13:58:36.576 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:28:37 GMT
+13:58:36.576 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+13:58:36.576 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+14:02:01.611 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "timestamp": "2023-12-16T08:32:02.183+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Status Already Exists",
+    "path": "/task/status/add"
+}
+14:02:01.715 [main] INFO  testcases.StatusFolder - Response Code: 422
+14:02:01.719 [main] INFO  testcases.StatusFolder - Response Status Code: 422
+14:02:02.158 [main] INFO  testcases.StatusFolder - Message: Status Already Exists
+14:02:27.155 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "timestamp": "2023-12-16T08:32:27.817+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Status Already Exists",
+    "path": "/task/status/add"
+}
+14:02:27.283 [main] INFO  testcases.StatusFolder - Response Code: 422
+14:02:27.288 [main] INFO  testcases.StatusFolder - Response Status Code: 422
+14:02:27.704 [main] INFO  testcases.StatusFolder - Message: Status Already Exists
+14:02:27.706 [main] INFO  testcases.StatusFolder - Response Time: 834
+14:02:27.706 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+14:02:27.707 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+14:02:27.707 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+14:02:27.707 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+14:02:27.707 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+14:02:27.707 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+14:02:27.707 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+14:02:27.707 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:32:27 GMT
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+14:02:27.708 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+14:02:28.449 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "timestamp": "2023-12-16T08:32:29.143+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Status Already Exists",
+    "path": "/task/status/add"
+}
+14:02:28.464 [main] INFO  testcases.StatusFolder - Message: Status Already Exists
+14:02:28.465 [main] INFO  testcases.StatusFolder - Response Code: 422
+14:02:28.465 [main] INFO  testcases.StatusFolder - Response Time: 714
+14:02:29.100 [main] INFO  testcases.StatusFolder - Response Body: {
+    "17": "Verda",
+    "101": "Done",
+    "279": "Tomi",
+    "281": "2023-12-16T06:46:16.701+00:00",
+    "282": "Feest"
+}
+14:02:29.101 [main] INFO  testcases.StatusFolder - Status Code: 200
+14:02:29.101 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+14:02:29.101 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+14:02:29.102 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+14:02:29.102 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+14:02:29.102 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+14:02:29.103 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+14:02:29.103 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+14:02:29.103 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+14:02:29.104 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+14:02:29.104 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+14:02:29.105 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+14:02:29.105 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:32:29 GMT
+14:02:29.105 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+14:02:29.106 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive

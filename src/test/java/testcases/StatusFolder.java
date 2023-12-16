@@ -131,22 +131,21 @@ public class StatusFolder {
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
 		String selectedStatusId = getRandomStatusId(keyList);
-		String fakeStatus = response.jsonPath().getString(selectedStatusId);
-		addStatusWithSamePayloadAsPrevious(fakeStatus);
-		deleteSingleStatusWithAuthorization(fakeStatus);
 
 		log.info("Response Code: " + response.getStatusCode());
 
 		// Check the response status code
 		if (response.getStatusCode() == 201) {
-			// Status created successfully
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, 201);
+			log.info("Response Status Code: " + actualStatusCode);
 		} else if (response.getStatusCode() == 422) {
-			// Status already exists
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 422);
+			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "Status Already Exits");
+			Assert.assertEquals(actualMessage, "Status Already Exists");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
@@ -172,6 +171,10 @@ public class StatusFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		String fakeStatus = response.jsonPath().getString(selectedStatusId);
+		addStatusWithSamePayloadAsPrevious(fakeStatus);
+		deleteSingleStatusWithAuthorization(fakeStatus);
 	}
 
 	@Test(priority = 6, dependsOnMethods = "verifyAddStatusWithAuthorization")

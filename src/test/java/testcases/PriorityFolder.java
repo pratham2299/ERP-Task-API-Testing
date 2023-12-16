@@ -133,9 +133,6 @@ public class PriorityFolder {
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
 		selectedPriorityId = getRandomPriorityId(keyList);
-		String fakePriority = response.jsonPath().getString(selectedPriorityId);
-		addPriorityWithSamePayloadAsPrevious(fakePriority);
-		deleteSinglePriorityWithAuthorization(fakePriority);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -143,10 +140,14 @@ public class PriorityFolder {
 		if (response.getStatusCode() == 201) {
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, 201);
+			log.info("Response Status Code: " + actualStatusCode);
 		} else if (response.getStatusCode() == 422) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 422);
+			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "Priority Already Exits");
+			Assert.assertEquals(actualMessage, "Priority Already Exists");
 		} else {
 			// Handle other status codes if needed
 			log.info("Unexpected status code: " + response.getStatusCode());
@@ -172,6 +173,10 @@ public class PriorityFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		String fakePriority = response.jsonPath().getString(selectedPriorityId);
+		addPriorityWithSamePayloadAsPrevious(fakePriority);
+		deleteSinglePriorityWithAuthorization(fakePriority);
 	}
 
 	@Test(priority = 6, dependsOnMethods = "verifyAddPriorityWithAuthorization")

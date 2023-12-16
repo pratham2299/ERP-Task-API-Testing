@@ -151,14 +151,15 @@ public class RegularTaskFolder {
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
 		String selectedRegularTaskId = getRandomRegularTaskId(keyList);
-		Integer regularTaskId = Integer.parseInt(selectedRegularTaskId);
-		deleteSingleRegularTaskWithAuthorization(regularTaskId);
 
 		// Check the response status code
 		if (response.getStatusCode() == 201) {
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, 201);
+			log.info("Response Status Code: " + actualStatusCode);
 		} else if (response.getStatusCode() == 409) {
+			int actualStatusCode = response.getStatusCode();
+			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
 			Assert.assertEquals(actualMessage, "409 CONFLICT");
@@ -187,6 +188,9 @@ public class RegularTaskFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		Integer regularTaskId = Integer.parseInt(selectedRegularTaskId);
+		deleteSingleRegularTaskWithAuthorization(regularTaskId);
 	}
 
 	@Test(priority = 6)

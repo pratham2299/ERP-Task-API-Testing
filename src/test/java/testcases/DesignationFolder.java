@@ -127,9 +127,6 @@ public class DesignationFolder {
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
 		String selectedDesignationId = getRandomDesignationId(keyList);
-		String fakeDesignation = response.jsonPath().getString(selectedDesignationId);
-		addDesignationWithSamePayloadAsPrevious(fakeDesignation);
-		deleteSingleDesignationWithAuthorization(fakeDesignation);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -137,7 +134,11 @@ public class DesignationFolder {
 		if (response.getStatusCode() == 201) {
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, 201);
+			log.info("Response Status Code: " + actualStatusCode);
 		} else if (response.getStatusCode() == 422) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 422);
+			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
 			Assert.assertEquals(actualMessage, "Designation Already Exits");
@@ -166,6 +167,10 @@ public class DesignationFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		String fakeDesignation = response.jsonPath().getString(selectedDesignationId);
+		addDesignationWithSamePayloadAsPrevious(fakeDesignation);
+		deleteSingleDesignationWithAuthorization(fakeDesignation);
 	}
 
 	@Test(priority = 6)
