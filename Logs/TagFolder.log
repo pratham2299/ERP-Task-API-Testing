@@ -2574,3 +2574,802 @@
 17:44:20.559 [main] INFO  testcases.TagFolder - Key: Date Value: Fri, 15 Dec 2023 12:14:18 GMT
 17:44:20.559 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
 17:44:20.559 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:10:30.710 [main] INFO  testcases.TagFolder - Response Body:
+
+10:10:30.716 [main] INFO  testcases.TagFolder - Response Code: 401
+10:10:30.718 [main] INFO  testcases.TagFolder - Response Time: 31
+10:10:30.749 [main] INFO  testcases.TagFolder - Status Code: 401
+10:10:30.858 [main] INFO  testcases.TagFolder - Response Body:
+
+10:10:30.859 [main] INFO  testcases.TagFolder - Response Code: 401
+10:10:30.885 [main] INFO  testcases.TagFolder - Response Body: 
+10:10:30.885 [main] INFO  testcases.TagFolder - Status Code: 401
+10:10:31.355 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "3": "QE",
+    "6": "QA",
+    "43": "Crist, Greenfelder and Hermiston",
+    "45": "Sauer Group"
+}
+10:10:31.767 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:40:31.802+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,QA.",
+    "path": "/task/tag/delete/single"
+}
+10:10:31.767 [main] INFO  testcases.TagFolder - Status Code: 404
+10:10:31.786 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,QA.
+10:10:31.787 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:10:31.787 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:10:31.787 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:10:31.787 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:10:31.787 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:10:31.788 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:10:31.788 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:10:31.788 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:10:31.788 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:10:31.788 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:10:31.789 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:10:31.789 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:40:31 GMT
+10:10:31.789 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:10:31.789 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:10:31.789 [main] INFO  testcases.TagFolder - Response Code: 404
+10:10:31.789 [main] INFO  testcases.TagFolder - Unexpected status code: 404
+10:10:31.790 [main] INFO  testcases.TagFolder - Response Time: 379
+10:10:31.790 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:10:31.790 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:10:31.790 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:10:31.790 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:10:31.790 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:10:31.791 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:10:31.791 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:10:31.791 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:10:31.791 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:10:31.792 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:10:31.792 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:10:31.792 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:40:31 GMT
+10:10:31.792 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:10:31.792 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:10:32.300 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:40:32.225+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Tag Already Exists",
+    "path": "/task/tag/add"
+}
+10:10:32.320 [main] INFO  testcases.TagFolder - Message: Tag Already Exists
+10:10:32.321 [main] INFO  testcases.TagFolder - Response Code: 422
+10:10:32.321 [main] INFO  testcases.TagFolder - Response Time: 496
+10:10:32.795 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:40:32.772+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/task/tag/add"
+}
+10:10:32.795 [main] INFO  testcases.TagFolder - Are Fields Missing: false
+10:10:32.795 [main] INFO  testcases.TagFolder - Response Code: 400
+10:10:32.810 [main] INFO  testcases.TagFolder - Message: Fields are Missing
+10:10:32.810 [main] INFO  testcases.TagFolder - Response Time: 463
+10:10:33.199 [main] INFO  testcases.TagFolder - Status Code: 200
+10:10:33.200 [main] INFO  testcases.TagFolder - Response Body: {
+    "3": "QE",
+    "6": "QA",
+    "43": "Crist, Greenfelder and Hermiston",
+    "45": "Sauer Group"
+}
+10:10:33.200 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:10:33.200 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:10:33.200 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:10:33.200 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:40:32 GMT
+10:10:33.201 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:10:33.201 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:10:33.714 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "3": "QE",
+    "6": "QA",
+    "43": "Champlin Inc",
+    "45": "Sauer Group"
+}
+10:10:33.738 [main] INFO  testcases.TagFolder - Response Code: 200
+10:10:33.738 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:10:33.738 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:10:33.739 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:40:32 GMT
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:10:33.739 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:10:34.223 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:40:34.171+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/task/tag/update"
+}
+10:10:34.239 [main] INFO  testcases.TagFolder - Message: Fields are missing
+10:10:34.240 [main] INFO  testcases.TagFolder - Response Code: 400
+10:10:34.240 [main] INFO  testcases.TagFolder - Response Time: 476
+10:10:34.643 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:40:34.672+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Tag Present For Given Id",
+    "path": "/task/tag/update"
+}
+10:10:34.654 [main] INFO  testcases.TagFolder - Message: No Tag Present For Given Id
+10:10:34.654 [main] INFO  testcases.TagFolder - Response Code: 404
+10:10:34.654 [main] INFO  testcases.TagFolder - Response Time: 393
+10:10:35.027 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:40:35.079+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,QA,Software Company.",
+    "path": "/task/tag/delete/single"
+}
+10:10:35.041 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,QA,Software Company.
+10:12:00.762 [main] INFO  testcases.TagFolder - Response Body:
+
+10:12:00.763 [main] INFO  testcases.TagFolder - Response Code: 401
+10:12:00.763 [main] INFO  testcases.TagFolder - Response Time: 12
+10:12:00.785 [main] INFO  testcases.TagFolder - Status Code: 401
+10:12:00.844 [main] INFO  testcases.TagFolder - Response Body:
+
+10:12:00.844 [main] INFO  testcases.TagFolder - Response Code: 401
+10:12:00.870 [main] INFO  testcases.TagFolder - Response Body: 
+10:12:00.870 [main] INFO  testcases.TagFolder - Status Code: 401
+10:12:01.265 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "3": "QE",
+    "6": "QA",
+    "43": "Champlin Inc",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:12:01.675 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:42:01.692+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Champlin Inc.",
+    "path": "/task/tag/delete/single"
+}
+10:12:01.676 [main] INFO  testcases.TagFolder - Status Code: 404
+10:12:01.692 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Champlin Inc.
+10:12:01.693 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:12:01.693 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:12:01.693 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:12:01.693 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:42:01 GMT
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:12:01.694 [main] INFO  testcases.TagFolder - Response Code: 404
+10:12:01.694 [main] INFO  testcases.TagFolder - Unexpected status code: 404
+10:12:01.694 [main] INFO  testcases.TagFolder - Response Time: 383
+10:12:01.694 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:12:01.694 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:12:01.694 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:12:01.694 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:42:01 GMT
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:12:01.695 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:12:02.052 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:42:02.103+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Tag Already Exists",
+    "path": "/task/tag/add"
+}
+10:12:02.069 [main] INFO  testcases.TagFolder - Message: Tag Already Exists
+10:12:02.069 [main] INFO  testcases.TagFolder - Response Code: 422
+10:12:02.069 [main] INFO  testcases.TagFolder - Response Time: 350
+10:12:02.436 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:42:02.474+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/task/tag/add"
+}
+10:12:02.437 [main] INFO  testcases.TagFolder - Are Fields Missing: false
+10:12:02.437 [main] INFO  testcases.TagFolder - Response Code: 400
+10:12:02.455 [main] INFO  testcases.TagFolder - Message: Fields are Missing
+10:12:02.455 [main] INFO  testcases.TagFolder - Response Time: 358
+10:12:02.814 [main] INFO  testcases.TagFolder - Status Code: 200
+10:12:02.816 [main] INFO  testcases.TagFolder - Response Body: {
+    "3": "QE",
+    "6": "QA",
+    "43": "Champlin Inc",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:12:02.816 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:12:02.816 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:12:02.817 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:12:02.817 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:12:02.817 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:12:02.817 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:12:02.817 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:12:02.818 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:12:02.818 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:12:02.818 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:12:02.818 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:12:02.819 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:42:02 GMT
+10:12:02.819 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:12:02.819 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:12:03.193 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "3": "QE",
+    "6": "QA",
+    "43": "Will, Heaney and Beier",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:12:03.221 [main] INFO  testcases.TagFolder - Response Code: 200
+10:12:03.222 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:12:03.222 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:12:03.222 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:12:03.222 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:42:02 GMT
+10:12:03.223 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:12:03.223 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:12:03.600 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:42:03.625+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/task/tag/update"
+}
+10:12:03.616 [main] INFO  testcases.TagFolder - Message: Fields are missing
+10:12:03.616 [main] INFO  testcases.TagFolder - Response Code: 400
+10:12:03.616 [main] INFO  testcases.TagFolder - Response Time: 369
+10:12:04.048 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:42:04.021+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Tag Present For Given Id",
+    "path": "/task/tag/update"
+}
+10:12:04.066 [main] INFO  testcases.TagFolder - Message: No Tag Present For Given Id
+10:12:04.066 [main] INFO  testcases.TagFolder - Response Code: 404
+10:12:04.066 [main] INFO  testcases.TagFolder - Response Time: 423
+10:12:04.459 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:42:04.483+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Champlin Inc,Software Company.",
+    "path": "/task/tag/delete/single"
+}
+10:12:04.472 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Champlin Inc,Software Company.
+10:14:15.340 [main] INFO  testcases.TagFolder - Response Body:
+
+10:14:15.341 [main] INFO  testcases.TagFolder - Response Code: 401
+10:14:15.341 [main] INFO  testcases.TagFolder - Response Time: 12
+10:14:15.363 [main] INFO  testcases.TagFolder - Status Code: 401
+10:14:15.417 [main] INFO  testcases.TagFolder - Response Body:
+
+10:14:15.417 [main] INFO  testcases.TagFolder - Response Code: 401
+10:14:15.437 [main] INFO  testcases.TagFolder - Response Body: 
+10:14:15.437 [main] INFO  testcases.TagFolder - Status Code: 401
+10:14:15.850 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "3": "QE",
+    "6": "QA",
+    "43": "Will, Heaney and Beier",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:14:16.336 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:44:16.303+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,QE.",
+    "path": "/task/tag/delete/single"
+}
+10:14:16.336 [main] INFO  testcases.TagFolder - Status Code: 404
+10:14:16.351 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,QE.
+10:14:16.351 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:14:16.351 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:14:16.351 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:44:15 GMT
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:14:16.352 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:14:16.352 [main] INFO  testcases.TagFolder - Response Code: 404
+10:14:16.353 [main] INFO  testcases.TagFolder - Unexpected status code: 404
+10:14:16.353 [main] INFO  testcases.TagFolder - Response Time: 459
+10:14:16.353 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:14:16.353 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:14:16.353 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:14:16.353 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:14:16.354 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:44:15 GMT
+10:14:16.354 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:14:16.354 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:14:16.744 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:44:16.773+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Tag Already Exists",
+    "path": "/task/tag/add"
+}
+10:14:16.759 [main] INFO  testcases.TagFolder - Message: Tag Already Exists
+10:14:16.759 [main] INFO  testcases.TagFolder - Response Code: 422
+10:14:16.759 [main] INFO  testcases.TagFolder - Response Time: 383
+10:14:17.135 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:44:17.183+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/task/tag/add"
+}
+10:14:17.135 [main] INFO  testcases.TagFolder - Are Fields Missing: false
+10:14:17.135 [main] INFO  testcases.TagFolder - Response Code: 400
+10:14:17.149 [main] INFO  testcases.TagFolder - Message: Fields are Missing
+10:14:17.149 [main] INFO  testcases.TagFolder - Response Time: 367
+10:14:17.563 [main] INFO  testcases.TagFolder - Status Code: 200
+10:14:17.564 [main] INFO  testcases.TagFolder - Response Body: {
+    "49": "Douglas-Bode",
+    "3": "QE",
+    "6": "QA",
+    "43": "Will, Heaney and Beier",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:14:17.564 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:14:17.564 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:14:17.564 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:14:17.564 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:14:17.564 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:44:17 GMT
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:14:17.565 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:14:17.973 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "3": "QE",
+    "6": "QA",
+    "43": "Altenwerth-Powlowski",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:14:17.995 [main] INFO  testcases.TagFolder - Response Code: 200
+10:14:17.995 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:14:17.995 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:14:17.995 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:14:17.995 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:14:17.995 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:14:17.995 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:44:17 GMT
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:14:17.996 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:14:18.384 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:44:18.433+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/task/tag/update"
+}
+10:14:18.400 [main] INFO  testcases.TagFolder - Message: Fields are missing
+10:14:18.400 [main] INFO  testcases.TagFolder - Response Code: 400
+10:14:18.401 [main] INFO  testcases.TagFolder - Response Time: 380
+10:14:18.794 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:44:18.827+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Tag Present For Given Id",
+    "path": "/task/tag/update"
+}
+10:14:18.811 [main] INFO  testcases.TagFolder - Message: No Tag Present For Given Id
+10:14:18.811 [main] INFO  testcases.TagFolder - Response Code: 404
+10:14:18.811 [main] INFO  testcases.TagFolder - Response Time: 386
+10:14:19.201 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:44:19.245+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,QE,Software Company.",
+    "path": "/task/tag/delete/single"
+}
+10:14:19.225 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,QE,Software Company.
+10:20:23.282 [main] INFO  testcases.TagFolder - Response Body:
+
+10:20:23.284 [main] INFO  testcases.TagFolder - Response Code: 401
+10:20:23.284 [main] INFO  testcases.TagFolder - Response Time: 13
+10:20:23.305 [main] INFO  testcases.TagFolder - Status Code: 401
+10:20:23.379 [main] INFO  testcases.TagFolder - Response Body:
+
+10:20:23.379 [main] INFO  testcases.TagFolder - Response Code: 401
+10:20:23.398 [main] INFO  testcases.TagFolder - Response Body: 
+10:20:23.399 [main] INFO  testcases.TagFolder - Status Code: 401
+10:20:23.972 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "6": "QA",
+    "43": "Altenwerth-Powlowski",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:20:24.377 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:50:24.420+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Sauer Group.",
+    "path": "/task/tag/delete/single"
+}
+10:20:24.377 [main] INFO  testcases.TagFolder - Status Code: 404
+10:20:24.388 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Sauer Group.
+10:20:24.388 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:20:24.388 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:20:24.388 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:20:24.388 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:20:24.388 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:20:24.388 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:20:24.388 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:50:24 GMT
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:20:24.389 [main] INFO  testcases.TagFolder - Response Code: 404
+10:20:24.389 [main] INFO  testcases.TagFolder - Unexpected status code: 404
+10:20:24.389 [main] INFO  testcases.TagFolder - Response Time: 388
+10:20:24.389 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:20:24.389 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:20:24.389 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:50:24 GMT
+10:20:24.389 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:20:24.390 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:20:24.998 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:50:25.042+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Tag Already Exists",
+    "path": "/task/tag/add"
+}
+10:20:25.007 [main] INFO  testcases.TagFolder - Message: Tag Already Exists
+10:20:25.007 [main] INFO  testcases.TagFolder - Response Code: 422
+10:20:25.007 [main] INFO  testcases.TagFolder - Response Time: 602
+10:20:25.551 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:50:25.573+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/task/tag/add"
+}
+10:20:25.551 [main] INFO  testcases.TagFolder - Are Fields Missing: false
+10:20:25.551 [main] INFO  testcases.TagFolder - Response Code: 400
+10:20:25.565 [main] INFO  testcases.TagFolder - Message: Fields are Missing
+10:20:25.565 [main] INFO  testcases.TagFolder - Response Time: 537
+10:20:26.208 [main] INFO  testcases.TagFolder - Status Code: 200
+10:20:26.209 [main] INFO  testcases.TagFolder - Response Body: {
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "6": "QA",
+    "43": "Altenwerth-Powlowski",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:20:26.209 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:20:26.209 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:20:26.209 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:50:25 GMT
+10:20:26.209 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:20:26.210 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:20:26.719 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "6": "QA",
+    "43": "Romaguera-Feest",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:20:26.730 [main] INFO  testcases.TagFolder - Response Code: 200
+10:20:26.730 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:20:26.730 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:20:26.730 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 04:50:26 GMT
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:20:26.730 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:20:27.304 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:50:27.325+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/task/tag/update"
+}
+10:20:27.311 [main] INFO  testcases.TagFolder - Message: Fields are missing
+10:20:27.311 [main] INFO  testcases.TagFolder - Response Code: 400
+10:20:27.311 [main] INFO  testcases.TagFolder - Response Time: 566
+10:20:27.826 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T04:50:27.871+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Tag Present For Given Id",
+    "path": "/task/tag/update"
+}
+10:20:27.837 [main] INFO  testcases.TagFolder - Message: No Tag Present For Given Id
+10:20:27.837 [main] INFO  testcases.TagFolder - Response Code: 404
+10:20:27.837 [main] INFO  testcases.TagFolder - Response Time: 508
+10:20:28.462 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T04:50:28.507+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Sauer Group,Software Company.",
+    "path": "/task/tag/delete/single"
+}
+10:20:28.473 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Sauer Group,Software Company.
+10:20:28.474 [main] INFO  testcases.TagFolder - Response Code: 404
+10:20:28.474 [main] INFO  testcases.TagFolder - Response Time: 619
+10:31:48.985 [main] INFO  testcases.TagFolder - Response Body:
+
+10:31:48.985 [main] INFO  testcases.TagFolder - Response Code: 401
+10:31:48.985 [main] INFO  testcases.TagFolder - Response Time: 14
+10:31:49.004 [main] INFO  testcases.TagFolder - Status Code: 401
+10:31:49.062 [main] INFO  testcases.TagFolder - Response Body:
+
+10:31:49.062 [main] INFO  testcases.TagFolder - Response Code: 401
+10:31:49.091 [main] INFO  testcases.TagFolder - Response Body: 
+10:31:49.091 [main] INFO  testcases.TagFolder - Status Code: 401
+10:31:49.574 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "53": "Auer, Prohaska and Fadel",
+    "6": "QA",
+    "43": "Romaguera-Feest",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:31:50.000 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T05:01:50.036+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Auer, Prohaska and Fadel.",
+    "path": "/task/tag/delete/single"
+}
+10:31:50.001 [main] INFO  testcases.TagFolder - Status Code: 404
+10:31:50.012 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Auer, Prohaska and Fadel.
+10:31:50.012 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:31:50.012 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:31:50.012 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:31:50.012 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 05:01:49 GMT
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:31:50.013 [main] INFO  testcases.TagFolder - Response Code: 404
+10:31:50.013 [main] INFO  testcases.TagFolder - Unexpected status code: 404
+10:31:50.013 [main] INFO  testcases.TagFolder - Response Time: 408
+10:31:50.013 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:31:50.013 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:31:50.013 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:31:50.013 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 05:01:49 GMT
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:31:50.014 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:31:50.504 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T05:01:50.538+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Tag Already Exists",
+    "path": "/task/tag/add"
+}
+10:31:50.513 [main] INFO  testcases.TagFolder - Message: Tag Already Exists
+10:31:50.513 [main] INFO  testcases.TagFolder - Response Code: 422
+10:31:50.513 [main] INFO  testcases.TagFolder - Response Time: 484
+10:31:50.933 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T05:01:50.969+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/task/tag/add"
+}
+10:31:50.933 [main] INFO  testcases.TagFolder - Are Fields Missing: false
+10:31:50.933 [main] INFO  testcases.TagFolder - Response Code: 400
+10:31:50.942 [main] INFO  testcases.TagFolder - Message: Fields are Missing
+10:31:50.942 [main] INFO  testcases.TagFolder - Response Time: 414
+10:31:51.340 [main] INFO  testcases.TagFolder - Status Code: 200
+10:31:51.341 [main] INFO  testcases.TagFolder - Response Body: {
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "53": "Auer, Prohaska and Fadel",
+    "6": "QA",
+    "43": "Romaguera-Feest",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:31:51.341 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:31:51.341 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:31:51.341 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 05:01:50 GMT
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:31:51.341 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:31:51.766 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "49": "Douglas-Bode",
+    "51": "Kris, Kihn and Jerde",
+    "3": "QE",
+    "53": "Auer, Prohaska and Fadel",
+    "6": "QA",
+    "43": "Hessel Inc",
+    "45": "Sauer Group",
+    "47": "Kub, Kerluke and Heller"
+}
+10:31:51.784 [main] INFO  testcases.TagFolder - Response Code: 200
+10:31:51.784 [main] INFO  testcases.TagFolder - Content Type header value is: application/json
+10:31:51.784 [main] INFO  testcases.TagFolder - Transfer Encoding header value is: chunked
+10:31:51.784 [main] INFO  testcases.TagFolder - Connection header value is: keep-alive
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: X-Content-Type-Options Value: nosniff
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: X-XSS-Protection Value: 0
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Pragma Value: no-cache
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Expires Value: 0
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: X-Frame-Options Value: DENY
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Content-Type Value: application/json
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Transfer-Encoding Value: chunked
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Date Value: Sat, 16 Dec 2023 05:01:51 GMT
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Keep-Alive Value: timeout=60
+10:31:51.784 [main] INFO  testcases.TagFolder - Key: Connection Value: keep-alive
+10:31:52.220 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T05:01:52.255+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/task/tag/update"
+}
+10:31:52.233 [main] INFO  testcases.TagFolder - Message: Fields are missing
+10:31:52.233 [main] INFO  testcases.TagFolder - Response Code: 400
+10:31:52.233 [main] INFO  testcases.TagFolder - Response Time: 428
+10:31:52.739 [main] INFO  testcases.TagFolder - Response Body:
+{
+    "timestamp": "2023-12-16T05:01:52.749+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Tag Present For Given Id",
+    "path": "/task/tag/update"
+}
+10:31:52.750 [main] INFO  testcases.TagFolder - Message: No Tag Present For Given Id
+10:31:52.750 [main] INFO  testcases.TagFolder - Response Code: 404
+10:31:52.750 [main] INFO  testcases.TagFolder - Response Time: 500
+10:31:53.249 [main] INFO  testcases.TagFolder - Response Body: {
+    "timestamp": "2023-12-16T05:01:53.285+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No tag to delete with tag,Auer, Prohaska and Fadel,Software Company.",
+    "path": "/task/tag/delete/single"
+}
+10:31:53.257 [main] INFO  testcases.TagFolder - Message: No tag to delete with tag,Auer, Prohaska and Fadel,Software Company.
+10:31:53.257 [main] INFO  testcases.TagFolder - Response Code: 404
+10:31:53.257 [main] INFO  testcases.TagFolder - Response Time: 493

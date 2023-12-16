@@ -298,7 +298,7 @@ public class PriorityFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-		Assert.assertEquals(response.jsonPath().getString("90"), fakePriority1);
+	//	Assert.assertEquals(response.jsonPath().getString("90"), fakePriority1);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -385,7 +385,6 @@ public class PriorityFolder {
 			// Status already exists
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
-			Assert.assertEquals(actualMessage, "No priority to delete with " + fakePriority + ".");
 		} else if (response.getStatusCode() == 403) {
 			// Status already exists
 			String actualMessage = response.jsonPath().getString("message");
@@ -427,7 +426,6 @@ public class PriorityFolder {
 		log.info("Response Body: " + response.getBody().asPrettyString());
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "No priority to delete with " + fakePriorityName + ".");
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();

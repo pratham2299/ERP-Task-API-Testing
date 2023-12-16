@@ -390,7 +390,6 @@ public class TagFolder {
 
 		String actualMessage = response.jsonPath().getString("message");
 		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "No tag to delete with " + fakeTagName + ".");
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();

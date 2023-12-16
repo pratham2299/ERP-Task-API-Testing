@@ -3,24 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.StatusFolder">
+      <class name="testcases.RegularTaskFolder">
         <methods>
           <include name="baseURL"/>
-          <include name="verifyAddStatusWithAuthorization"/>
+          <include name="verifyUpdateRegularTaskWithAuthorization"/>
         </methods>
-      </class> <!-- testcases.StatusFolder -->
-      <class name="testcases.TagFolder">
+      </class> <!-- testcases.RegularTaskFolder -->
+      <class name="testcases.PriorityFolder">
         <methods>
           <include name="baseURL"/>
-          <include name="verifyAddTagWithAuthorization"/>
+          <include name="deleteSinglePriorityWithInvalidPriorityName"/>
         </methods>
-      </class> <!-- testcases.TagFolder -->
-      <class name="testcases.DesignationFolder">
+      </class> <!-- testcases.PriorityFolder -->
+      <class name="testcases.RoleFolder">
         <methods>
+          <include name="verifyAddRoleWithAuthorization"/>
           <include name="baseURL"/>
-          <include name="verifyAddDesignationWithAuthorization"/>
         </methods>
-      </class> <!-- testcases.DesignationFolder -->
+      </class> <!-- testcases.RoleFolder -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

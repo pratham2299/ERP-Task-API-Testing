@@ -1,96 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="69" passed="65" failed="4" skipped="0">
+<testng-results ignored="0" total="85" passed="74" failed="11" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T11:04:55 IST" name="Suite" finished-at="2023-12-15T11:05:20 IST" duration-ms="24684">
+  <suite started-at="2023-12-16T10:10:01 IST" name="Suite" finished-at="2023-12-16T10:10:39 IST" duration-ms="38358">
     <groups>
     </groups>
-    <test started-at="2023-12-15T11:04:55 IST" name="Test" finished-at="2023-12-15T11:05:20 IST" duration-ms="24684">
+    <test started-at="2023-12-16T10:10:01 IST" name="Test" finished-at="2023-12-16T10:10:39 IST" duration-ms="38358">
       <class name="testcases.PriorityFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:16 IST" name="baseURL" finished-at="2023-12-15T11:05:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="baseURL" finished-at="2023-12-16T10:10:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddPriorityWithoutAuthorization()[pri:1, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:16 IST" name="verifyAddPriorityWithoutAuthorization" finished-at="2023-12-15T11:05:16 IST" duration-ms="22" status="PASS">
+        <test-method signature="verifyAddPriorityWithoutAuthorization()[pri:1, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="verifyAddPriorityWithoutAuthorization" finished-at="2023-12-16T10:10:35 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPriorityWithoutAuthorization -->
-        <test-method signature="verifyGetAllPriorityWithoutAuthorization()[pri:2, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:16 IST" name="verifyGetAllPriorityWithoutAuthorization" finished-at="2023-12-15T11:05:16 IST" duration-ms="23" status="PASS">
+        <test-method signature="verifyGetAllPriorityWithoutAuthorization()[pri:2, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="verifyGetAllPriorityWithoutAuthorization" finished-at="2023-12-16T10:10:35 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllPriorityWithoutAuthorization -->
-        <test-method signature="updatePriorityWithoutAuthorization()[pri:3, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:16 IST" name="updatePriorityWithoutAuthorization" finished-at="2023-12-15T11:05:16 IST" duration-ms="30" status="PASS">
+        <test-method signature="updatePriorityWithoutAuthorization()[pri:3, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="updatePriorityWithoutAuthorization" finished-at="2023-12-16T10:10:35 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePriorityWithoutAuthorization -->
-        <test-method signature="verifyAddPriorityWithAuthorization()[pri:5, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:16 IST" name="verifyAddPriorityWithAuthorization" finished-at="2023-12-15T11:05:17 IST" duration-ms="808" status="PASS">
+        <test-method signature="verifyAddPriorityWithAuthorization()[pri:5, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="verifyAddPriorityWithAuthorization" finished-at="2023-12-16T10:10:35 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPriorityWithAuthorization -->
-        <test-method signature="addPriorityWithSamePayloadAsPrevious()[pri:6, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:17 IST" name="addPriorityWithSamePayloadAsPrevious" finished-at="2023-12-15T11:05:17 IST" duration-ms="444" status="PASS">
+        <test-method signature="addPriorityWithSamePayloadAsPrevious()[pri:6, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:35 IST" name="addPriorityWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:36 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPriorityWithSamePayloadAsPrevious -->
-        <test-method signature="addPriorityWithInvalidPayload()[pri:7, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:17 IST" name="addPriorityWithInvalidPayload" finished-at="2023-12-15T11:05:18 IST" duration-ms="404" status="PASS">
+        <test-method signature="addPriorityWithInvalidPayload()[pri:7, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:36 IST" name="addPriorityWithInvalidPayload" finished-at="2023-12-16T10:10:36 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPriorityWithInvalidPayload -->
-        <test-method signature="verifyGetAllPriorityWithAuthorization()[pri:8, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:18 IST" name="verifyGetAllPriorityWithAuthorization" finished-at="2023-12-15T11:05:18 IST" duration-ms="380" status="PASS">
+        <test-method signature="addStatusWithSamePriorityLevelInPayloadAsPrevious()[pri:8, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:36 IST" name="addStatusWithSamePriorityLevelInPayloadAsPrevious" finished-at="2023-12-16T10:10:37 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStatusWithSamePriorityLevelInPayloadAsPrevious -->
+        <test-method signature="verifyGetAllPriorityWithAuthorization()[pri:9, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:37 IST" name="verifyGetAllPriorityWithAuthorization" finished-at="2023-12-16T10:10:37 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllPriorityWithAuthorization -->
-        <test-method signature="updatePriorityWithAuthorization()[pri:9, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:18 IST" name="updatePriorityWithAuthorization" finished-at="2023-12-15T11:05:18 IST" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePriorityWithAuthorization -->
-        <test-method signature="updatePriorityWithoutGivingPriorityId()[pri:10, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:18 IST" name="updatePriorityWithoutGivingPriorityId" finished-at="2023-12-15T11:05:19 IST" duration-ms="408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePriorityWithoutGivingPriorityId -->
-        <test-method signature="updatePriorityByGivingNonExistingPriorityId()[pri:11, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:19 IST" name="updatePriorityByGivingNonExistingPriorityId" finished-at="2023-12-15T11:05:19 IST" duration-ms="389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePriorityByGivingNonExistingPriorityId -->
-        <test-method signature="deleteSinglePriorityWithInvalidPriorityName()[pri:13, instance:testcases.PriorityFolder@35d6ca49]" started-at="2023-12-15T11:05:19 IST" name="deleteSinglePriorityWithInvalidPriorityName" finished-at="2023-12-15T11:05:20 IST" duration-ms="401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSinglePriorityWithInvalidPriorityName -->
-      </class> <!-- testcases.PriorityFolder -->
-      <class name="testcases.StatusFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="baseURL" finished-at="2023-12-15T11:05:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddStatusWithoutAuthorization()[pri:1, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="verifyAddStatusWithoutAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddStatusWithoutAuthorization -->
-        <test-method signature="verifyGetAllStatusWithoutAuthorization()[pri:2, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="verifyGetAllStatusWithoutAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGetAllStatusWithoutAuthorization -->
-        <test-method signature="verifyUpdateStatusWithoutAuthorization()[pri:3, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="verifyUpdateStatusWithoutAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateStatusWithoutAuthorization -->
-        <test-method signature="deleteSingleStatusWithoutAuthorization()[pri:4, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="deleteSingleStatusWithoutAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSingleStatusWithoutAuthorization -->
-        <test-method signature="verifyAddStatusWithAuthorization()[pri:5, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="verifyAddStatusWithAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="603" status="FAIL">
+        <test-method signature="updatePriorityWithAuthorization()[pri:10, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:37 IST" name="updatePriorityWithAuthorization" finished-at="2023-12-16T10:10:38 IST" duration-ms="442" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Status Already Exits] but found [Status Already Exists]]]>
+              <![CDATA[expected [Global] but found [null]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Status Already Exits] but found [Status Already Exists]
+              <![CDATA[java.lang.AssertionError: expected [Global] but found [null]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:122)
+at testcases.PriorityFolder.updatePriorityWithAuthorization(PriorityFolder.java:301)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePriorityWithAuthorization -->
+        <test-method signature="updatePriorityWithoutGivingPriorityId()[pri:11, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:38 IST" name="updatePriorityWithoutGivingPriorityId" finished-at="2023-12-16T10:10:38 IST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePriorityWithoutGivingPriorityId -->
+        <test-method signature="updatePriorityByGivingNonExistingPriorityId()[pri:12, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:38 IST" name="updatePriorityByGivingNonExistingPriorityId" finished-at="2023-12-16T10:10:39 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePriorityByGivingNonExistingPriorityId -->
+        <test-method signature="deleteSinglePriorityWithInvalidPriorityName()[pri:14, instance:testcases.PriorityFolder@3b9d6699]" started-at="2023-12-16T10:10:39 IST" name="deleteSinglePriorityWithInvalidPriorityName" finished-at="2023-12-16T10:10:39 IST" duration-ms="387" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No priority to delete with Master2.] but found [No priority to delete with Investor,Master2.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No priority to delete with Master2.] but found [No priority to delete with Investor,Master2.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.PriorityFolder.deleteSinglePriorityWithInvalidPriorityName(PriorityFolder.java:430)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSinglePriorityWithInvalidPriorityName -->
+      </class> <!-- testcases.PriorityFolder -->
+      <class name="testcases.StatusFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="baseURL" finished-at="2023-12-16T10:10:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURL -->
+        <test-method signature="verifyAddStatusWithoutAuthorization()[pri:1, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="verifyAddStatusWithoutAuthorization" finished-at="2023-12-16T10:10:09 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStatusWithoutAuthorization -->
+        <test-method signature="verifyGetAllStatusWithoutAuthorization()[pri:2, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="verifyGetAllStatusWithoutAuthorization" finished-at="2023-12-16T10:10:09 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllStatusWithoutAuthorization -->
+        <test-method signature="verifyUpdateStatusWithoutAuthorization()[pri:3, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="verifyUpdateStatusWithoutAuthorization" finished-at="2023-12-16T10:10:09 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateStatusWithoutAuthorization -->
+        <test-method signature="deleteSingleStatusWithoutAuthorization()[pri:4, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="deleteSingleStatusWithoutAuthorization" finished-at="2023-12-16T10:10:09 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleStatusWithoutAuthorization -->
+        <test-method signature="verifyAddStatusWithAuthorization()[pri:5, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:09 IST" name="verifyAddStatusWithAuthorization" finished-at="2023-12-16T10:10:10 IST" duration-ms="1241" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No status to delete with Runolfsdottir.] but found [No status to delete with Passed,Runolfsdottir.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No status to delete with Runolfsdottir.] but found [No status to delete with Passed,Runolfsdottir.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.StatusFolder.deleteSingleStatusWithAuthorization(StatusFolder.java:393)
+at testcases.StatusFolder.verifyAddStatusWithAuthorization(StatusFolder.java:135)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,71 +230,48 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddStatusWithAuthorization -->
-        <test-method signature="addStatusWithSamePayloadAsPrevious()[pri:6, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:00 IST" name="addStatusWithSamePayloadAsPrevious" finished-at="2023-12-15T11:05:01 IST" duration-ms="488" status="PASS">
+        <test-method signature="addStatusWithSamePayloadAsPrevious()[pri:6, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:10 IST" name="addStatusWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:11 IST" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStatusWithSamePayloadAsPrevious -->
-        <test-method signature="addStatusWithInvalidPayload()[pri:7, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:01 IST" name="addStatusWithInvalidPayload" finished-at="2023-12-15T11:05:01 IST" duration-ms="577" status="PASS">
+        <test-method signature="addStatusWithInvalidPayload()[pri:7, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:11 IST" name="addStatusWithInvalidPayload" finished-at="2023-12-16T10:10:11 IST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStatusWithInvalidPayload -->
-        <test-method signature="verifyGetAllStatusWithAuthorization()[pri:8, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:01 IST" name="verifyGetAllStatusWithAuthorization" finished-at="2023-12-15T11:05:02 IST" duration-ms="418" status="PASS">
+        <test-method signature="addStatusWithSameStatusLevelInPayloadAsPrevious()[pri:8, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:11 IST" name="addStatusWithSameStatusLevelInPayloadAsPrevious" finished-at="2023-12-16T10:10:12 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStatusWithSameStatusLevelInPayloadAsPrevious -->
+        <test-method signature="verifyGetAllStatusWithAuthorization()[pri:9, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:12 IST" name="verifyGetAllStatusWithAuthorization" finished-at="2023-12-16T10:10:12 IST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllStatusWithAuthorization -->
-        <test-method signature="updateStatusWithAuthorization()[pri:9, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:02 IST" name="updateStatusWithAuthorization" finished-at="2023-12-15T11:05:02 IST" duration-ms="437" status="PASS">
+        <test-method signature="updateStatusWithAuthorization()[pri:10, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:12 IST" name="updateStatusWithAuthorization" finished-at="2023-12-16T10:10:13 IST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateStatusWithAuthorization -->
-        <test-method signature="updateStatusWithoutGivingStatusId()[pri:10, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:02 IST" name="updateStatusWithoutGivingStatusId" finished-at="2023-12-15T11:05:03 IST" duration-ms="410" status="PASS">
+        <test-method signature="updateStatusWithoutGivingStatusId()[pri:11, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:13 IST" name="updateStatusWithoutGivingStatusId" finished-at="2023-12-16T10:10:13 IST" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateStatusWithoutGivingStatusId -->
-        <test-method signature="updateStatusByGivingNonExistingStatusId()[pri:11, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:03 IST" name="updateStatusByGivingNonExistingStatusId" finished-at="2023-12-15T11:05:03 IST" duration-ms="389" status="PASS">
+        <test-method signature="updateStatusByGivingNonExistingStatusId()[pri:12, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:13 IST" name="updateStatusByGivingNonExistingStatusId" finished-at="2023-12-16T10:10:14 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateStatusByGivingNonExistingStatusId -->
-        <test-method signature="deleteSingleStatusWithInvalidStatusName()[pri:13, instance:testcases.StatusFolder@142eef62]" started-at="2023-12-15T11:05:03 IST" name="deleteSingleStatusWithInvalidStatusName" finished-at="2023-12-15T11:05:03 IST" duration-ms="415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSingleStatusWithInvalidStatusName -->
-      </class> <!-- testcases.StatusFolder -->
-      <class name="testcases.TagFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="baseURL" finished-at="2023-12-15T11:05:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddTagWithoutAuthorization()[pri:1, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="verifyAddTagWithoutAuthorization" finished-at="2023-12-15T11:05:12 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTagWithoutAuthorization -->
-        <test-method signature="verifyGetAllTagWithoutAuthorization()[pri:2, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="verifyGetAllTagWithoutAuthorization" finished-at="2023-12-15T11:05:12 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGetAllTagWithoutAuthorization -->
-        <test-method signature="updateTagWithoutAuthorization()[pri:3, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="updateTagWithoutAuthorization" finished-at="2023-12-15T11:05:12 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateTagWithoutAuthorization -->
-        <test-method signature="deleteSingleTagWithoutAuthorization()[pri:4, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="deleteSingleTagWithoutAuthorization" finished-at="2023-12-15T11:05:12 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSingleTagWithoutAuthorization -->
-        <test-method signature="verifyAddTagWithAuthorization()[pri:5, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:12 IST" name="verifyAddTagWithAuthorization" finished-at="2023-12-15T11:05:13 IST" duration-ms="781" status="FAIL">
+        <test-method signature="deleteSingleStatusWithInvalidStatusName()[pri:14, instance:testcases.StatusFolder@64da2a7]" started-at="2023-12-16T10:10:14 IST" name="deleteSingleStatusWithInvalidStatusName" finished-at="2023-12-16T10:10:14 IST" duration-ms="518" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Invalid status code expected [200] but found [404]]]>
+              <![CDATA[expected [No status to delete with Stopped.] but found [No status to delete with Passed,Runolfsdottir,Stopped.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid status code expected [200] but found [404]
+              <![CDATA[java.lang.AssertionError: expected [No status to delete with Stopped.] but found [No status to delete with Passed,Runolfsdottir,Stopped.]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at testcases.TagFolder.deleteSingleTagWithAuthorization(TagFolder.java:320)
-at testcases.TagFolder.verifyAddTagWithAuthorization(TagFolder.java:147)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.StatusFolder.deleteSingleStatusWithInvalidStatusName(StatusFolder.java:440)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,72 +309,146 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- deleteSingleStatusWithInvalidStatusName -->
+      </class> <!-- testcases.StatusFolder -->
+      <class name="testcases.TagFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="baseURL" finished-at="2023-12-16T10:10:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURL -->
+        <test-method signature="verifyAddTagWithoutAuthorization()[pri:1, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="verifyAddTagWithoutAuthorization" finished-at="2023-12-16T10:10:30 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddTagWithoutAuthorization -->
+        <test-method signature="verifyGetAllTagWithoutAuthorization()[pri:2, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="verifyGetAllTagWithoutAuthorization" finished-at="2023-12-16T10:10:30 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllTagWithoutAuthorization -->
+        <test-method signature="updateTagWithoutAuthorization()[pri:3, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="updateTagWithoutAuthorization" finished-at="2023-12-16T10:10:30 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTagWithoutAuthorization -->
+        <test-method signature="deleteSingleTagWithoutAuthorization()[pri:4, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="deleteSingleTagWithoutAuthorization" finished-at="2023-12-16T10:10:30 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleTagWithoutAuthorization -->
+        <test-method signature="verifyAddTagWithAuthorization()[pri:5, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:30 IST" name="verifyAddTagWithAuthorization" finished-at="2023-12-16T10:10:31 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyAddTagWithAuthorization -->
-        <test-method signature="addTagWithSamePayloadAsPrevious()[pri:6, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:13 IST" name="addTagWithSamePayloadAsPrevious" finished-at="2023-12-15T11:05:13 IST" duration-ms="415" status="PASS">
+        <test-method signature="addTagWithSamePayloadAsPrevious()[pri:6, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:31 IST" name="addTagWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:32 IST" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTagWithSamePayloadAsPrevious -->
-        <test-method signature="addTagWithInvalidPayload()[pri:7, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:13 IST" name="addTagWithInvalidPayload" finished-at="2023-12-15T11:05:14 IST" duration-ms="441" status="PASS">
+        <test-method signature="addTagWithInvalidPayload()[pri:7, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:32 IST" name="addTagWithInvalidPayload" finished-at="2023-12-16T10:10:32 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTagWithInvalidPayload -->
-        <test-method signature="verifyGetAllTagWithAuthorization()[pri:8, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:14 IST" name="verifyGetAllTagWithAuthorization" finished-at="2023-12-15T11:05:14 IST" duration-ms="394" status="PASS">
+        <test-method signature="verifyGetAllTagWithAuthorization()[pri:8, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:32 IST" name="verifyGetAllTagWithAuthorization" finished-at="2023-12-16T10:10:33 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllTagWithAuthorization -->
-        <test-method signature="updateTagWithAuthorization()[pri:9, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:14 IST" name="updateTagWithAuthorization" finished-at="2023-12-15T11:05:15 IST" duration-ms="391" status="PASS">
+        <test-method signature="updateTagWithAuthorization()[pri:9, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:33 IST" name="updateTagWithAuthorization" finished-at="2023-12-16T10:10:33 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateTagWithAuthorization -->
-        <test-method signature="updateTagWithoutGivingTagId()[pri:10, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:15 IST" name="updateTagWithoutGivingTagId" finished-at="2023-12-15T11:05:15 IST" duration-ms="397" status="PASS">
+        <test-method signature="updateTagWithoutGivingTagId()[pri:10, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:33 IST" name="updateTagWithoutGivingTagId" finished-at="2023-12-16T10:10:34 IST" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateTagWithoutGivingTagId -->
-        <test-method signature="updateTagByGivingNonExistingTagId()[pri:11, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:15 IST" name="updateTagByGivingNonExistingTagId" finished-at="2023-12-15T11:05:15 IST" duration-ms="404" status="PASS">
+        <test-method signature="updateTagByGivingNonExistingTagId()[pri:11, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:34 IST" name="updateTagByGivingNonExistingTagId" finished-at="2023-12-16T10:10:34 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateTagByGivingNonExistingTagId -->
-        <test-method signature="deleteSingleTagWithInvalidTagName()[pri:13, instance:testcases.TagFolder@56e07a08]" started-at="2023-12-15T11:05:15 IST" name="deleteSingleTagWithInvalidTagName" finished-at="2023-12-15T11:05:16 IST" duration-ms="426" status="PASS">
+        <test-method signature="deleteSingleTagWithInvalidTagName()[pri:13, instance:testcases.TagFolder@47428937]" started-at="2023-12-16T10:10:34 IST" name="deleteSingleTagWithInvalidTagName" finished-at="2023-12-16T10:10:35 IST" duration-ms="384" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No tag to delete with Software Company.] but found [No tag to delete with tag,QA,Software Company.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No tag to delete with Software Company.] but found [No tag to delete with tag,QA,Software Company.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.TagFolder.deleteSingleTagWithInvalidTagName(TagFolder.java:393)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingleTagWithInvalidTagName -->
       </class> <!-- testcases.TagFolder -->
       <class name="testcases.DesignationFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:03 IST" name="baseURL" finished-at="2023-12-15T11:05:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:14 IST" name="baseURL" finished-at="2023-12-16T10:10:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddDesignationWithoutAuthorization()[pri:1, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:03 IST" name="verifyAddDesignationWithoutAuthorization" finished-at="2023-12-15T11:05:03 IST" duration-ms="49" status="PASS">
+        <test-method signature="verifyAddDesignationWithoutAuthorization()[pri:1, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:14 IST" name="verifyAddDesignationWithoutAuthorization" finished-at="2023-12-16T10:10:14 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDesignationWithoutAuthorization -->
-        <test-method signature="verifyGetAllDesignationWithoutAuthorization()[pri:2, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:04 IST" name="verifyGetAllDesignationWithoutAuthorization" finished-at="2023-12-15T11:05:04 IST" duration-ms="30" status="PASS">
+        <test-method signature="verifyGetAllDesignationWithoutAuthorization()[pri:2, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:14 IST" name="verifyGetAllDesignationWithoutAuthorization" finished-at="2023-12-16T10:10:14 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllDesignationWithoutAuthorization -->
-        <test-method signature="updateDesignationWithoutAuthorization()[pri:3, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:04 IST" name="updateDesignationWithoutAuthorization" finished-at="2023-12-15T11:05:04 IST" duration-ms="108" status="PASS">
+        <test-method signature="updateDesignationWithoutAuthorization()[pri:3, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:14 IST" name="updateDesignationWithoutAuthorization" finished-at="2023-12-16T10:10:15 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDesignationWithoutAuthorization -->
-        <test-method signature="deleteSingleDesignationWithoutAuthorization()[pri:4, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:04 IST" name="deleteSingleDesignationWithoutAuthorization" finished-at="2023-12-15T11:05:04 IST" duration-ms="31" status="PASS">
+        <test-method signature="deleteSingleDesignationWithoutAuthorization()[pri:4, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:15 IST" name="deleteSingleDesignationWithoutAuthorization" finished-at="2023-12-16T10:10:15 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingleDesignationWithoutAuthorization -->
-        <test-method signature="verifyAddDesignationWithAuthorization()[pri:5, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:04 IST" name="verifyAddDesignationWithAuthorization" finished-at="2023-12-15T11:05:05 IST" duration-ms="818" status="FAIL">
+        <test-method signature="verifyAddDesignationWithAuthorization()[pri:5, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:15 IST" name="verifyAddDesignationWithAuthorization" finished-at="2023-12-16T10:10:15 IST" duration-ms="841" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Invalid status code expected [200] but found [404]]]>
+              <![CDATA[expected [No designation to delete with Unprocessable Entity.] but found [No status to delete with designation,Unprocessable Entity.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid status code expected [200] but found [404]
+              <![CDATA[java.lang.AssertionError: expected [No designation to delete with Unprocessable Entity.] but found [No status to delete with designation,Unprocessable Entity.]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at testcases.DesignationFolder.deleteSingleDesignationWithAuthorization(DesignationFolder.java:320)
-at testcases.DesignationFolder.verifyAddDesignationWithAuthorization(DesignationFolder.java:147)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.DesignationFolder.deleteSingleDesignationWithAuthorization(DesignationFolder.java:357)
+at testcases.DesignationFolder.verifyAddDesignationWithAuthorization(DesignationFolder.java:131)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -335,127 +487,382 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDesignationWithAuthorization -->
-        <test-method signature="addDesignationWithInvalidPayload()[pri:6, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:05 IST" name="addDesignationWithInvalidPayload" finished-at="2023-12-15T11:05:05 IST" duration-ms="415" status="PASS">
+        <test-method signature="addDesignationWithInvalidPayload()[pri:6, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:15 IST" name="addDesignationWithInvalidPayload" finished-at="2023-12-16T10:10:16 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDesignationWithInvalidPayload -->
-        <test-method signature="addDesignationWithSamePayloadAsPrevious()[pri:7, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:05 IST" name="addDesignationWithSamePayloadAsPrevious" finished-at="2023-12-15T11:05:05 IST" duration-ms="425" status="PASS">
+        <test-method signature="addDesignationWithSamePayloadAsPrevious()[pri:7, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:16 IST" name="addDesignationWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:17 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDesignationWithSamePayloadAsPrevious -->
-        <test-method signature="verifyGetAllDesignationWithAuthorization()[pri:8, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:05 IST" name="verifyGetAllDesignationWithAuthorization" finished-at="2023-12-15T11:05:06 IST" duration-ms="386" status="PASS">
+        <test-method signature="verifyGetAllDesignationWithAuthorization()[pri:8, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:17 IST" name="verifyGetAllDesignationWithAuthorization" finished-at="2023-12-16T10:10:17 IST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllDesignationWithAuthorization -->
-        <test-method signature="updateDesignationWithAuthorization()[pri:9, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:06 IST" name="updateDesignationWithAuthorization" finished-at="2023-12-15T11:05:06 IST" duration-ms="395" status="PASS">
+        <test-method signature="updateDesignationWithAuthorization()[pri:9, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:17 IST" name="updateDesignationWithAuthorization" finished-at="2023-12-16T10:10:18 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDesignationWithAuthorization -->
-        <test-method signature="updateDesignationWithoutGivingDesignationId()[pri:10, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:06 IST" name="updateDesignationWithoutGivingDesignationId" finished-at="2023-12-15T11:05:07 IST" duration-ms="433" status="PASS">
+        <test-method signature="updateDesignationWithoutGivingDesignationId()[pri:10, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:18 IST" name="updateDesignationWithoutGivingDesignationId" finished-at="2023-12-16T10:10:18 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDesignationWithoutGivingDesignationId -->
-        <test-method signature="updateDesignationByGivingNonExistingDesignationId()[pri:11, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:07 IST" name="updateDesignationByGivingNonExistingDesignationId" finished-at="2023-12-15T11:05:07 IST" duration-ms="403" status="PASS">
+        <test-method signature="updateDesignationByGivingNonExistingDesignationId()[pri:11, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:18 IST" name="updateDesignationByGivingNonExistingDesignationId" finished-at="2023-12-16T10:10:18 IST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDesignationByGivingNonExistingDesignationId -->
-        <test-method signature="deleteSingleDesignationWithInvalidDesignationName()[pri:13, instance:testcases.DesignationFolder@4a9cc6cb]" started-at="2023-12-15T11:05:07 IST" name="deleteSingleDesignationWithInvalidDesignationName" finished-at="2023-12-15T11:05:07 IST" duration-ms="434" status="PASS">
+        <test-method signature="deleteSingleDesignationWithInvalidDesignationName()[pri:13, instance:testcases.DesignationFolder@46074492]" started-at="2023-12-16T10:10:18 IST" name="deleteSingleDesignationWithInvalidDesignationName" finished-at="2023-12-16T10:10:19 IST" duration-ms="402" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No designation to delete with Lawyer2.] but found [No status to delete with designation,Unprocessable Entity,Lawyer2.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No designation to delete with Lawyer2.] but found [No status to delete with designation,Unprocessable Entity,Lawyer2.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.DesignationFolder.deleteSingleDesignationWithInvalidDesignationName(DesignationFolder.java:400)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingleDesignationWithInvalidDesignationName -->
       </class> <!-- testcases.DesignationFolder -->
       <class name="testcases.ProjectFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:55 IST" name="baseURL" finished-at="2023-12-15T11:04:55 IST" duration-ms="512" status="PASS">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:01 IST" name="baseURL" finished-at="2023-12-16T10:10:02 IST" duration-ms="971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddProjectWithoutAuthorization()[pri:1, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:55 IST" name="verifyAddProjectWithoutAuthorization" finished-at="2023-12-15T11:04:56 IST" duration-ms="1100" status="PASS">
+        <test-method signature="verifyAddProjectWithoutAuthorization()[pri:1, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:02 IST" name="verifyAddProjectWithoutAuthorization" finished-at="2023-12-16T10:10:04 IST" duration-ms="1945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddProjectWithoutAuthorization -->
-        <test-method signature="verifyGetAllProjectWithoutAuthorization()[pri:2, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:57 IST" name="verifyGetAllProjectWithoutAuthorization" finished-at="2023-12-15T11:04:57 IST" duration-ms="40" status="PASS">
+        <test-method signature="verifyGetAllProjectWithoutAuthorization()[pri:2, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:04 IST" name="verifyGetAllProjectWithoutAuthorization" finished-at="2023-12-16T10:10:04 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllProjectWithoutAuthorization -->
-        <test-method signature="verifyAddProjectWithAuthorization()[pri:3, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:57 IST" name="verifyAddProjectWithAuthorization" finished-at="2023-12-15T11:04:57 IST" duration-ms="577" status="PASS">
+        <test-method signature="verifyAddProjectWithAuthorization()[pri:3, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:04 IST" name="verifyAddProjectWithAuthorization" finished-at="2023-12-16T10:10:05 IST" duration-ms="1029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddProjectWithAuthorization -->
-        <test-method signature="addProjectWithSamePayloadAsPrevious()[pri:4, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:57 IST" name="addProjectWithSamePayloadAsPrevious" finished-at="2023-12-15T11:04:58 IST" duration-ms="418" status="PASS">
+        <test-method signature="addProjectWithSamePayloadAsPrevious()[pri:4, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:05 IST" name="addProjectWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:05 IST" duration-ms="425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProjectWithSamePayloadAsPrevious -->
-        <test-method signature="addProjectWithInvalidPayload()[pri:5, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:58 IST" name="addProjectWithInvalidPayload" finished-at="2023-12-15T11:04:59 IST" duration-ms="909" status="PASS">
+        <test-method signature="addProjectWithInvalidPayload()[pri:5, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:05 IST" name="addProjectWithInvalidPayload" finished-at="2023-12-16T10:10:08 IST" duration-ms="2567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProjectWithInvalidPayload -->
-        <test-method signature="addProjectWithoutGivingProjectStartDateInPayload()[pri:6, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:59 IST" name="addProjectWithoutGivingProjectStartDateInPayload" finished-at="2023-12-15T11:04:59 IST" duration-ms="470" status="PASS">
+        <test-method signature="addProjectWithoutGivingProjectStartDateInPayload()[pri:6, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:08 IST" name="addProjectWithoutGivingProjectStartDateInPayload" finished-at="2023-12-16T10:10:08 IST" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProjectWithoutGivingProjectStartDateInPayload -->
-        <test-method signature="verifyGetAllProjectWithAuthorization()[pri:7, instance:testcases.ProjectFolder@66ea1466]" started-at="2023-12-15T11:04:59 IST" name="verifyGetAllProjectWithAuthorization" finished-at="2023-12-15T11:05:00 IST" duration-ms="550" status="PASS">
+        <test-method signature="verifyGetAllProjectWithAuthorization()[pri:7, instance:testcases.ProjectFolder@f415a95]" started-at="2023-12-16T10:10:08 IST" name="verifyGetAllProjectWithAuthorization" finished-at="2023-12-16T10:10:09 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllProjectWithAuthorization -->
       </class> <!-- testcases.ProjectFolder -->
-      <class name="testcases.RoleFolder">
-        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:07 IST" name="baseURL" finished-at="2023-12-15T11:05:07 IST" duration-ms="1" status="PASS">
+      <class name="testcases.RegularTaskFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="baseURL" finished-at="2023-12-16T10:10:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURL -->
-        <test-method signature="verifyAddRoleWithoutAuthorization()[pri:1, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:07 IST" name="verifyAddRoleWithoutAuthorization" finished-at="2023-12-15T11:05:07 IST" duration-ms="26" status="PASS">
+        <test-method signature="verifyAddRegularTaskWithoutAuthorization()[pri:1, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="verifyAddRegularTaskWithoutAuthorization" finished-at="2023-12-16T10:10:19 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddRegularTaskWithoutAuthorization -->
+        <test-method signature="verifyGetAllRegularTaskForEmployeeWithoutAuthorization()[pri:2, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="verifyGetAllRegularTaskForEmployeeWithoutAuthorization" finished-at="2023-12-16T10:10:19 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllRegularTaskForEmployeeWithoutAuthorization -->
+        <test-method signature="verifyUpdateRegularTaskWithoutAuthorization()[pri:3, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="verifyUpdateRegularTaskWithoutAuthorization" finished-at="2023-12-16T10:10:19 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateRegularTaskWithoutAuthorization -->
+        <test-method signature="deleteSingleStatusWithoutAuthorization()[pri:4, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="deleteSingleStatusWithoutAuthorization" finished-at="2023-12-16T10:10:19 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleStatusWithoutAuthorization -->
+        <test-method signature="verifyAddRegularTaskWithAuthorization()[pri:5, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:19 IST" name="verifyAddRegularTaskWithAuthorization" finished-at="2023-12-16T10:10:20 IST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddRegularTaskWithAuthorization -->
+        <test-method signature="addRegularTaskWithSamePayloadAsPrevious()[pri:6, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:20 IST" name="addRegularTaskWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:20 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRegularTaskWithSamePayloadAsPrevious -->
+        <test-method signature="addRegularTaskWithInvalidPayload()[pri:7, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:20 IST" name="addRegularTaskWithInvalidPayload" finished-at="2023-12-16T10:10:21 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRegularTaskWithInvalidPayload -->
+        <test-method signature="verifyGetAllRegularTaskWithAuthorization()[pri:8, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:21 IST" name="verifyGetAllRegularTaskWithAuthorization" finished-at="2023-12-16T10:10:21 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllRegularTaskWithAuthorization -->
+        <test-method signature="verifyGetAllRegularTaskWithInvalidEmployeeId()[pri:8, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:21 IST" name="verifyGetAllRegularTaskWithInvalidEmployeeId" finished-at="2023-12-16T10:10:21 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllRegularTaskWithInvalidEmployeeId -->
+        <test-method signature="verifyUpdateRegularTaskWithAuthorization()[pri:10, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:21 IST" name="verifyUpdateRegularTaskWithAuthorization" finished-at="2023-12-16T10:10:22 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateRegularTaskWithAuthorization -->
+        <test-method signature="updateStatusWithoutGivingRegularTaskId()[pri:11, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:22 IST" name="updateStatusWithoutGivingRegularTaskId" finished-at="2023-12-16T10:10:22 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateStatusWithoutGivingRegularTaskId -->
+        <test-method signature="updateStatusByGivingNonExistingRegularTaskId()[pri:12, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:22 IST" name="updateStatusByGivingNonExistingRegularTaskId" finished-at="2023-12-16T10:10:23 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateStatusByGivingNonExistingRegularTaskId -->
+        <test-method signature="deleteSingleRegularTaskWithInvalidRegularTaskId()[pri:14, instance:testcases.RegularTaskFolder@d78795]" started-at="2023-12-16T10:10:23 IST" name="deleteSingleRegularTaskWithInvalidRegularTaskId" finished-at="2023-12-16T10:10:23 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleRegularTaskWithInvalidRegularTaskId -->
+      </class> <!-- testcases.RegularTaskFolder -->
+      <class name="testcases.RoleFolder">
+        <test-method is-config="true" signature="baseURL()[pri:0, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="baseURL" finished-at="2023-12-16T10:10:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURL -->
+        <test-method signature="verifyAddRoleWithoutAuthorization()[pri:1, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="verifyAddRoleWithoutAuthorization" finished-at="2023-12-16T10:10:23 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddRoleWithoutAuthorization -->
-        <test-method signature="verifyGetAllRoleWithoutAuthorization()[pri:2, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:07 IST" name="verifyGetAllRoleWithoutAuthorization" finished-at="2023-12-15T11:05:07 IST" duration-ms="21" status="PASS">
+        <test-method signature="verifyGetAllRoleWithoutAuthorization()[pri:2, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="verifyGetAllRoleWithoutAuthorization" finished-at="2023-12-16T10:10:23 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllRoleWithoutAuthorization -->
-        <test-method signature="updateRoleWithoutAuthorization()[pri:3, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:07 IST" name="updateRoleWithoutAuthorization" finished-at="2023-12-15T11:05:08 IST" duration-ms="28" status="PASS">
+        <test-method signature="updateRoleWithoutAuthorization()[pri:3, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="updateRoleWithoutAuthorization" finished-at="2023-12-16T10:10:23 IST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateRoleWithoutAuthorization -->
-        <test-method signature="deleteSingleRoleWithoutAuthorization()[pri:4, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:08 IST" name="deleteSingleRoleWithoutAuthorization" finished-at="2023-12-15T11:05:08 IST" duration-ms="21" status="PASS">
+        <test-method signature="deleteSingleRoleWithoutAuthorization()[pri:4, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="deleteSingleRoleWithoutAuthorization" finished-at="2023-12-16T10:10:23 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingleRoleWithoutAuthorization -->
-        <test-method signature="getRoleByLevelWithoutAuthorization()[pri:5, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:08 IST" name="getRoleByLevelWithoutAuthorization" finished-at="2023-12-15T11:05:08 IST" duration-ms="24" status="PASS">
+        <test-method signature="getRoleByLevelWithoutAuthorization()[pri:5, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:23 IST" name="getRoleByLevelWithoutAuthorization" finished-at="2023-12-16T10:10:24 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRoleByLevelWithoutAuthorization -->
-        <test-method signature="verifyAddRoleWithAuthorization()[pri:6, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:08 IST" name="verifyAddRoleWithAuthorization" finished-at="2023-12-15T11:05:08 IST" duration-ms="383" status="PASS">
+        <test-method signature="verifyAddRoleWithAuthorization()[pri:6, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:24 IST" name="verifyAddRoleWithAuthorization" finished-at="2023-12-16T10:10:24 IST" duration-ms="879" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid status code expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid status code expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at testcases.RoleFolder.deleteSingleRoleWithAuthorization(RoleFolder.java:416)
+at testcases.RoleFolder.verifyAddRoleWithAuthorization(RoleFolder.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddRoleWithAuthorization -->
-        <test-method signature="addRoleWithSamePayloadAsPrevious()[pri:7, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:08 IST" name="addRoleWithSamePayloadAsPrevious" finished-at="2023-12-15T11:05:08 IST" duration-ms="376" status="PASS">
+        <test-method signature="addRoleWithSamePayloadAsPrevious()[pri:7, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:24 IST" name="addRoleWithSamePayloadAsPrevious" finished-at="2023-12-16T10:10:25 IST" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRoleWithSamePayloadAsPrevious -->
-        <test-method signature="addRoleWithInvalidPayload()[pri:8, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:08 IST" name="addRoleWithInvalidPayload" finished-at="2023-12-15T11:05:09 IST" duration-ms="409" status="PASS">
+        <test-method signature="addRoleWithInvalidPayload()[pri:8, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:25 IST" name="addRoleWithInvalidPayload" finished-at="2023-12-16T10:10:25 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRoleWithInvalidPayload -->
-        <test-method signature="verifyGetAllRoleWithAuthorization()[pri:9, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:09 IST" name="verifyGetAllRoleWithAuthorization" finished-at="2023-12-15T11:05:10 IST" duration-ms="775" status="PASS">
+        <test-method signature="addRoleWithSameRoleLevelInPayloadAsPrevious()[pri:9, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:25 IST" name="addRoleWithSameRoleLevelInPayloadAsPrevious" finished-at="2023-12-16T10:10:26 IST" duration-ms="516" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Role Already Exists] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Role Already Exists] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.RoleFolder.addRoleWithSameRoleLevelInPayloadAsPrevious(RoleFolder.java:257)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRoleWithSameRoleLevelInPayloadAsPrevious -->
+        <test-method signature="verifyGetAllRoleWithAuthorization()[pri:10, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:26 IST" name="verifyGetAllRoleWithAuthorization" finished-at="2023-12-16T10:10:26 IST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllRoleWithAuthorization -->
-        <test-method signature="updateRoleWithAuthorization()[pri:10, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:10 IST" name="updateRoleWithAuthorization" finished-at="2023-12-15T11:05:10 IST" duration-ms="372" status="PASS">
+        <test-method signature="updateRoleWithAuthorization()[pri:11, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:26 IST" name="updateRoleWithAuthorization" finished-at="2023-12-16T10:10:27 IST" duration-ms="528" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Producer] but found [ROLE_PRODUCER]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Producer] but found [ROLE_PRODUCER]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.RoleFolder.updateRoleWithAuthorization(RoleFolder.java:312)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateRoleWithAuthorization -->
-        <test-method signature="updateRoleWithoutGivingRoleId()[pri:11, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:10 IST" name="updateRoleWithoutGivingRoleId" finished-at="2023-12-15T11:05:10 IST" duration-ms="412" status="PASS">
+        <test-method signature="updateRoleWithoutGivingRoleId()[pri:12, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:27 IST" name="updateRoleWithoutGivingRoleId" finished-at="2023-12-16T10:10:27 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateRoleWithoutGivingRoleId -->
-        <test-method signature="updateRoleByGivingNonExistingRoleId()[pri:12, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:10 IST" name="updateRoleByGivingNonExistingRoleId" finished-at="2023-12-15T11:05:11 IST" duration-ms="414" status="PASS">
+        <test-method signature="updateRoleByGivingNonExistingRoleId()[pri:13, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:27 IST" name="updateRoleByGivingNonExistingRoleId" finished-at="2023-12-16T10:10:28 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateRoleByGivingNonExistingRoleId -->
-        <test-method signature="deleteSingleRoleWithInvalidRoleId()[pri:14, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:11 IST" name="deleteSingleRoleWithInvalidRoleId" finished-at="2023-12-15T11:05:11 IST" duration-ms="412" status="PASS">
+        <test-method signature="deleteSingleRoleWithInvalidRoleId()[pri:15, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:28 IST" name="deleteSingleRoleWithInvalidRoleId" finished-at="2023-12-16T10:10:29 IST" duration-ms="1330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingleRoleWithInvalidRoleId -->
-        <test-method signature="getRoleByLevelWithAuthorization()[pri:15, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:11 IST" name="getRoleByLevelWithAuthorization" finished-at="2023-12-15T11:05:12 IST" duration-ms="370" status="FAIL">
+        <test-method signature="getRoleByLevelWithAuthorization()[pri:16, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:29 IST" name="getRoleByLevelWithAuthorization" finished-at="2023-12-16T10:10:30 IST" duration-ms="491" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Invalid status code expected [200] but found [404]]]>
@@ -468,7 +875,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
-at testcases.RoleFolder.getRoleByLevelWithAuthorization(RoleFolder.java:404)
+at testcases.RoleFolder.getRoleByLevelWithAuthorization(RoleFolder.java:469)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -507,7 +914,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRoleByLevelWithAuthorization -->
-        <test-method signature="getRoleByLevelWithInvalidRoleLevel()[pri:16, instance:testcases.RoleFolder@5990e6c5]" started-at="2023-12-15T11:05:12 IST" name="getRoleByLevelWithInvalidRoleLevel" finished-at="2023-12-15T11:05:12 IST" duration-ms="369" status="PASS">
+        <test-method signature="getRoleByLevelWithInvalidRoleLevel()[pri:17, instance:testcases.RoleFolder@2c715e84]" started-at="2023-12-16T10:10:30 IST" name="getRoleByLevelWithInvalidRoleLevel" finished-at="2023-12-16T10:10:30 IST" duration-ms="506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRoleByLevelWithInvalidRoleLevel -->
