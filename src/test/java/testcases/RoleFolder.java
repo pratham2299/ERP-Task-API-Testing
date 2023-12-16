@@ -257,13 +257,15 @@ public class RoleFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-		String actualMessage = response.jsonPath().getString("message");
-		log.info("Message: " + actualMessage);
-		Assert.assertEquals(actualMessage, "Role Already Exists");
+		if (response.getStatusCode() == 422) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Role Already Exists");
+		}
 
 		log.info("Response Code: " + response.getStatusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
 	}
 

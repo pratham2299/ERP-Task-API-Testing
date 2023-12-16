@@ -191,6 +191,7 @@ public class RegularTaskFolder {
 
 		String regularTaskName = response.jsonPath().getString(selectedRegularTaskId);
 		addRegularTaskWithSamePayloadAsPrevious(regularTaskName);
+		
 		Integer regularTaskId = Integer.parseInt(selectedRegularTaskId);
 		deleteSingleRegularTaskWithAuthorization(regularTaskId);
 	}
@@ -466,8 +467,11 @@ public class RegularTaskFolder {
 		if (response.getStatusCode() == 200) {
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+			log.info("Response Status Code: " + actualStatusCode);
 		} else if (response.getStatusCode() == 404) {
-			// Status already exists
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 404, "Invalid status code");
+			log.info("Response Status Code: " + actualStatusCode);
 			String actualMessage = response.jsonPath().getString("message");
 			log.info("Message: " + actualMessage);
 			Assert.assertEquals(actualMessage, "Regular Task Not Found");

@@ -14941,3 +14941,46 @@
 14:20:12.003 [main] INFO  testcases.StatusFolder - Message: Status Already Exists
 14:20:12.020 [main] INFO  testcases.StatusFolder - Response Code: 422
 14:20:12.023 [main] INFO  testcases.StatusFolder - Response Time: 1785
+14:29:52.623 [main] INFO  testcases.StatusFolder - Status Code: 200
+14:29:52.677 [main] INFO  testcases.StatusFolder - Response Body: {
+    "50": "Tuna Sashimi",
+    "52": "Tacos",
+    "54": "Salmon Nigiri",
+    "56": "Risotto with Seafood",
+    "57": "Gmail"
+}
+14:29:54.162 [main] INFO  testcases.StatusFolder - Response Body:
+{
+    "50": "Bruschette with Tomato",
+    "52": "Tacos",
+    "54": "Salmon Nigiri",
+    "56": "Risotto with Seafood",
+    "57": "Gmail"
+}
+14:29:54.650 [main] INFO  testcases.StatusFolder - Response Code: 200
+14:29:54.651 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+14:29:54.652 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+14:29:54.653 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+14:29:54.653 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+14:29:54.653 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+14:29:54.654 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+14:29:54.654 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+14:29:54.655 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+14:29:54.655 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+14:29:54.655 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:59:54 GMT
+14:29:54.655 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+14:29:54.655 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive
+14:29:54.655 [main] INFO  testcases.StatusFolder - Content Type header value is: application/json
+14:29:54.655 [main] INFO  testcases.StatusFolder - Transfer Encoding header value is: chunked
+14:29:54.656 [main] INFO  testcases.StatusFolder - Connection header value is: keep-alive
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: X-Content-Type-Options Value: nosniff
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: X-XSS-Protection Value: 0
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: Pragma Value: no-cache
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: Expires Value: 0
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: X-Frame-Options Value: DENY
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: Content-Type Value: application/json
+14:29:54.656 [main] INFO  testcases.StatusFolder - Key: Transfer-Encoding Value: chunked
+14:29:54.657 [main] INFO  testcases.StatusFolder - Key: Date Value: Sat, 16 Dec 2023 08:59:54 GMT
+14:29:54.657 [main] INFO  testcases.StatusFolder - Key: Keep-Alive Value: timeout=60
+14:29:54.657 [main] INFO  testcases.StatusFolder - Key: Connection Value: keep-alive

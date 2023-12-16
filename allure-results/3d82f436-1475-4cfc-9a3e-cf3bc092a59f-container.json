@@ -1,0 +1,1 @@
+{"uuid":"3d82f436-1475-4cfc-9a3e-cf3bc092a59f","name":"testcases.RegularTaskFolder","children":["148954f6-b8be-4eb4-8dc5-75fadaa625fa"],"befores":[{"name":"baseURL","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1702717189731,"stop":1702717190359}],"afters":[],"start":1702717189690,"stop":1702717194775}

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1362784554\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1395236768\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.StatusFolder" class="method navigator-link" hash-for-method="addStatusWithSameStatusLevelInPayloadAsPrevious">addStatusWithSameStatusLevelInPayloadAsPrevious</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RegularTaskFolder" class="method navigator-link" hash-for-method="verifyGetAllRegularTaskWithAuthorization">verifyGetAllRegularTaskWithAuthorization</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.StatusFolder</span>
+              <span class="class-name">testcases.RegularTaskFolder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addStatusWithSameStatusLevelInPayloadAsPrevious">
-                  </a> <!-- addStatusWithSameStatusLevelInPayloadAsPrevious -->
-                  <span class="method-name">addStatusWithSameStatusLevelInPayloadAsPrevious</span>
+                  <a name="verifyGetAllRegularTaskWithAuthorization">
+                  </a> <!-- verifyGetAllRegularTaskWithAuthorization -->
+                  <span class="method-name">verifyGetAllRegularTaskWithAuthorization</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1362784554\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1395236768\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.StatusFolder&quot;&gt;
+      &lt;class name=&quot;testcases.RegularTaskFolder&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;addStatusWithSameStatusLevelInPayloadAsPrevious&quot;/&gt;
+          &lt;include name=&quot;verifyGetAllRegularTaskWithAuthorization&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases.StatusFolder --&gt;
+      &lt;/class&gt; &lt;!-- testcases.RegularTaskFolder --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,9 +191,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addStatusWithSameStatusLevelInPayloadAsPrevious')
-data.setCell(0, 2, 'testcases.StatusFolder')
-data.setCell(0, 3, 4287);
+data.setCell(0, 1, 'verifyGetAllRegularTaskWithAuthorization')
+data.setCell(0, 2, 'testcases.RegularTaskFolder')
+data.setCell(0, 3, 4283);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -217,27 +217,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.StatusFolder</span>
+              <span class="ignored-class-name">testcases.RegularTaskFolder</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">updateStatusWithoutGivingStatusId</span>
+                <span class="ignored-method-name">verifyAddRegularTaskWithoutAuthorization</span>
                 <br/>
-                <span class="ignored-method-name">updateStatusByGivingNonExistingStatusId</span>
+                <span class="ignored-method-name">verifyGetAllRegularTaskForEmployeeWithoutAuthorization</span>
                 <br/>
-                <span class="ignored-method-name">verifyAddStatusWithAuthorization</span>
+                <span class="ignored-method-name">verifyAddRegularTaskWithAuthorization</span>
                 <br/>
-                <span class="ignored-method-name">verifyAddStatusWithoutAuthorization</span>
+                <span class="ignored-method-name">deleteSingleRegularTaskWithInvalidRegularTaskId</span>
                 <br/>
-                <span class="ignored-method-name">verifyGetAllStatusWithAuthorization</span>
+                <span class="ignored-method-name">addRegularTaskWithInvalidPayload</span>
                 <br/>
-                <span class="ignored-method-name">addStatusWithInvalidPayload</span>
+                <span class="ignored-method-name">verifyGetAllRegularTaskWithInvalidEmployeeId</span>
+                <br/>
+                <span class="ignored-method-name">updateStatusByGivingNonExistingRegularTaskId</span>
+                <br/>
+                <span class="ignored-method-name">updateStatusWithoutGivingRegularTaskId</span>
+                <br/>
+                <span class="ignored-method-name">verifyUpdateRegularTaskWithoutAuthorization</span>
                 <br/>
                 <span class="ignored-method-name">deleteSingleStatusWithoutAuthorization</span>
-                <br/>
-                <span class="ignored-method-name">verifyGetAllStatusWithoutAuthorization</span>
-                <br/>
-                <span class="ignored-method-name">verifyUpdateStatusWithoutAuthorization</span>
-                <br/>
-                <span class="ignored-method-name">deleteSingleStatusWithInvalidStatusName</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -249,14 +249,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.StatusFolder</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.RegularTaskFolder</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">baseURL</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addStatusWithSameStatusLevelInPayloadAsPrevious</span>
-                <span class="method-start">717 ms</span>
+                <span class="method-name">verifyGetAllRegularTaskWithAuthorization</span>
+                <span class="method-start">662 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
