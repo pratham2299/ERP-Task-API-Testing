@@ -144,8 +144,6 @@ public class RoleFolder {
 
 		// Choose a random key from the list
 		String selectedRoleId = getRandomRoleId(keyList);
-		Integer roleId = Integer.parseInt(selectedRoleId);
-		deleteSingleRoleWithAuthorization(roleId);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -182,11 +180,16 @@ public class RoleFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		String fakeRole = response.jsonPath().getString(selectedRoleId);
+		addRoleWithSamePayloadAsPrevious(fakeRole);
+		Integer roleId = Integer.parseInt(selectedRoleId);
+		deleteSingleRoleWithAuthorization(roleId);
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, dependsOnMethods = "verifyAddRoleWithAuthorization")
 	@Step("Add Role With Same Payload As Previous")
-	public void addRoleWithSamePayloadAsPrevious() {
+	public String addRoleWithSamePayloadAsPrevious(String fakeRole) {
 		HashMap<String, Object> roleMap = new HashMap<>();
 		roleMap.put("role", "Front_End_Developer");
 		roleMap.put("roleLevel", 4);
@@ -208,6 +211,8 @@ public class RoleFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return fakeRole;
 	}
 
 	@Test(priority = 8)

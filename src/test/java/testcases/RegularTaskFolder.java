@@ -189,13 +189,15 @@ public class RegularTaskFolder {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
 
+		String regularTaskName = response.jsonPath().getString(selectedRegularTaskId);
+		addRegularTaskWithSamePayloadAsPrevious(regularTaskName);
 		Integer regularTaskId = Integer.parseInt(selectedRegularTaskId);
 		deleteSingleRegularTaskWithAuthorization(regularTaskId);
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, dependsOnMethods = "verifyAddRegularTaskWithAuthorization")
 	@Step("Add Regular Task With Same Payload As Previous")
-	public void addRegularTaskWithSamePayloadAsPrevious() {
+	public String addRegularTaskWithSamePayloadAsPrevious(String regularTaskName) {
 		// Create a HashMap to represent the JSON payload
 		HashMap<String, Object> payloadMap = new HashMap<>();
 		payloadMap.put("regularTaskName", "Gmail");
@@ -221,6 +223,8 @@ public class RegularTaskFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 409, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return regularTaskName;
 	}
 
 	@Test(priority = 7)

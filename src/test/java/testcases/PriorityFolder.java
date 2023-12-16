@@ -303,7 +303,7 @@ public class PriorityFolder {
 
 	@Test(priority = 10, dependsOnMethods = "verifyGetAllPriorityWithAuthorization")
 	@Step("Update Priority With Authorization")
-	public void updatePriorityWithAuthorization(Integer priorityId) {
+	public Integer updatePriorityWithAuthorization(Integer priorityId) {
 		HashMap<String, Object> priorityMap = new HashMap<>();
 		priorityMap.put("priorityId", priorityId);
 		String fakePriority1 = faker.job().seniority();
@@ -342,6 +342,8 @@ public class PriorityFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		return priorityId;
 	}
 
 	@Test(priority = 11)
