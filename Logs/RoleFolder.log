@@ -1993,3 +1993,595 @@
 10:33:03.489 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
 10:33:03.495 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
 10:33:03.496 [main] INFO  testcases.RoleFolder - Connection header value is: close
+11:41:14.626 [main] INFO  testcases.RoleFolder - Response Body:
+
+11:41:14.629 [main] INFO  testcases.RoleFolder - Response Code: 401
+11:41:14.633 [main] INFO  testcases.RoleFolder - Response Time: 355
+11:41:14.723 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:41:14.796 [main] INFO  testcases.RoleFolder - Response Body:
+
+11:41:14.797 [main] INFO  testcases.RoleFolder - Response Code: 401
+11:41:14.826 [main] INFO  testcases.RoleFolder - Response Body: 
+11:41:14.826 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:41:14.850 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:41:14.850 [main] INFO  testcases.RoleFolder - Response Body: 
+11:41:15.533 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:15.479+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:41:16.612 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:11:16.592+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Role Not Found",
+    "path": "/employee/role/delete"
+}
+11:41:16.631 [main] INFO  testcases.RoleFolder - Message: Role Not Found
+11:41:16.632 [main] INFO  testcases.RoleFolder - Status Code: 404
+11:41:16.632 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:41:16.632 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:41:16.634 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:11:16 GMT
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:41:16.634 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:41:16.634 [main] INFO  testcases.RoleFolder - Response Code: 404
+11:41:16.634 [main] INFO  testcases.RoleFolder - Unexpected status code: 404
+11:41:16.635 [main] INFO  testcases.RoleFolder - Response Time: 550
+11:41:16.635 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:41:16.635 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:41:16.635 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:41:16.635 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:41:16.637 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:41:16.637 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:11:16 GMT
+11:41:16.637 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:41:16.637 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:41:17.252 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:17.233+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:41:17.265 [main] INFO  testcases.RoleFolder - Message: Role Already Exists
+11:41:17.265 [main] INFO  testcases.RoleFolder - Response Code: 422
+11:41:17.265 [main] INFO  testcases.RoleFolder - Response Time: 602
+11:41:17.735 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:17.716+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/role/add"
+}
+11:41:17.750 [main] INFO  testcases.RoleFolder - Message: Fields are Missing
+11:41:17.751 [main] INFO  testcases.RoleFolder - Response Code: 400
+11:41:17.751 [main] INFO  testcases.RoleFolder - Response Time: 460
+11:41:18.353 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:18.333+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:41:18.366 [main] INFO  testcases.RoleFolder - Message: Role Already Exists
+11:41:18.366 [main] INFO  testcases.RoleFolder - Response Code: 422
+11:41:18.366 [main] INFO  testcases.RoleFolder - Response Time: 593
+11:41:18.990 [main] INFO  testcases.RoleFolder - Status Code: 200
+11:41:18.991 [main] INFO  testcases.RoleFolder - Response Body: {
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_BACK_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_SUPERADMIN",
+    "54": "ROLE_TECHNICIAN",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:41:19.555 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_BACK_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_TECHNICIAN",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:41:20.237 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:20.217+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/role/update"
+}
+11:41:20.247 [main] INFO  testcases.RoleFolder - Message: Fields are missing
+11:41:20.247 [main] INFO  testcases.RoleFolder - Response Code: 400
+11:41:20.247 [main] INFO  testcases.RoleFolder - Response Time: 634
+11:41:20.710 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:11:20.690+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Role Present For Given Id",
+    "path": "/employee/role/update"
+}
+11:41:20.724 [main] INFO  testcases.RoleFolder - Message: No Role Present For Given Id
+11:41:20.724 [main] INFO  testcases.RoleFolder - Response Code: 404
+11:41:20.724 [main] INFO  testcases.RoleFolder - Response Time: 451
+11:41:21.612 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:11:21.570+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Role Not Found",
+    "path": "/employee/role/delete"
+}
+11:41:21.628 [main] INFO  testcases.RoleFolder - Message: Role Not Found
+11:41:21.628 [main] INFO  testcases.RoleFolder - Response Code: 404
+11:41:21.628 [main] INFO  testcases.RoleFolder - Response Time: 684
+11:41:22.143 [main] INFO  testcases.RoleFolder - Status Code: 200
+11:41:22.144 [main] INFO  testcases.RoleFolder - Response Body: [
+    {
+        "roleId": 54,
+        "role": "ROLE_TECHNICIAN",
+        "roleName": "ROLE_TECHNICIAN",
+        "roleLevel": 4
+    },
+    {
+        "roleId": 61,
+        "role": "ROLE_OFFICER",
+        "roleName": "ROLE_OFFICER",
+        "roleLevel": 5
+    },
+    {
+        "roleId": 57,
+        "role": "ROLE_FACILITATOR",
+        "roleName": "ROLE_FACILITATOR",
+        "roleLevel": 6
+    },
+    {
+        "roleId": 69,
+        "role": "ROLE_REACT_DEVELOPER",
+        "roleName": "ROLE_REACT_DEVELOPER",
+        "roleLevel": 7
+    }
+]
+11:41:22.144 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:41:22.144 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:41:22.144 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:41:22.144 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:11:22 GMT
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:41:22.145 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:41:22.744 [main] INFO  testcases.RoleFolder - Status Code: 404
+11:41:22.745 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:11:22.726+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Level Not Found",
+    "path": "/employee/role/level/12"
+}
+11:41:22.757 [main] INFO  testcases.RoleFolder - Message: Level Not Found
+11:42:16.874 [main] INFO  testcases.RoleFolder - Status Code: 200
+11:42:16.923 [main] INFO  testcases.RoleFolder - Response Body: {
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_BACK_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_TECHNICIAN",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:42:17.661 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_BACK_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_ASSOCIATE",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:42:18.041 [main] INFO  testcases.RoleFolder - Response Code: 200
+11:42:18.041 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:42:18.042 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:42:18.042 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:42:18.042 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:42:18.042 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:42:18.042 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:42:18.042 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:42:18.042 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:12:17 GMT
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:42:18.043 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:42:18.043 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:42:18.044 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:42:18.044 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:42:18.044 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:42:18.044 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:42:18.044 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:42:18.044 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:12:17 GMT
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:42:18.045 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:42:38.681 [main] INFO  testcases.RoleFolder - Response Body:
+
+11:42:38.683 [main] INFO  testcases.RoleFolder - Response Code: 401
+11:42:38.686 [main] INFO  testcases.RoleFolder - Response Time: 373
+11:42:38.775 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:42:38.854 [main] INFO  testcases.RoleFolder - Response Body:
+
+11:42:38.854 [main] INFO  testcases.RoleFolder - Response Code: 401
+11:42:38.882 [main] INFO  testcases.RoleFolder - Response Body: 
+11:42:38.882 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:42:38.910 [main] INFO  testcases.RoleFolder - Status Code: 401
+11:42:38.910 [main] INFO  testcases.RoleFolder - Response Body: 
+11:42:39.588 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:39.531+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:42:40.657 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:12:40.630+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String \"/employee/role/add\": not a valid `java.lang.Integer` value",
+    "path": "/employee/role/delete"
+}
+11:42:40.657 [main] INFO  testcases.RoleFolder - Unexpected status code: 400
+11:42:40.657 [main] INFO  testcases.RoleFolder - Status Code: 400
+11:42:40.658 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:42:40.658 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:42:40.658 [main] INFO  testcases.RoleFolder - Connection header value is: close
+11:42:41.293 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:41.271+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:42:41.309 [main] INFO  testcases.RoleFolder - Message: Role Already Exists
+11:42:41.309 [main] INFO  testcases.RoleFolder - Response Code: 422
+11:42:41.309 [main] INFO  testcases.RoleFolder - Response Time: 618
+11:42:41.824 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:41.803+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/role/add"
+}
+11:42:41.835 [main] INFO  testcases.RoleFolder - Message: Fields are Missing
+11:42:41.835 [main] INFO  testcases.RoleFolder - Response Code: 400
+11:42:41.835 [main] INFO  testcases.RoleFolder - Response Time: 495
+11:42:42.488 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:42.466+00:00",
+    "status": 422,
+    "error": "Unprocessable Entity",
+    "message": "Role Already Exists",
+    "path": "/employee/role/add"
+}
+11:42:42.502 [main] INFO  testcases.RoleFolder - Message: Role Already Exists
+11:42:42.502 [main] INFO  testcases.RoleFolder - Response Code: 422
+11:42:42.502 [main] INFO  testcases.RoleFolder - Response Time: 643
+11:42:43.102 [main] INFO  testcases.RoleFolder - Status Code: 200
+11:42:43.103 [main] INFO  testcases.RoleFolder - Response Body: {
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_BACK_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_ASSOCIATE",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:42:43.661 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "51": "ROLE_ASSISTANT",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_ASSOCIATE",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:42:43.687 [main] INFO  testcases.RoleFolder - Response Code: 200
+11:42:43.687 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:42:43.688 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:42:43.688 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:42:43.688 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:42:43.688 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:42:43.688 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:42:43.688 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:12:43 GMT
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:42:43.689 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:42:43.689 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+11:42:43.689 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+11:42:43.690 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+11:42:43.690 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+11:42:43.691 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+11:42:43.691 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+11:42:43.691 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:12:43 GMT
+11:42:43.691 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+11:42:43.691 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+11:42:44.176 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:44.125+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/role/update"
+}
+11:42:44.187 [main] INFO  testcases.RoleFolder - Message: Fields are missing
+11:42:44.187 [main] INFO  testcases.RoleFolder - Response Code: 400
+11:42:44.187 [main] INFO  testcases.RoleFolder - Response Time: 468
+11:42:44.676 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:12:44.656+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Role Present For Given Id",
+    "path": "/employee/role/update"
+}
+11:42:44.687 [main] INFO  testcases.RoleFolder - Message: No Role Present For Given Id
+11:42:44.688 [main] INFO  testcases.RoleFolder - Response Code: 404
+11:42:44.688 [main] INFO  testcases.RoleFolder - Response Time: 480
+11:42:45.552 [main] INFO  testcases.RoleFolder - Response Body: {
+    "50": "ROLE_FRONT_END_DEVELOPER",
+    "69": "ROLE_REACT_DEVELOPER",
+    "6": "ROLE_DESIGNER",
+    "54": "ROLE_ASSOCIATE",
+    "57": "ROLE_FACILITATOR",
+    "61": "ROLE_OFFICER"
+}
+11:42:45.563 [main] INFO  testcases.RoleFolder - Message: null
+11:42:46.093 [main] INFO  testcases.RoleFolder - Status Code: 404
+11:42:46.625 [main] INFO  testcases.RoleFolder - Status Code: 404
+11:42:46.627 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:12:46.599+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Level Not Found",
+    "path": "/employee/role/level/17"
+}
+11:42:46.639 [main] INFO  testcases.RoleFolder - Message: Level Not Found
+12:07:09.494 [main] INFO  testcases.RoleFolder - Response Body:
+
+12:07:09.494 [main] INFO  testcases.RoleFolder - Response Code: 401
+12:07:09.495 [main] INFO  testcases.RoleFolder - Response Time: 16
+12:07:09.520 [main] INFO  testcases.RoleFolder - Status Code: 401
+12:07:09.545 [main] INFO  testcases.RoleFolder - Response Body:
+
+12:07:09.545 [main] INFO  testcases.RoleFolder - Response Code: 401
+12:07:09.567 [main] INFO  testcases.RoleFolder - Response Body: 
+12:07:09.568 [main] INFO  testcases.RoleFolder - Status Code: 401
+12:07:09.590 [main] INFO  testcases.RoleFolder - Status Code: 401
+12:07:09.591 [main] INFO  testcases.RoleFolder - Response Body: 
+12:07:10.097 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "6": "ROLE_DESIGNER",
+    "79": "ROLE_PRODUCER"
+}
+12:07:10.479 [main] INFO  testcases.RoleFolder - Response Body: {
+    "6": "ROLE_DESIGNER"
+}
+12:07:10.479 [main] INFO  testcases.RoleFolder - Status Code: 200
+12:07:10.480 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+12:07:10.480 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+12:07:10.480 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+12:07:10.480 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+12:07:10.480 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+12:07:10.481 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:37:10 GMT
+12:07:10.482 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+12:07:10.482 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+12:07:10.482 [main] INFO  testcases.RoleFolder - Response Code: 200
+12:07:10.482 [main] INFO  testcases.RoleFolder - Unexpected status code: 200
+12:07:10.482 [main] INFO  testcases.RoleFolder - Response Time: 375
+12:07:10.483 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+12:07:10.483 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+12:07:10.483 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+12:07:10.483 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+12:07:10.484 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+12:07:10.484 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+12:07:10.484 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+12:07:10.484 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+12:07:10.484 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+12:07:10.485 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+12:07:10.485 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+12:07:10.485 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:37:10 GMT
+12:07:10.485 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+12:07:10.486 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+12:07:10.853 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "80": "ROLE_FRONT_END_DEVELOPER",
+    "6": "ROLE_DESIGNER"
+}
+12:07:10.867 [main] INFO  testcases.RoleFolder - Message: null
+12:07:11.297 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:37:11.185+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are Missing",
+    "path": "/employee/role/add"
+}
+12:07:11.307 [main] INFO  testcases.RoleFolder - Message: Fields are Missing
+12:07:11.307 [main] INFO  testcases.RoleFolder - Response Code: 400
+12:07:11.308 [main] INFO  testcases.RoleFolder - Response Time: 422
+12:07:11.678 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "80": "ROLE_FRONT_END_DEVELOPER",
+    "81": "ROLE_ARCHITECT",
+    "6": "ROLE_DESIGNER"
+}
+12:07:11.689 [main] INFO  testcases.RoleFolder - Message: null
+12:07:12.116 [main] INFO  testcases.RoleFolder - Status Code: 200
+12:07:12.117 [main] INFO  testcases.RoleFolder - Response Body: {
+    "80": "ROLE_FRONT_END_DEVELOPER",
+    "81": "ROLE_ARCHITECT",
+    "6": "ROLE_DESIGNER"
+}
+12:07:12.540 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "80": "ROLE_FRONT_END_DEVELOPER",
+    "81": "ROLE_COORDINATOR",
+    "6": "ROLE_DESIGNER"
+}
+12:07:12.555 [main] INFO  testcases.RoleFolder - Response Code: 200
+12:07:12.555 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+12:07:12.555 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+12:07:12.555 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+12:07:12.555 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:37:11 GMT
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+12:07:12.556 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+12:07:12.556 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+12:07:12.556 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:37:11 GMT
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+12:07:12.556 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+12:07:12.913 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:37:12.876+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Fields are missing",
+    "path": "/employee/role/update"
+}
+12:07:12.927 [main] INFO  testcases.RoleFolder - Message: Fields are missing
+12:07:12.927 [main] INFO  testcases.RoleFolder - Response Code: 400
+12:07:12.927 [main] INFO  testcases.RoleFolder - Response Time: 351
+12:07:13.347 [main] INFO  testcases.RoleFolder - Response Body:
+{
+    "timestamp": "2023-12-16T06:37:13.253+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No Role Present For Given Id",
+    "path": "/employee/role/update"
+}
+12:07:13.362 [main] INFO  testcases.RoleFolder - Message: No Role Present For Given Id
+12:07:13.362 [main] INFO  testcases.RoleFolder - Response Code: 404
+12:07:13.362 [main] INFO  testcases.RoleFolder - Response Time: 409
+12:07:13.911 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:37:13.865+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Role Not Found",
+    "path": "/employee/role/delete"
+}
+12:07:13.924 [main] INFO  testcases.RoleFolder - Message: Role Not Found
+12:07:13.924 [main] INFO  testcases.RoleFolder - Response Code: 404
+12:07:13.924 [main] INFO  testcases.RoleFolder - Response Time: 362
+12:07:14.371 [main] INFO  testcases.RoleFolder - Status Code: 200
+12:07:14.373 [main] INFO  testcases.RoleFolder - Response Body: [
+    {
+        "roleId": 6,
+        "role": "ROLE_DESIGNER",
+        "roleName": "Designer",
+        "roleLevel": 1
+    },
+    {
+        "roleId": 81,
+        "role": "ROLE_COORDINATOR",
+        "roleName": "Coordinator",
+        "roleLevel": 2
+    },
+    {
+        "roleId": 80,
+        "role": "ROLE_FRONT_END_DEVELOPER",
+        "roleName": "ROLE_FRONT_END_DEVELOPER",
+        "roleLevel": 4
+    }
+]
+12:07:14.374 [main] INFO  testcases.RoleFolder - Content Type header value is: application/json
+12:07:14.374 [main] INFO  testcases.RoleFolder - Transfer Encoding header value is: chunked
+12:07:14.374 [main] INFO  testcases.RoleFolder - Connection header value is: keep-alive
+12:07:14.374 [main] INFO  testcases.RoleFolder - Key: X-Content-Type-Options Value: nosniff
+12:07:14.374 [main] INFO  testcases.RoleFolder - Key: X-XSS-Protection Value: 0
+12:07:14.374 [main] INFO  testcases.RoleFolder - Key: Cache-Control Value: no-cache, no-store, max-age=0, must-revalidate
+12:07:14.375 [main] INFO  testcases.RoleFolder - Key: Pragma Value: no-cache
+12:07:14.375 [main] INFO  testcases.RoleFolder - Key: Expires Value: 0
+12:07:14.375 [main] INFO  testcases.RoleFolder - Key: X-Frame-Options Value: DENY
+12:07:14.375 [main] INFO  testcases.RoleFolder - Key: Content-Type Value: application/json
+12:07:14.375 [main] INFO  testcases.RoleFolder - Key: Transfer-Encoding Value: chunked
+12:07:14.376 [main] INFO  testcases.RoleFolder - Key: Date Value: Sat, 16 Dec 2023 06:37:13 GMT
+12:07:14.376 [main] INFO  testcases.RoleFolder - Key: Keep-Alive Value: timeout=60
+12:07:14.376 [main] INFO  testcases.RoleFolder - Key: Connection Value: keep-alive
+12:07:14.778 [main] INFO  testcases.RoleFolder - Status Code: 404
+12:07:14.778 [main] INFO  testcases.RoleFolder - Response Body: {
+    "timestamp": "2023-12-16T06:37:14.700+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Level Not Found",
+    "path": "/employee/role/level/19"
+}
+12:07:14.788 [main] INFO  testcases.RoleFolder - Message: Level Not Found

@@ -107,11 +107,11 @@ public class StatusFolder {
 	@Test(priority = 5)
 	@Step("Add Status With Authorization")
 	public void verifyAddStatusWithAuthorization() {
-		int fakeLevel = faker.number().numberBetween(1, 10);
+		int fakeStatusLevel = faker.number().numberBetween(1, 10);
 		String fakeStatus1 = faker.name().lastName();
 		HashMap<String, Object> statusMap = new HashMap<>();
 		statusMap.put("status", fakeStatus1);
-		statusMap.put("statusLevel", fakeLevel);
+		statusMap.put("statusLevel", fakeStatusLevel);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(statusMap);
@@ -132,6 +132,7 @@ public class StatusFolder {
 		// Choose a random key from the list
 		String selectedStatusId = getRandomStatusId(keyList);
 		String fakeStatus = response.jsonPath().getString(selectedStatusId);
+		addStatusWithSamePayloadAsPrevious(fakeStatus);
 		deleteSingleStatusWithAuthorization(fakeStatus);
 
 		log.info("Response Code: " + response.getStatusCode());
@@ -173,12 +174,13 @@ public class StatusFolder {
 		}
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, dependsOnMethods = "verifyAddStatusWithAuthorization")
 	@Step("Add Status With Same Payload As Previous")
-	public void addStatusWithSamePayloadAsPrevious() {
+	public String addStatusWithSamePayloadAsPrevious(String fakeStatus) {
+		int fakeStatusLevel = faker.number().numberBetween(1, 10);
 		HashMap<String, Object> statusMap = new HashMap<>();
-		statusMap.put("status", "Done");
-		statusMap.put("statusLevel", 19);
+		statusMap.put("status", fakeStatus);
+		statusMap.put("statusLevel", fakeStatusLevel);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(statusMap);
@@ -196,6 +198,8 @@ public class StatusFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return fakeStatus;
 	}
 
 	@Test(priority = 7)
@@ -259,6 +263,18 @@ public class StatusFolder {
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedStatusId = getRandomStatusId(keyList);
+		System.out.println(selectedStatusId);
+		Integer statusId = Integer.parseInt(selectedStatusId);
+		updateStatusWithAuthorization(statusId);
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -279,13 +295,13 @@ public class StatusFolder {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, dependsOnMethods = "verifyGetAllStatusWithAuthorization")
 	@Step("Update Status With Authorization")
-	public void updateStatusWithAuthorization() {
+	public Integer updateStatusWithAuthorization(Integer statusId) {
 		String fakeStatus1 = faker.name().firstName();
 		HashMap<String, Object> statusMap = new HashMap<>();
 		statusMap.put("status", fakeStatus1);
-		statusMap.put("statusId", 82);
+		statusMap.put("statusId", statusId);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(statusMap);
@@ -295,7 +311,8 @@ public class StatusFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-	//	Assert.assertEquals(response.jsonPath().getString("82"), fakeStatus1);
+		String statusId1 = String.valueOf(statusId);
+		Assert.assertEquals(response.jsonPath().getString(statusId1), fakeStatus1);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
@@ -318,6 +335,8 @@ public class StatusFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		return statusId;
 	}
 
 	@Test(priority = 11)

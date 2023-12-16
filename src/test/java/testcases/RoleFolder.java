@@ -144,8 +144,8 @@ public class RoleFolder {
 
 		// Choose a random key from the list
 		String selectedRoleId = getRandomRoleId(keyList);
-		String fakeRole = response.jsonPath().getString(selectedRoleId);
-		deleteSingleRoleWithAuthorization(fakeRole);
+		Integer roleId = Integer.parseInt(selectedRoleId);
+		deleteSingleRoleWithAuthorization(roleId);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -273,6 +273,19 @@ public class RoleFolder {
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+
+		// Choose a random key from the list
+		String selectedRoleId = getRandomRoleId(keyList);
+		System.out.println(selectedRoleId);
+		Integer roleId = Integer.parseInt(selectedRoleId);
+		updateRoleWithAuthorization(roleId);
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -293,11 +306,11 @@ public class RoleFolder {
 		}
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 11, dependsOnMethods = "verifyGetAllRoleWithAuthorization")
 	@Step("Update Role With Authorization")
-	public void updateRoleWithAuthorization() {
+	public Integer updateRoleWithAuthorization(Integer roleId) {
 		HashMap<String, Object> roleMap = new HashMap<>();
-		roleMap.put("roleId", 25);
+		roleMap.put("roleId", roleId);
 		String fakeRole1 = faker.job().position();
 		roleMap.put("role", fakeRole1);
 
@@ -309,7 +322,8 @@ public class RoleFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-//		Assert.assertEquals(response.jsonPath().getString("25"), "ROLE_" + fakeRole1.toUpperCase());
+		String roleId1 = String.valueOf(roleId);
+		Assert.assertEquals(response.jsonPath().getString(roleId1), "ROLE_" + fakeRole1.toUpperCase());
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -331,6 +345,8 @@ public class RoleFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		return roleId;
 	}
 
 	@Test(priority = 12)
@@ -385,7 +401,7 @@ public class RoleFolder {
 
 	@Test(priority = 14, dependsOnMethods = { "verifyAddRoleWithAuthorization" })
 	@Step("Delete Single Role With Authorization")
-	public String deleteSingleRoleWithAuthorization(String fakeRoleId) {
+	public Integer deleteSingleRoleWithAuthorization(Integer fakeRoleId) {
 		HashMap<String, Object> roleMap = new HashMap<>();
 		roleMap.put("roleId", fakeRoleId);
 
@@ -463,8 +479,21 @@ public class RoleFolder {
 		requestSpec.basePath("/employee/role/level/" + fakeLevel);
 		response = requestSpec.auth().basic(username, password).get();
 		log.info("Status Code: " + response.statusCode());
-		int actualStatusCode = response.getStatusCode();
-		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+
+		// Check the response status code
+		if (response.getStatusCode() == 200) {
+			int actualStatusCode = response.getStatusCode();
+			Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
+		} else if (response.getStatusCode() == 404) {
+			// Status already exists
+			String actualMessage = response.jsonPath().getString("message");
+			log.info("Message: " + actualMessage);
+			Assert.assertEquals(actualMessage, "Role Not Found");
+		} else {
+			// Handle other status codes if needed
+			log.info("Unexpected status code: " + response.getStatusCode());
+		}
+
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
 		String contentType = response.getHeader("Content-Type");

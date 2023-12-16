@@ -126,8 +126,9 @@ public class DesignationFolder {
 		List<String> keyList = new ArrayList<>(allKeys.keySet());
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
-		String selectedStatusId = getRandomDesignationId(keyList);
-		String fakeDesignation = response.jsonPath().getString(selectedStatusId);
+		String selectedDesignationId = getRandomDesignationId(keyList);
+		String fakeDesignation = response.jsonPath().getString(selectedDesignationId);
+		addDesignationWithSamePayloadAsPrevious(fakeDesignation);
 		deleteSingleDesignationWithAuthorization(fakeDesignation);
 
 		log.info("Response Code: " + response.getStatusCode());
@@ -192,11 +193,11 @@ public class DesignationFolder {
 		log.info("Response Time: " + response.getTime());
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, dependsOnMethods = "verifyAddDesignationWithAuthorization")
 	@Step("Add Designation With Same Payload As Previous")
-	public void addDesignationWithSamePayloadAsPrevious() {
+	public String addDesignationWithSamePayloadAsPrevious(String fakeDesignation) {
 		HashMap<String, Object> designationMap = new HashMap<>();
-		designationMap.put("designation", "Project Lead");
+		designationMap.put("designation", fakeDesignation);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(designationMap);
@@ -215,6 +216,8 @@ public class DesignationFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return fakeDesignation;
 	}
 
 	@Test(priority = 8)
@@ -226,6 +229,18 @@ public class DesignationFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
+
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedDesignationId = getRandomDesignationId(keyList);
+		System.out.println(selectedDesignationId);
+		Integer designationId = Integer.parseInt(selectedDesignationId);
+		updateDesignationWithAuthorization(designationId);
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -247,11 +262,11 @@ public class DesignationFolder {
 		}
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 9, dependsOnMethods = "verifyGetAllDesignationWithAuthorization")
 	@Step("Update Designation With Authorization")
-	public void updateDesignationWithAuthorization() {
+	public Integer updateDesignationWithAuthorization(Integer designationId) {
 		HashMap<String, Object> designationMap = new HashMap<>();
-		designationMap.put("designationId", 13);
+		designationMap.put("designationId", designationId);
 		String fakeDesignation1 = faker.job().position();
 		designationMap.put("designation", fakeDesignation1);
 
@@ -263,7 +278,8 @@ public class DesignationFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-	//	Assert.assertEquals(response.jsonPath().getString("13"), fakeDesignation1);
+		String designationId1 = String.valueOf(designationId);
+		Assert.assertEquals(response.jsonPath().getString(designationId1), fakeDesignation1);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -285,6 +301,8 @@ public class DesignationFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		return designationId;
 	}
 
 	@Test(priority = 10)

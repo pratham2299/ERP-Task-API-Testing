@@ -150,8 +150,9 @@ public class RegularTaskFolder {
 		List<String> keyList = new ArrayList<>(allKeys.keySet());
 		System.out.println("All Keys: " + keyList);
 		// Choose a random key from the list
-		String selectedStatusId = getRandomRegularTaskId(keyList);
-		deleteSingleRegularTaskWithAuthorization(selectedStatusId);
+		String selectedRegularTaskId = getRandomRegularTaskId(keyList);
+		Integer regularTaskId = Integer.parseInt(selectedRegularTaskId);
+		deleteSingleRegularTaskWithAuthorization(regularTaskId);
 
 		// Check the response status code
 		if (response.getStatusCode() == 201) {
@@ -265,6 +266,17 @@ public class RegularTaskFolder {
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedStatusId = getRandomRegularTaskId(keyList);
+		Integer regularTaskId = Integer.parseInt(selectedStatusId);
+		verifyUpdateRegularTaskWithAuthorization(regularTaskId);
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -328,14 +340,14 @@ public class RegularTaskFolder {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, dependsOnMethods = { "verifyGetAllRegularTaskWithAuthorization" })
 	@Step("Update Regular Task With Authorization")
-	public void verifyUpdateRegularTaskWithAuthorization() {
+	public Integer verifyUpdateRegularTaskWithAuthorization(Integer regularTaskId) {
 		String fakeRegularTaskName = faker.food().dish();
 		// Create a HashMap to represent the JSON payload
 		HashMap<String, Object> regularTaskMap = new HashMap<>();
 		regularTaskMap.put("regularTaskName", fakeRegularTaskName);
-		regularTaskMap.put("regularTaskId", 10);
+		regularTaskMap.put("regularTaskId", regularTaskId);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(regularTaskMap);
@@ -344,6 +356,9 @@ public class RegularTaskFolder {
 		response = requestSpec.auth().basic(username, password).contentType("application/json").body(payload).put();
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
+
+		String regularTaskId1 = String.valueOf(regularTaskId);
+		Assert.assertEquals(response.jsonPath().getString(regularTaskId1), fakeRegularTaskName);
 
 		log.info("Response Code: " + response.getStatusCode());
 		int actualStatusCode = response.getStatusCode();
@@ -366,6 +381,7 @@ public class RegularTaskFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+		return regularTaskId;
 	}
 
 	@Test(priority = 11)
@@ -425,7 +441,7 @@ public class RegularTaskFolder {
 
 	@Test(priority = 13, dependsOnMethods = { "verifyAddRegularTaskWithAuthorization" })
 	@Step("Delete Single Regular Task With Authorization")
-	public String deleteSingleRegularTaskWithAuthorization(String fakeRegularTaskId) {
+	public Integer deleteSingleRegularTaskWithAuthorization(Integer fakeRegularTaskId) {
 		// Create a HashMap to represent the JSON payload
 		HashMap<String, Object> regularTaskMap = new HashMap<>();
 		regularTaskMap.put("regularTaskId", fakeRegularTaskId);

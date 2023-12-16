@@ -74,7 +74,7 @@ public class TagFolder {
 	public void updateTagWithoutAuthorization() {
 		HashMap<String, Object> tagMap = new HashMap<>();
 		tagMap.put("tagId", 7);
-		String fakeTag1 = faker.company().name();
+		String fakeTag1 = faker.animal().name();
 		tagMap.put("tag", fakeTag1);
 
 		// Convert the HashMap to JSON format using Gson
@@ -105,7 +105,7 @@ public class TagFolder {
 	@Test(priority = 5)
 	@Step("Add Tag With Authorization")
 	public void verifyAddTagWithAuthorization() {
-		String fakeTag1 = faker.company().name();
+		String fakeTag1 = faker.animal().name();
 		HashMap<String, Object> tagMap = new HashMap<>();
 		tagMap.put("tagName", fakeTag1);
 
@@ -127,6 +127,7 @@ public class TagFolder {
 		// Choose a random key from the list
 		String selectedTagId = getRandomTagId(keyList);
 		String fakeTag = response.jsonPath().getString(selectedTagId);
+		addTagWithSamePayloadAsPrevious(fakeTag);
 		deleteSingleTagWithAuthorization(fakeTag);
 
 		log.info("Response Code: " + response.getStatusCode());
@@ -166,11 +167,11 @@ public class TagFolder {
 		}
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, dependsOnMethods = "verifyAddTagWithAuthorization")
 	@Step("Add Tag With Same Payload As Previous")
-	public void addTagWithSamePayloadAsPrevious() {
+	public String addTagWithSamePayloadAsPrevious(String fakeTag) {
 		HashMap<String, Object> tagMap = new HashMap<>();
-		tagMap.put("tagName", "QE");
+		tagMap.put("tagName", fakeTag);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(tagMap);
@@ -189,12 +190,14 @@ public class TagFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return fakeTag;
 	}
 
 	@Test(priority = 7)
 	@Step("Add Tag With Invalid Payload")
 	public void addTagWithInvalidPayload() {
-		String fakeTag = faker.company().name();
+		String fakeTag = faker.animal().name();
 		HashMap<String, Object> tagMap = new HashMap<>();
 		tagMap.put("tag", fakeTag);
 
@@ -228,6 +231,18 @@ public class TagFolder {
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
 
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		String selectedTagId = getRandomTagId(keyList);
+		System.out.println(selectedTagId);
+		Integer tagId = Integer.parseInt(selectedTagId);
+		updateTagWithAuthorization(tagId);
+
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
 		Assert.assertEquals(contentType, "application/json", "invalid content type value");
@@ -248,12 +263,12 @@ public class TagFolder {
 		}
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 9, dependsOnMethods = "verifyGetAllTagWithAuthorization")
 	@Step("Update Tag With Authorization")
-	public void updateTagWithAuthorization() {
+	public Integer updateTagWithAuthorization(Integer tagId) {
 		HashMap<String, Object> tagMap = new HashMap<>();
-		tagMap.put("tagId", 43);
-		String fakeTag1 = faker.company().name();
+		tagMap.put("tagId", tagId);
+		String fakeTag1 = faker.animal().name();
 		tagMap.put("tag", fakeTag1);
 
 		// Convert the HashMap to JSON format using Gson
@@ -264,7 +279,8 @@ public class TagFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-		Assert.assertEquals(response.jsonPath().getString("43"), fakeTag1);
+		String tagId1 = String.valueOf(tagId);
+		Assert.assertEquals(response.jsonPath().getString(tagId1), fakeTag1);
 
 		log.info("Response Code: " + response.getStatusCode());
 
@@ -286,6 +302,8 @@ public class TagFolder {
 		for (Header header : headersList) {
 			log.info("Key: " + header.getName() + " Value: " + header.getValue());
 		}
+
+		return tagId;
 	}
 
 	@Test(priority = 10)
@@ -382,7 +400,7 @@ public class TagFolder {
 	@Test(priority = 13)
 	@Step("Delete Tag With Invalid Tag Name")
 	public void deleteSingleTagWithInvalidTagName() {
-		String fakeTagName = "Software Company";
+		String fakeTagName = faker.animal().name();
 		requestSpec.basePath("/task/tag/delete/single").queryParam("tagName", fakeTagName);
 		response = requestSpec.auth().basic(username, password).contentType("application/json").delete();
 

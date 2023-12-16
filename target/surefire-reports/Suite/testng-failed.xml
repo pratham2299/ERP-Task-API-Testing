@@ -3,38 +3,29 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="testcases.StatusFolder">
-        <methods>
-          <include name="deleteSingleStatusWithInvalidStatusName"/>
-          <include name="baseURL"/>
-          <include name="verifyAddStatusWithAuthorization"/>
-        </methods>
-      </class> <!-- testcases.StatusFolder -->
-      <class name="testcases.TagFolder">
-        <methods>
-          <include name="baseURL"/>
-          <include name="deleteSingleTagWithInvalidTagName"/>
-        </methods>
-      </class> <!-- testcases.TagFolder -->
       <class name="testcases.DesignationFolder">
         <methods>
           <include name="baseURL"/>
-          <include name="deleteSingleDesignationWithInvalidDesignationName"/>
-          <include name="verifyAddDesignationWithAuthorization"/>
+          <include name="addDesignationWithSamePayloadAsPrevious"/>
         </methods>
       </class> <!-- testcases.DesignationFolder -->
+      <class name="testcases.TagFolder">
+        <methods>
+          <include name="baseURL"/>
+          <include name="addTagWithSamePayloadAsPrevious"/>
+        </methods>
+      </class> <!-- testcases.TagFolder -->
       <class name="testcases.PriorityFolder">
         <methods>
           <include name="baseURL"/>
           <include name="updatePriorityWithAuthorization"/>
-          <include name="deleteSinglePriorityWithInvalidPriorityName"/>
+          <include name="addPriorityWithSamePayloadAsPrevious"/>
+          <include name="verifyGetAllPriorityWithAuthorization"/>
         </methods>
       </class> <!-- testcases.PriorityFolder -->
       <class name="testcases.RoleFolder">
         <methods>
-          <include name="updateRoleWithAuthorization"/>
-          <include name="verifyAddRoleWithAuthorization"/>
-          <include name="getRoleByLevelWithAuthorization"/>
+          <include name="addRoleWithSamePayloadAsPrevious"/>
           <include name="baseURL"/>
           <include name="addRoleWithSameRoleLevelInPayloadAsPrevious"/>
         </methods>

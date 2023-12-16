@@ -134,6 +134,7 @@ public class PriorityFolder {
 		// Choose a random key from the list
 		selectedPriorityId = getRandomPriorityId(keyList);
 		String fakePriority = response.jsonPath().getString(selectedPriorityId);
+		addPriorityWithSamePayloadAsPrevious(fakePriority);
 		deleteSinglePriorityWithAuthorization(fakePriority);
 
 		log.info("Response Code: " + response.getStatusCode());
@@ -173,12 +174,13 @@ public class PriorityFolder {
 		}
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, dependsOnMethods = "verifyAddPriorityWithAuthorization")
 	@Step("Add Priority With Same Payload As Previous")
-	public void addPriorityWithSamePayloadAsPrevious() {
+	public String addPriorityWithSamePayloadAsPrevious(String fakePriority) {
+		int fakePriorityLevel = faker.number().numberBetween(1, 10);
 		HashMap<String, Object> priorityMap = new HashMap<>();
-		priorityMap.put("priority", "Low");
-		priorityMap.put("priorityLevel", 23);
+		priorityMap.put("priority", fakePriority);
+		priorityMap.put("priorityLevel", fakePriorityLevel);
 
 		// Convert the HashMap to JSON format using Gson
 		String payload = new Gson().toJson(priorityMap);
@@ -197,6 +199,8 @@ public class PriorityFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 422, "Invalid status code");
 		log.info("Response Time: " + response.getTime());
+
+		return fakePriority;
 	}
 
 	@Test(priority = 7)
@@ -259,8 +263,18 @@ public class PriorityFolder {
 		int actualStatusCode = response.getStatusCode();
 		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 		log.info("Response Body: " + response.getBody().asPrettyString());
-		String responseBody = response.getBody().asPrettyString();
-		Assert.assertEquals(responseBody.contains("Low"), true, "Low value does not exist");
+
+		// Extract all keys from the response as a Map
+		Map<String, ?> allKeys = response.jsonPath().getMap("");
+
+		// Print all keys
+		List<String> keyList = new ArrayList<>(allKeys.keySet());
+		System.out.println("All Keys: " + keyList);
+		// Choose a random key from the list
+		selectedPriorityId = getRandomPriorityId(keyList);
+		System.out.println(selectedPriorityId);
+		Integer priorityId = Integer.parseInt(selectedPriorityId);
+		updatePriorityWithAuthorization(priorityId);
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
@@ -282,11 +296,11 @@ public class PriorityFolder {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, dependsOnMethods = "verifyGetAllPriorityWithAuthorization")
 	@Step("Update Priority With Authorization")
-	public void updatePriorityWithAuthorization() {
+	public void updatePriorityWithAuthorization(Integer priorityId) {
 		HashMap<String, Object> priorityMap = new HashMap<>();
-		priorityMap.put("priorityId", 90);
+		priorityMap.put("priorityId", priorityId);
 		String fakePriority1 = faker.job().seniority();
 		priorityMap.put("priority", fakePriority1);
 
@@ -298,9 +312,12 @@ public class PriorityFolder {
 		String responseBody = response.getBody().asPrettyString();
 		log.info("Response Body:\n" + responseBody);
 
-	//	Assert.assertEquals(response.jsonPath().getString("90"), fakePriority1);
+		String priorityId1 = String.valueOf(priorityId);
+		Assert.assertEquals(response.jsonPath().getString(priorityId1), fakePriority1);
 
 		log.info("Response Code: " + response.getStatusCode());
+		int actualStatusCode = response.getStatusCode();
+		Assert.assertEquals(actualStatusCode, 200, "Invalid status code");
 
 		String contentType = response.getHeader("Content-Type");
 		log.info("Content Type header value is: " + contentType);
