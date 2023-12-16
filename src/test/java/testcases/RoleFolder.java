@@ -191,7 +191,7 @@ public class RoleFolder {
 	@Step("Add Role With Same Payload As Previous")
 	public String addRoleWithSamePayloadAsPrevious(String fakeRole) {
 		HashMap<String, Object> roleMap = new HashMap<>();
-		roleMap.put("role", "Front_End_Developer");
+		roleMap.put("role", fakeRole);
 		roleMap.put("roleLevel", 4);
 
 		// Convert the HashMap to JSON format using Gson

@@ -1,0 +1,1 @@
+{"uuid":"36d31062-7ce7-4318-9411-7076c121ded1","name":"testcases.RoleFolder","children":["46549874-29c3-463a-bb15-28105a8673db"],"befores":[{"name":"baseURL","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1702717571304,"stop":1702717571752}],"afters":[],"start":1702717571269,"stop":1702717593830}
